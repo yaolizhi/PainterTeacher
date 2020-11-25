@@ -1,0 +1,119 @@
+10
+
+dir
+0
+svn://ylz@121.89.185.99/1v1zhibo/ios/%E5%B0%8F%E7%94%BB%E5%AE%B61v1/%E6%95%99%E5%B8%88%E7%AB%AF/PainterTeacher/PainterTeacher
+svn://ylz@121.89.185.99/1v1zhibo
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+77e24059-a2e4-4cde-b9eb-89e667a2e844
+
+Base.lproj
+dir
+
+
+
+add
+
+main.m
+file
+
+
+
+add
+
+Course
+dir
+
+
+
+add
+
+SceneDelegate.m
+file
+
+
+
+add
+
+Main
+dir
+
+
+
+add
+
+ViewController.h
+file
+
+
+
+add
+
+Evaluation
+dir
+
+
+
+add
+
+Home
+dir
+
+
+
+add
+
+Mine
+dir
+
+
+
+add
+
+ViewController.m
+file
+
+
+
+add
+
+Assets.xcassets
+dir
+
+
+
+add
+
+BaseController
+dir
+
+
+
+add
+
+SceneDelegate.h
+file
+
+
+
+add
+
