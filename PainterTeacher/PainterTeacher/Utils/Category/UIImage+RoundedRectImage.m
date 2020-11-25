@@ -128,9 +128,9 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
 }
 
 // 加载原始图片
-+ (instancetype)imageWithOriginalName:(NSString *)imageName {
++ (UIImage *)imageWithOriginalName:(NSString *)imageName
+{
     UIImage *image = [UIImage imageNamed:imageName];
-    
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     return image;
@@ -138,7 +138,7 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
 
 
 //返回纯色的图片
-+ (UIImage *) createImageWithColor:(UIColor *)color {
++ (UIImage *)createImageWithColor:(UIColor *)color {
     
     CGRect rect = CGRectMake(0.0f,0.0f,1.0f,1.0f);
     UIGraphicsBeginImageContext(rect.size);

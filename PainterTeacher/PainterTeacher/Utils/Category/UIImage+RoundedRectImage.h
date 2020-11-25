@@ -18,7 +18,7 @@
 + (NSString *)imageChangeToBase64:(UIImage *)image;
 
 // 加载原始图片
-+ (instancetype)imageWithOriginalName:(NSString *)imageName;
++ (UIImage *)imageWithOriginalName:(NSString *)imageName;
 
 //根据颜色返回图片
 + (UIImage *)createImageWithColor:(UIColor *)color;

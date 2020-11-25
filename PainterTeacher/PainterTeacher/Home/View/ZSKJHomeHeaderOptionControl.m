@@ -86,7 +86,7 @@
 {
     [self.titleLabel setText:title];
     [self.subtitleLabel setText:subtitle];
-    [self.iconView setImage:imageName(icon)];
+    [self.iconView setImageName:icon];
 }
 
 

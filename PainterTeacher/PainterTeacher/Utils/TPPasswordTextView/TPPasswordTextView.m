@@ -86,7 +86,8 @@
     [self.textField becomeFirstResponder];
 }
 
-- (void)hideKeyboard {
+- (void)hideKeyboard
+{
     [self.textField resignFirstResponder];
 }
 

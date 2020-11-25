@@ -39,6 +39,9 @@
 #import "UIView+Extension.h"
 #import "ZSKJDefaultAlertView.h"
 #import "ZSKJHelper.h"
+#import "UIImage+RoundedRectImage.h"
+#import "UIImageView+Category.h"
+
 
 
 
@@ -72,6 +75,7 @@ alpha:a]
 #define KLineColor UIColorFromRGB(0xEDF2F7) //项目分割线颜色
 #define KBlueColor UIColorFromRGB(0x2BA3FF) //项目蓝色
 #define KGreenColor UIColorFromRGB(0x20D357) //项目绿色
+#define KGrayLineColor UIColorFromRGB(0xCCCCCC) //项目灰色
 
 #define CornerRadius  8
 

@@ -22,7 +22,7 @@
     [self.view setBackgroundColor:KLineColor];
     if (self.navigationController.viewControllers.count > 1)
     {
-        UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"mine_fanhui"]  style:UIBarButtonItemStylePlain target:self action:@selector(leftBtnAction:)];
+        UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithImage:[UIImage imageWithOriginalName:@"back"] style:UIBarButtonItemStylePlain target:self action:@selector(leftBtnAction:)];
         [self.navigationItem setLeftBarButtonItem:item];
         
     }
@@ -55,8 +55,8 @@
 
 -(void)viewWillAppear:(BOOL)animated bottomBar:(BOOL)hidden
 {
-    [self.tabBarController.tabBar setHidden:hidden];
     [super viewWillAppear:animated];
+    [self.tabBarController.tabBar setHidden:hidden];
 }
 
 

@@ -11,11 +11,13 @@
 
 
 #import <UIKit/UIKit.h>
+#import "ZSKJCollectionView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZSKJHomeFormalCollectionView : UICollectionView
+@interface ZSKJHomeFormalCollectionView : ZSKJCollectionView
 
+- (instancetype)initWithFrame:(CGRect)frame withType:(FlowLayoutType)type;
 
 
 

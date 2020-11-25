@@ -27,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.view setBackgroundColor:KWhiteColor];
     [self setTitle:@"临时课堂"];
 }
 
@@ -34,15 +35,54 @@
 {
     if (views)
     {
+        [self.view addSubview:self.iconView];
+        [self.view addSubview:self.tipLabel];
         [self.view addSubview:self.passwordTextView];
-        [self.passwordTextView setCenter:CGPointMake(self.view.centerX, 200)];
+        
+        
+        [self.tipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+           
+            make.bottom.equalTo(self.passwordTextView.mas_top).offset(-30);
+            make.centerX.equalTo(self.view);
+            
+        }];
+        [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
+                
+            make.bottom.equalTo(self.tipLabel.mas_top).offset(-20);
+            make.centerX.equalTo(self.view);
+        }];
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        [self.passwordTextView setCenter:CGPointMake(self.view.centerX, 400)];
         [self.passwordTextView setPasswordDidChangeBlock:^(NSString *password) {
 
             
         }];
+        
+        
+        
     }
 }
 
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesEnded:touches withEvent:event];
+    [self.passwordTextView hideKeyboard];
+}
 
 
 #pragma mark - Getter / Setter
@@ -50,8 +90,9 @@
 {
     if (!_passwordTextView)
     {
-        _passwordTextView = [[TPPasswordTextView alloc]initWithFrame:CGRectMake(0, 0, 300, 60)];
-        [_passwordTextView setBackgroundColor:KLineColor];
+        _passwordTextView = [[TPPasswordTextView alloc]initWithFrame:CGRectMake(0, 0, 600, 100)];
+        [_passwordTextView setElementBorderColor:KGrayLineColor];
+        [_passwordTextView setElementBorderWidth:1.0];
         [_passwordTextView setElementCount:6];
     }
     return _passwordTextView;
@@ -65,7 +106,7 @@
     if (!_iconView)
     {
         _iconView = [[UIImageView alloc]init];
-        [_iconView setImage:imageName(@"")];
+        [_iconView setImageName:@"mineTemporary"];
     }
     return _iconView;
 }

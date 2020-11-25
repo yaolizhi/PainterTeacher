@@ -162,6 +162,16 @@
 		96A0C89E256BB13500DA0AA5 /* ZSKJCoursesCellItemControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A0C89D256BB13500DA0AA5 /* ZSKJCoursesCellItemControl.m */; };
 		96A0C8A2256BBA7200DA0AA5 /* ZSKJScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A0C8A1256BBA7200DA0AA5 /* ZSKJScheduleViewController.m */; };
 		96A0C8A6256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A0C8A5256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.m */; };
+		96A1A860256DF3A800876755 /* ZSKJMineResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1A85F256DF3A800876755 /* ZSKJMineResumeViewController.m */; };
+		96A1A866256DF52900876755 /* SSKJ_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1A864256DF52900876755 /* SSKJ_TableViewCell.m */; };
+		96A1A867256DF52900876755 /* SSKJ_TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1A865256DF52900876755 /* SSKJ_TableView.m */; };
+		96A1A86B256DF62500876755 /* SSKJ_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1A86A256DF62500876755 /* SSKJ_ScrollView.m */; };
+		96A1A86F256DF84E00876755 /* ZSKJCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1A86E256DF84E00876755 /* ZSKJCollectionView.m */; };
+		96A1A884256DFFF100876755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A1A880256DFFF100876755 /* LaunchScreen.storyboard */; };
+		96A1A885256DFFF100876755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A1A882256DFFF100876755 /* Main.storyboard */; };
+		96A1A889256E030700876755 /* UIImageView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1A888256E030700876755 /* UIImageView+Category.m */; };
+		96A1A88D256E0BA100876755 /* ZSKJMineResumeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1A88C256E0BA100876755 /* ZSKJMineResumeCollectionView.m */; };
+		96A1A891256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1A890256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.m */; };
 		96D7E82F256CDFE2002D1E90 /* ZSKJHomeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E82E256CDFE2002D1E90 /* ZSKJHomeCollectionView.m */; };
 		96D7E833256CE01B002D1E90 /* ZSKJHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E832256CE01B002D1E90 /* ZSKJHomeCollectionViewCell.m */; };
 		96D7E837256CE20B002D1E90 /* ZSKJHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E836256CE20B002D1E90 /* ZSKJHomeHeaderView.m */; };
@@ -504,6 +514,24 @@
 		96A0C8A1256BBA7200DA0AA5 /* ZSKJScheduleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJScheduleViewController.m; sourceTree = "<group>"; };
 		96A0C8A4256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJScheduleOptionControl.h; sourceTree = "<group>"; };
 		96A0C8A5256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJScheduleOptionControl.m; sourceTree = "<group>"; };
+		96A1A85E256DF3A800876755 /* ZSKJMineResumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJMineResumeViewController.h; sourceTree = "<group>"; };
+		96A1A85F256DF3A800876755 /* ZSKJMineResumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJMineResumeViewController.m; sourceTree = "<group>"; };
+		96A1A862256DF52900876755 /* SSKJ_TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKJ_TableView.h; sourceTree = "<group>"; };
+		96A1A863256DF52900876755 /* SSKJ_TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKJ_TableViewCell.h; sourceTree = "<group>"; };
+		96A1A864256DF52900876755 /* SSKJ_TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKJ_TableViewCell.m; sourceTree = "<group>"; };
+		96A1A865256DF52900876755 /* SSKJ_TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKJ_TableView.m; sourceTree = "<group>"; };
+		96A1A869256DF62500876755 /* SSKJ_ScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKJ_ScrollView.h; sourceTree = "<group>"; };
+		96A1A86A256DF62500876755 /* SSKJ_ScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKJ_ScrollView.m; sourceTree = "<group>"; };
+		96A1A86D256DF84E00876755 /* ZSKJCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJCollectionView.h; sourceTree = "<group>"; };
+		96A1A86E256DF84E00876755 /* ZSKJCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJCollectionView.m; sourceTree = "<group>"; };
+		96A1A881256DFFF100876755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96A1A883256DFFF100876755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96A1A887256E030700876755 /* UIImageView+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Category.h"; sourceTree = "<group>"; };
+		96A1A888256E030700876755 /* UIImageView+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Category.m"; sourceTree = "<group>"; };
+		96A1A88B256E0BA100876755 /* ZSKJMineResumeCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJMineResumeCollectionView.h; sourceTree = "<group>"; };
+		96A1A88C256E0BA100876755 /* ZSKJMineResumeCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJMineResumeCollectionView.m; sourceTree = "<group>"; };
+		96A1A88F256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJMineResumeCollectionViewCell.h; sourceTree = "<group>"; };
+		96A1A890256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJMineResumeCollectionViewCell.m; sourceTree = "<group>"; };
 		96D7E82D256CDFE2002D1E90 /* ZSKJHomeCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeCollectionView.h; sourceTree = "<group>"; };
 		96D7E82E256CDFE2002D1E90 /* ZSKJHomeCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeCollectionView.m; sourceTree = "<group>"; };
 		96D7E831256CE01B002D1E90 /* ZSKJHomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeCollectionViewCell.h; sourceTree = "<group>"; };
@@ -581,6 +609,8 @@
 				9653B50E256771800088B16E /* Assets.xcassets */,
 				9653B513256771800088B16E /* Info.plist */,
 				9653B514256771800088B16E /* main.m */,
+				96A1A880256DFFF100876755 /* LaunchScreen.storyboard */,
+				96A1A882256DFFF100876755 /* Main.storyboard */,
 			);
 			path = PainterTeacher;
 			sourceTree = "<group>";
@@ -729,6 +759,8 @@
 				96A0C8A1256BBA7200DA0AA5 /* ZSKJScheduleViewController.m */,
 				96D7E867256D1463002D1E90 /* ZSKJTemporaryViewController.h */,
 				96D7E868256D1463002D1E90 /* ZSKJTemporaryViewController.m */,
+				96A1A85E256DF3A800876755 /* ZSKJMineResumeViewController.h */,
+				96A1A85F256DF3A800876755 /* ZSKJMineResumeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -755,6 +787,10 @@
 				96A0C89D256BB13500DA0AA5 /* ZSKJCoursesCellItemControl.m */,
 				96A0C8A4256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.h */,
 				96A0C8A5256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.m */,
+				96A1A88B256E0BA100876755 /* ZSKJMineResumeCollectionView.h */,
+				96A1A88C256E0BA100876755 /* ZSKJMineResumeCollectionView.m */,
+				96A1A88F256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.h */,
+				96A1A890256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1346,10 +1382,18 @@
 		9653B72C2567C2610088B16E /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				96A1A869256DF62500876755 /* SSKJ_ScrollView.h */,
+				96A1A86A256DF62500876755 /* SSKJ_ScrollView.m */,
+				96A1A862256DF52900876755 /* SSKJ_TableView.h */,
+				96A1A865256DF52900876755 /* SSKJ_TableView.m */,
+				96A1A863256DF52900876755 /* SSKJ_TableViewCell.h */,
+				96A1A864256DF52900876755 /* SSKJ_TableViewCell.m */,
 				9653B72D2567C2960088B16E /* ZSKJTextFieldControl.h */,
 				9653B72E2567C2960088B16E /* ZSKJTextFieldControl.m */,
 				96D7E860256D0E11002D1E90 /* ZSKJHelper.h */,
 				96D7E861256D0E11002D1E90 /* ZSKJHelper.m */,
+				96A1A86D256DF84E00876755 /* ZSKJCollectionView.h */,
+				96A1A86E256DF84E00876755 /* ZSKJCollectionView.m */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -1373,6 +1417,8 @@
 				96A0C849256B396500DA0AA5 /* UITextField+PlaceHolder.m */,
 				96A0C857256B396500DA0AA5 /* UIImage+RoundedRectImage.h */,
 				96A0C84B256B396500DA0AA5 /* UIImage+RoundedRectImage.m */,
+				96A1A887256E030700876755 /* UIImageView+Category.h */,
+				96A1A888256E030700876755 /* UIImageView+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1453,6 +1499,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9653B7042567C1EA0088B16E /* MJRefresh.bundle in Resources */,
+				96A1A885256DFFF100876755 /* Main.storyboard in Resources */,
+				96A1A884256DFFF100876755 /* LaunchScreen.storyboard in Resources */,
 				9653B50F256771800088B16E /* Assets.xcassets in Resources */,
 				9653B71C2567C1EA0088B16E /* IQKeyboardManager.bundle in Resources */,
 			);
@@ -1487,11 +1535,13 @@
 				96A0C859256B396500DA0AA5 /* UIImage+GIFS.m in Sources */,
 				9653B6EC2567C1EA0088B16E /* AFAutoPurgingImageCache.m in Sources */,
 				96A0C85E256B396500DA0AA5 /* UIImage+Extension.m in Sources */,
+				96A1A867256DF52900876755 /* SSKJ_TableView.m in Sources */,
 				9653B6B52567C1EA0088B16E /* SDWebImageFrame.m in Sources */,
 				9653B57C2567B43E0088B16E /* ZSKJCourseViewController.m in Sources */,
 				9653B6C82567C1EA0088B16E /* SDImageCacheConfig.m in Sources */,
 				9653B70B2567C1EA0088B16E /* MJRefreshAutoStateFooter.m in Sources */,
 				9653B6FA2567C1EA0088B16E /* UIImage+YYWebImage.m in Sources */,
+				96A1A889256E030700876755 /* UIImageView+Category.m in Sources */,
 				9653B7162567C1EA0088B16E /* IQTextView.m in Sources */,
 				9653B6D52567C1EA0088B16E /* MJPropertyKey.m in Sources */,
 				9653B6E72567C1EA0088B16E /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1522,6 +1572,7 @@
 				96D7E833256CE01B002D1E90 /* ZSKJHomeCollectionViewCell.m in Sources */,
 				96D7E847256CFD5E002D1E90 /* ZSKJHomeBrowseCollectionView.m in Sources */,
 				9653B6DE2567C1EA0088B16E /* MASConstraintMaker.m in Sources */,
+				96A1A86B256DF62500876755 /* SSKJ_ScrollView.m in Sources */,
 				9653B6CA2567C1EA0088B16E /* UIView+WebCache.m in Sources */,
 				9653B7192567C1EA0088B16E /* IQBarButtonItem.m in Sources */,
 				9653B7232567C1EA0088B16E /* IQKeyboardReturnKeyHandler.m in Sources */,
@@ -1544,6 +1595,7 @@
 				9653B6E82567C1EA0088B16E /* UIImageView+AFNetworking.m in Sources */,
 				9653B5072567717E0088B16E /* SceneDelegate.m in Sources */,
 				9653B6F72567C1EA0088B16E /* UIButton+YYWebImage.m in Sources */,
+				96A1A88D256E0BA100876755 /* ZSKJMineResumeCollectionView.m in Sources */,
 				9653B7172567C1EA0088B16E /* IQToolbar.m in Sources */,
 				9653B70E2567C1EA0088B16E /* MJRefreshNormalHeader.m in Sources */,
 				9653B6C32567C1EA0088B16E /* SDWebImageTransition.m in Sources */,
@@ -1589,7 +1641,9 @@
 				96A0C861256B396500DA0AA5 /* UIImage+RoundedRectImage.m in Sources */,
 				9653B6F92567C1EA0088B16E /* MKAnnotationView+YYWebImage.m in Sources */,
 				96D7E85E256D0BAC002D1E90 /* ZSKJHomeFormalCollectionView.m in Sources */,
+				96A1A860256DF3A800876755 /* ZSKJMineResumeViewController.m in Sources */,
 				9653B5822567B74A0088B16E /* AppDelegate.m in Sources */,
+				96A1A891256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.m in Sources */,
 				9653B6E22567C1EA0088B16E /* MASConstraint.m in Sources */,
 				96D7E843256CFCE4002D1E90 /* ZSKJHomeBrowseViewController.m in Sources */,
 				9653B6DF2567C1EA0088B16E /* MASLayoutConstraint.m in Sources */,
@@ -1610,8 +1664,10 @@
 				9653B6CC2567C1EA0088B16E /* UIButton+WebCache.m in Sources */,
 				9653B72A2567C1EA0088B16E /* TAAbstractDotView.m in Sources */,
 				9653B7242567C1EA0088B16E /* SDCycleScrollView.m in Sources */,
+				96A1A86F256DF84E00876755 /* ZSKJCollectionView.m in Sources */,
 				9653B6C72567C1EA0088B16E /* SDWebImageGIFCoder.m in Sources */,
 				9653B6E42567C1EA0088B16E /* MASViewAttribute.m in Sources */,
+				96A1A866256DF52900876755 /* SSKJ_TableViewCell.m in Sources */,
 				9653B6ED2567C1EA0088B16E /* AFImageDownloader.m in Sources */,
 				9653B55A2567B0430088B16E /* ZSKJBaseViewController.m in Sources */,
 				9653B6B42567C1EA0088B16E /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1636,6 +1692,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96A1A880256DFFF100876755 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96A1A881256DFFF100876755 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		96A1A882256DFFF100876755 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96A1A883256DFFF100876755 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9653B516256771800088B16E /* Debug */ = {
@@ -1760,13 +1835,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/$PROJECT_NAME/Main/PrefixHeader.pch;
 				INFOPLIST_FILE = PainterTeacher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZSKJ.PainterTeacher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -1780,13 +1856,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/$PROJECT_NAME/Main/PrefixHeader.pch;
 				INFOPLIST_FILE = PainterTeacher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZSKJ.PainterTeacher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

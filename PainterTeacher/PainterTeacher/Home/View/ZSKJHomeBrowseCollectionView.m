@@ -23,11 +23,9 @@
 
 @implementation ZSKJHomeBrowseCollectionView
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame withType:(FlowLayoutType)type
 {
-    UICollectionViewFlowLayout *layouts = [[UICollectionViewFlowLayout alloc] init];
-    layouts.scrollDirection = UICollectionViewScrollDirectionVertical;
-    self = [super initWithFrame:frame collectionViewLayout:layouts];
+    self = [super initWithFrame:frame withType:type];
     if (self)
     {
         [self setBackgroundColor:KLineColor];
@@ -51,7 +49,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 20;
+    return 30;
 }
 
 

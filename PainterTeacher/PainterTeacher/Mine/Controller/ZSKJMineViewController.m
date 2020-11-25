@@ -15,7 +15,9 @@
 #import "ZSKJSettViewController.h" //!< 设置
 #import "ZSKJCoursesViewController.h" //!< 历程
 #import "ZSKJScheduleViewController.h" //!< 排课
-#import "ZSKJTemporaryViewController.h"
+#import "ZSKJTemporaryViewController.h"  //!<临时课堂
+#import "ZSKJMineResumeViewController.h" //!< 我的简历
+
 
 
 
@@ -198,13 +200,6 @@
 
 
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    ZSKJLoginViewController *login = [[ZSKJLoginViewController alloc]init];
-    [self pushViewController:login animated:YES];
-}
-
-
 -(void)itemAction:(UIControl*)sender
 {
     switch (sender.tag)
@@ -218,8 +213,7 @@
 #pragma mark case 2 简历
         case 2:
         {
-            ZSKJCoursesViewController *course = [[ZSKJCoursesViewController alloc]init];
-            [self pushViewController:course animated:YES];
+            [self pushViewController:[[ZSKJMineResumeViewController alloc]init] animated:YES];
         }
             break;
 #pragma mark case 3 课时明细
@@ -308,6 +302,7 @@
     {
         _headerBgView = [[UIImageView alloc]init];
         [_headerBgView setBackgroundColor:KMainColor];
+        [_headerBgView setUserInteractionEnabled:YES];
     }
     return _headerBgView;
 }

@@ -201,7 +201,7 @@
     if (!_typeView)
     {
         _typeView = [[UIImageView alloc]init];
-        [_typeView setImage:imageName(@"typeitems")];
+        [_typeView setImageName:@"typeitems"];
     }
     return _typeView;
 }

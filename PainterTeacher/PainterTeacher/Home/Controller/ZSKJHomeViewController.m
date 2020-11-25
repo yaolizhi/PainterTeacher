@@ -52,7 +52,7 @@
 {
     if (!_homeCollectionView)
     {
-        _homeCollectionView = [[ZSKJHomeCollectionView alloc]initWithFrame:CGRectMake(0, self.navbarHeight, ScreenWidth, ScreenHeight-(self.navbarHeight+self.tabbarHeight))];
+        _homeCollectionView = [[ZSKJHomeCollectionView alloc]initWithFrame:CGRectMake(0, self.navbarHeight, ScreenWidth, ScreenHeight-(self.navbarHeight+self.tabbarHeight)) withType:VerticalType];
     }
     return _homeCollectionView;
 }
