@@ -85,6 +85,7 @@
 }
 
 
+
 #pragma mark - Getter / Setter
 -(TPPasswordTextView *)passwordTextView
 {
@@ -92,7 +93,6 @@
     {
         _passwordTextView = [[TPPasswordTextView alloc]initWithFrame:CGRectMake(0, 0, 600, 100)];
         [_passwordTextView setElementBorderColor:KGrayLineColor];
-        [_passwordTextView setElementBorderWidth:1.0];
         [_passwordTextView setElementCount:6];
     }
     return _passwordTextView;

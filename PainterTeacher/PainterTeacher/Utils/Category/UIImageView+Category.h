@@ -16,6 +16,14 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setImageName:(NSString*)name;
 
 
+/// 添加动画图片数组
+/// @param images 动画图片数组
+-(void)setAnimationImagesArray:(NSArray*)images;
+
+
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

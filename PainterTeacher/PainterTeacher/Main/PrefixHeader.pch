@@ -46,6 +46,10 @@
 
 
 
+//video
+#define RECORD_MAX_TIME 8.0           //最长录制时间
+#define TIMER_INTERVAL 0.05         //计时器刷新频率
+#define VIDEO_FOLDER @"videoFolder" //视频录制存放文件夹
 
 
 
@@ -76,6 +80,9 @@ alpha:a]
 #define KBlueColor UIColorFromRGB(0x2BA3FF) //项目蓝色
 #define KGreenColor UIColorFromRGB(0x20D357) //项目绿色
 #define KGrayLineColor UIColorFromRGB(0xCCCCCC) //项目灰色
+#define KRedColor UIColorFromRGB(0xFF5959) //项目红色
+
+
 
 #define CornerRadius  8
 

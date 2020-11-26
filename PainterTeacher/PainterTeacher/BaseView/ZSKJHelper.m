@@ -9,8 +9,37 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
+@interface ZSKJHelper ()
+
+@property (nonatomic, copy) NSString *temporaryDirectory; //!< 存放沙盒目录
+
+@end
+
 
 @implementation ZSKJHelper
+
+
+
+
+
+static ZSKJHelper *shareHelper = nil;
+
++(ZSKJHelper *)shareHelper
+{
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken,
+        ^{
+            shareHelper = [[self alloc] init];
+            [shareHelper setTemporaryDirectory:NSTemporaryDirectory()];
+        });
+  
+    return shareHelper;
+}
+
+
+
+
+
 
 
 +(void)pushViewController:(UIViewController*)object animated:(BOOL)animated

@@ -6,17 +6,25 @@
 //
 
 #import "ZSKJCourseViewController.h"
+#import "ZSKJDeviceAlertView.h"
+
 
 @interface ZSKJCourseViewController ()
+
+
 
 @end
 
 @implementation ZSKJCourseViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
+
+
+
+
 
 
 -(void)viewWillAppear:(BOOL)animated
@@ -24,14 +32,21 @@
     [super viewWillAppear:animated bottomBar:NO];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+
+
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    
+    
+    [ZSKJDeviceAlertView showWithTitle:@"" witIcon:@"" submitBlock:^(NSString * _Nonnull code) {
+    }];
+    
+    
+    
 }
-*/
-
 @end

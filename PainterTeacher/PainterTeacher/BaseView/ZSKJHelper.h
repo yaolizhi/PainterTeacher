@@ -11,6 +11,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZSKJHelper : NSObject
 
+
++(ZSKJHelper *)shareHelper;
+
+
+-(NSString*)getDocumentPath:(NSString*)name;
+
+
+
 + (UIViewController *)root;
 
 +(void)pushViewController:(UIViewController*)object animated:(BOOL)animated;

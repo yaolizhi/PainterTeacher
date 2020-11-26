@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9632FA87256F8F6300A1D181 /* ZSKJAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9632FA83256F8F6300A1D181 /* ZSKJAudioTool.m */; };
+		9632FA9A256F9C0700A1D181 /* LameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9632FA96256F9C0700A1D181 /* LameTool.m */; };
+		9632FA9B256F9C0700A1D181 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9632FA97256F9C0700A1D181 /* libmp3lame.a */; };
 		9653B5072567717E0088B16E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653B5062567717E0088B16E /* SceneDelegate.m */; };
 		9653B50A2567717E0088B16E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653B5092567717E0088B16E /* ViewController.m */; };
 		9653B50F256771800088B16E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9653B50E256771800088B16E /* Assets.xcassets */; };
@@ -172,6 +175,11 @@
 		96A1A889256E030700876755 /* UIImageView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1A888256E030700876755 /* UIImageView+Category.m */; };
 		96A1A88D256E0BA100876755 /* ZSKJMineResumeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1A88C256E0BA100876755 /* ZSKJMineResumeCollectionView.m */; };
 		96A1A891256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1A890256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.m */; };
+		96A1AA1F256F3C2C00876755 /* ZSKJDeviceAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1AA1D256F3C2C00876755 /* ZSKJDeviceAlertView.m */; };
+		96A1AA20256F3C2C00876755 /* ZSKJDeviceBoardControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1AA1E256F3C2C00876755 /* ZSKJDeviceBoardControl.m */; };
+		96A1AA29256F533F00876755 /* AVAssetWriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1AA25256F533F00876755 /* AVAssetWriteManager.m */; };
+		96A1AA2A256F533F00876755 /* FMWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1AA26256F533F00876755 /* FMWModel.m */; };
+		96A1AA2F256F536B00876755 /* XCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1AA2E256F536B00876755 /* XCFileManager.m */; };
 		96D7E82F256CDFE2002D1E90 /* ZSKJHomeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E82E256CDFE2002D1E90 /* ZSKJHomeCollectionView.m */; };
 		96D7E833256CE01B002D1E90 /* ZSKJHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E832256CE01B002D1E90 /* ZSKJHomeCollectionViewCell.m */; };
 		96D7E837256CE20B002D1E90 /* ZSKJHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E836256CE20B002D1E90 /* ZSKJHomeHeaderView.m */; };
@@ -190,6 +198,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9632FA83256F8F6300A1D181 /* ZSKJAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJAudioTool.m; sourceTree = "<group>"; };
+		9632FA86256F8F6300A1D181 /* ZSKJAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJAudioTool.h; sourceTree = "<group>"; };
+		9632FA96256F9C0700A1D181 /* LameTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LameTool.m; sourceTree = "<group>"; };
+		9632FA97256F9C0700A1D181 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		9632FA98256F9C0700A1D181 /* LameTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LameTool.h; sourceTree = "<group>"; };
+		9632FA99256F9C0700A1D181 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
 		9653B4FF2567717E0088B16E /* PainterTeacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PainterTeacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9653B5052567717E0088B16E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		9653B5062567717E0088B16E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
@@ -532,6 +546,16 @@
 		96A1A88C256E0BA100876755 /* ZSKJMineResumeCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJMineResumeCollectionView.m; sourceTree = "<group>"; };
 		96A1A88F256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJMineResumeCollectionViewCell.h; sourceTree = "<group>"; };
 		96A1A890256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJMineResumeCollectionViewCell.m; sourceTree = "<group>"; };
+		96A1AA1B256F3C2C00876755 /* ZSKJDeviceAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJDeviceAlertView.h; sourceTree = "<group>"; };
+		96A1AA1C256F3C2C00876755 /* ZSKJDeviceBoardControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJDeviceBoardControl.h; sourceTree = "<group>"; };
+		96A1AA1D256F3C2C00876755 /* ZSKJDeviceAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJDeviceAlertView.m; sourceTree = "<group>"; };
+		96A1AA1E256F3C2C00876755 /* ZSKJDeviceBoardControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJDeviceBoardControl.m; sourceTree = "<group>"; };
+		96A1AA25256F533F00876755 /* AVAssetWriteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAssetWriteManager.m; sourceTree = "<group>"; };
+		96A1AA26256F533F00876755 /* FMWModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMWModel.m; sourceTree = "<group>"; };
+		96A1AA27256F533F00876755 /* AVAssetWriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAssetWriteManager.h; sourceTree = "<group>"; };
+		96A1AA28256F533F00876755 /* FMWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMWModel.h; sourceTree = "<group>"; };
+		96A1AA2D256F536B00876755 /* XCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFileManager.h; sourceTree = "<group>"; };
+		96A1AA2E256F536B00876755 /* XCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFileManager.m; sourceTree = "<group>"; };
 		96D7E82D256CDFE2002D1E90 /* ZSKJHomeCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeCollectionView.h; sourceTree = "<group>"; };
 		96D7E82E256CDFE2002D1E90 /* ZSKJHomeCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeCollectionView.m; sourceTree = "<group>"; };
 		96D7E831256CE01B002D1E90 /* ZSKJHomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeCollectionViewCell.h; sourceTree = "<group>"; };
@@ -569,12 +593,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9632FA9B256F9C0700A1D181 /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9632FA82256F8F6300A1D181 /* AVAudio */ = {
+			isa = PBXGroup;
+			children = (
+				9632FA86256F8F6300A1D181 /* ZSKJAudioTool.h */,
+				9632FA83256F8F6300A1D181 /* ZSKJAudioTool.m */,
+			);
+			path = AVAudio;
+			sourceTree = "<group>";
+		};
+		9632FA95256F9C0700A1D181 /* Libmp3lame */ = {
+			isa = PBXGroup;
+			children = (
+				9632FA98256F9C0700A1D181 /* LameTool.h */,
+				9632FA96256F9C0700A1D181 /* LameTool.m */,
+				9632FA97256F9C0700A1D181 /* libmp3lame.a */,
+				9632FA99256F9C0700A1D181 /* lame.h */,
+			);
+			path = Libmp3lame;
+			sourceTree = "<group>";
+		};
 		9653B4F62567717E0088B16E = {
 			isa = PBXGroup;
 			children = (
@@ -831,6 +876,9 @@
 		9653B5912567C1CD0088B16E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9632FA95256F9C0700A1D181 /* Libmp3lame */,
+				9632FA82256F8F6300A1D181 /* AVAudio */,
+				96A1AA24256F533F00876755 /* AVAsset */,
 				96D7E86B256D14D3002D1E90 /* TPPasswordTextView */,
 				96A0C892256B9B5100DA0AA5 /* AlertView */,
 				96A0C840256B396500DA0AA5 /* Category */,
@@ -1428,8 +1476,33 @@
 			children = (
 				96A0C893256B9B8E00DA0AA5 /* ZSKJDefaultAlertView.h */,
 				96A0C894256B9B8E00DA0AA5 /* ZSKJDefaultAlertView.m */,
+				96A1AA1A256F3C2C00876755 /* ZSKJDeviceAlertView */,
 			);
 			path = AlertView;
+			sourceTree = "<group>";
+		};
+		96A1AA1A256F3C2C00876755 /* ZSKJDeviceAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				96A1AA1B256F3C2C00876755 /* ZSKJDeviceAlertView.h */,
+				96A1AA1D256F3C2C00876755 /* ZSKJDeviceAlertView.m */,
+				96A1AA1C256F3C2C00876755 /* ZSKJDeviceBoardControl.h */,
+				96A1AA1E256F3C2C00876755 /* ZSKJDeviceBoardControl.m */,
+			);
+			path = ZSKJDeviceAlertView;
+			sourceTree = "<group>";
+		};
+		96A1AA24256F533F00876755 /* AVAsset */ = {
+			isa = PBXGroup;
+			children = (
+				96A1AA28256F533F00876755 /* FMWModel.h */,
+				96A1AA26256F533F00876755 /* FMWModel.m */,
+				96A1AA2D256F536B00876755 /* XCFileManager.h */,
+				96A1AA2E256F536B00876755 /* XCFileManager.m */,
+				96A1AA27256F533F00876755 /* AVAssetWriteManager.h */,
+				96A1AA25256F533F00876755 /* AVAssetWriteManager.m */,
+			);
+			path = AVAsset;
 			sourceTree = "<group>";
 		};
 		96D7E86B256D14D3002D1E90 /* TPPasswordTextView */ = {
@@ -1523,6 +1596,7 @@
 				9653B50A2567717E0088B16E /* ViewController.m in Sources */,
 				96A0C8A6256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.m in Sources */,
 				9653B6E32567C1EA0088B16E /* MASViewConstraint.m in Sources */,
+				9632FA87256F8F6300A1D181 /* ZSKJAudioTool.m in Sources */,
 				9653B71A2567C1EA0088B16E /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				9653B7132567C1EA0088B16E /* MJRefreshBackFooter.m in Sources */,
 				96A0C87C256B618200DA0AA5 /* ZSKJMineinformationViewController.m in Sources */,
@@ -1578,6 +1652,7 @@
 				9653B7232567C1EA0088B16E /* IQKeyboardReturnKeyHandler.m in Sources */,
 				9653B6D32567C1EA0088B16E /* NSObject+MJClass.m in Sources */,
 				96A0C89E256BB13500DA0AA5 /* ZSKJCoursesCellItemControl.m in Sources */,
+				96A1AA29256F533F00876755 /* AVAssetWriteManager.m in Sources */,
 				9653B6FB2567C1EA0088B16E /* CALayer+YYWebImage.m in Sources */,
 				9653B6BE2567C1EA0088B16E /* SDWebImageCoder.m in Sources */,
 				9653B6C62567C1EA0088B16E /* NSImage+WebCache.m in Sources */,
@@ -1662,21 +1737,26 @@
 				9653B7262567C1EA0088B16E /* SDCollectionViewCell.m in Sources */,
 				96A0C83E256B38A900DA0AA5 /* ZSKJMineCellItemControl.m in Sources */,
 				9653B6CC2567C1EA0088B16E /* UIButton+WebCache.m in Sources */,
+				96A1AA1F256F3C2C00876755 /* ZSKJDeviceAlertView.m in Sources */,
 				9653B72A2567C1EA0088B16E /* TAAbstractDotView.m in Sources */,
 				9653B7242567C1EA0088B16E /* SDCycleScrollView.m in Sources */,
+				9632FA9A256F9C0700A1D181 /* LameTool.m in Sources */,
 				96A1A86F256DF84E00876755 /* ZSKJCollectionView.m in Sources */,
 				9653B6C72567C1EA0088B16E /* SDWebImageGIFCoder.m in Sources */,
 				9653B6E42567C1EA0088B16E /* MASViewAttribute.m in Sources */,
 				96A1A866256DF52900876755 /* SSKJ_TableViewCell.m in Sources */,
 				9653B6ED2567C1EA0088B16E /* AFImageDownloader.m in Sources */,
+				96A1AA20256F3C2C00876755 /* ZSKJDeviceBoardControl.m in Sources */,
 				9653B55A2567B0430088B16E /* ZSKJBaseViewController.m in Sources */,
 				9653B6B42567C1EA0088B16E /* UIImageView+HighlightedWebCache.m in Sources */,
 				96D7E82F256CDFE2002D1E90 /* ZSKJHomeCollectionView.m in Sources */,
 				96A0C85A256B396500DA0AA5 /* UITextField+Helper.m in Sources */,
+				96A1AA2A256F533F00876755 /* FMWModel.m in Sources */,
 				9653B6EB2567C1EA0088B16E /* UIWebView+AFNetworking.m in Sources */,
 				9653B71F2567C1EA0088B16E /* IQUITextFieldView+Additions.m in Sources */,
 				9653B6DD2567C1EA0088B16E /* MASCompositeConstraint.m in Sources */,
 				9653B7092567C1EA0088B16E /* MJRefreshBackStateFooter.m in Sources */,
+				96A1AA2F256F536B00876755 /* XCFileManager.m in Sources */,
 				96D7E837256CE20B002D1E90 /* ZSKJHomeHeaderView.m in Sources */,
 				96D7E84F256CFD98002D1E90 /* ZSKJHomeBrowseHeaderView.m in Sources */,
 				9653B6F42567C1EA0088B16E /* YYImageCache.m in Sources */,
@@ -1840,9 +1920,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PainterTeacher/Utils/Libmp3lame",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZSKJ.PainterTeacher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1861,9 +1945,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PainterTeacher/Utils/Libmp3lame",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZSKJ.PainterTeacher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
