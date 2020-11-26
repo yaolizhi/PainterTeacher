@@ -49,7 +49,7 @@
            
             make.right.equalTo(self.mas_right).offset(-10);
             make.centerY.equalTo(self.mas_centerY);
-            make.width.height.equalTo(@(30));
+            make.width.equalTo(@(30));
                     
         }];
         
@@ -61,6 +61,8 @@
             make.right.equalTo(self.accessoryView.mas_right);
             make.height.equalTo(@(1));
         }];
+        
+        [self setCornerRadius:5.0];
     }
     return self;
 }
@@ -70,9 +72,9 @@
 
 -(void)setIcon:(NSString*)icon title:(NSString*)title accessory:(NSString*)accessory
 {
-    [self.iconImageView setImage:[UIImage imageNamed:icon]];
+    [self.iconImageView setImageName:icon];
     [self.titleLabel setText:title];
-    [self.accessoryView setImage:[UIImage imageNamed:accessory]];
+    [self.accessoryView setImageName:accessory];
 }
 
 
@@ -86,7 +88,6 @@
     if (!_iconImageView)
     {
         _iconImageView  = [[UIImageView alloc]init];
-        [_iconImageView setBackgroundColor:[UIColor orangeColor]];
     }
     return _iconImageView;
 }
@@ -108,7 +109,7 @@
     if (!_accessoryView)
     {
         _accessoryView  = [[UIImageView alloc]init];
-        [_accessoryView setBackgroundColor:[UIColor grayColor]];
+        [_accessoryView setContentMode:UIViewContentModeScaleAspectFit];
     }
     return _accessoryView;
 }

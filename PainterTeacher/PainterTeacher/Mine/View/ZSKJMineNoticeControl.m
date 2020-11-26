@@ -26,8 +26,6 @@
     self = [super init];
     if (self)
     {
-        [self setBackgroundColor:[UIColor blueColor]];
-        
         [self addSubview:self.iconView];
         [self addSubview:self.noticeLabel];
         
@@ -55,13 +53,22 @@
 
 
 
+
+#pragma mark - Private Method
+//设置通知数量
+-(void)setNotice:(NSString*)notice
+{
+    [self.noticeLabel setText:notice];
+}
+
 #pragma mark - Getter / Setter
 -(UIImageView *)iconView
 {
     if (!_iconView)
     {
         _iconView  = [[UIImageView alloc]init];
-        [_iconView setBackgroundColor:KWhiteColor];
+        [_iconView setContentMode:UIViewContentModeScaleAspectFit];
+        [_iconView setImageName:@"mineNotice"];
     }
     return _iconView;
 }

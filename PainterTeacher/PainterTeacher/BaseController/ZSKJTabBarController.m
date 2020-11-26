@@ -23,6 +23,24 @@
 
 @implementation ZSKJTabBarController
 
+
+/**
+ *  当第一次使用这个类或者子类的时候调用，作用：初始化
+ */
+#pragma mark - 改变 tabbar 选中状态下的文字颜色
++ (void)initialize
+{
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:KSubTextColor, NSForegroundColorAttributeName, [UIFont systemFontOfSize:12], NSFontAttributeName,nil] forState:UIControlStateNormal];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:KMainColor, NSForegroundColorAttributeName, [UIFont systemFontOfSize:12], NSFontAttributeName,nil] forState:UIControlStateSelected];
+    
+    UITabBar *tabBar = [UITabBar appearance];
+    [tabBar setBarTintColor:KWhiteColor];
+    tabBar.translucent = NO;
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,8 +49,8 @@
     //添加home
     ZSKJHomeViewController *home = [[ZSKJHomeViewController alloc]init];
     ZSKJNavigationViewController *homeNav = [[ZSKJNavigationViewController alloc] initWithRootViewController:home];
-    [home setTabBarItemImage:@""];
-    [home setTabBarItemSelectedImage:@""];
+    [home setTabBarItemImage:@"homeItemsNormal"];
+    [home setTabBarItemSelectedImage:@"homeItems"];
     [home setTabBarItemTitle:@"首页"];
     [self addChildViewController:homeNav];
     
@@ -40,8 +58,8 @@
     //添加home
     ZSKJCourseViewController *course = [[ZSKJCourseViewController alloc]init];
     ZSKJNavigationViewController *courseNav = [[ZSKJNavigationViewController alloc] initWithRootViewController:course];
-    [course setTabBarItemImage:@""];
-    [course setTabBarItemSelectedImage:@""];
+    [course setTabBarItemImage:@"courseItemsNormal"];
+    [course setTabBarItemSelectedImage:@"courseItems"];
     [course setTabBarItemTitle:@"课程"];
     [self addChildViewController:courseNav];
     
@@ -49,8 +67,8 @@
     //添加home
     ZSKJEvaluationViewController *evaluation = [[ZSKJEvaluationViewController alloc]init];
     ZSKJNavigationViewController *evaluationNav = [[ZSKJNavigationViewController alloc] initWithRootViewController:evaluation];
-    [evaluation setTabBarItemImage:@""];
-    [evaluation setTabBarItemSelectedImage:@""];
+    [evaluation setTabBarItemImage:@"evaluationItemsNormal"];
+    [evaluation setTabBarItemSelectedImage:@"evaluationItems"];
     [evaluation setTabBarItemTitle:@"课后单"];
     [self addChildViewController:evaluationNav];
     
@@ -58,8 +76,8 @@
     //添加home
     ZSKJMineViewController *mine = [[ZSKJMineViewController alloc]init];
     ZSKJNavigationViewController *mineNav = [[ZSKJNavigationViewController alloc] initWithRootViewController:mine];
-    [mine setTabBarItemImage:@""];
-    [mine setTabBarItemSelectedImage:@""];
+    [mine setTabBarItemImage:@"mineItemsNormal"];
+    [mine setTabBarItemSelectedImage:@"mineItems"];
     [mine setTabBarItemTitle:@"我的"];
     [self addChildViewController:mineNav];
     

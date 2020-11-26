@@ -10,6 +10,7 @@
 		9632FA87256F8F6300A1D181 /* ZSKJAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9632FA83256F8F6300A1D181 /* ZSKJAudioTool.m */; };
 		9632FA9A256F9C0700A1D181 /* LameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9632FA96256F9C0700A1D181 /* LameTool.m */; };
 		9632FA9B256F9C0700A1D181 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9632FA97256F9C0700A1D181 /* libmp3lame.a */; };
+		9632FAA0256FA85900A1D181 /* ZSKJNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9632FA9F256FA85900A1D181 /* ZSKJNoticeViewController.m */; };
 		9653B5072567717E0088B16E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653B5062567717E0088B16E /* SceneDelegate.m */; };
 		9653B50A2567717E0088B16E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653B5092567717E0088B16E /* ViewController.m */; };
 		9653B50F256771800088B16E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9653B50E256771800088B16E /* Assets.xcassets */; };
@@ -204,6 +205,8 @@
 		9632FA97256F9C0700A1D181 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 		9632FA98256F9C0700A1D181 /* LameTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LameTool.h; sourceTree = "<group>"; };
 		9632FA99256F9C0700A1D181 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		9632FA9E256FA85900A1D181 /* ZSKJNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJNoticeViewController.h; sourceTree = "<group>"; };
+		9632FA9F256FA85900A1D181 /* ZSKJNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJNoticeViewController.m; sourceTree = "<group>"; };
 		9653B4FF2567717E0088B16E /* PainterTeacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PainterTeacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9653B5052567717E0088B16E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		9653B5062567717E0088B16E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
@@ -806,6 +809,8 @@
 				96D7E868256D1463002D1E90 /* ZSKJTemporaryViewController.m */,
 				96A1A85E256DF3A800876755 /* ZSKJMineResumeViewController.h */,
 				96A1A85F256DF3A800876755 /* ZSKJMineResumeViewController.m */,
+				9632FA9E256FA85900A1D181 /* ZSKJNoticeViewController.h */,
+				9632FA9F256FA85900A1D181 /* ZSKJNoticeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1741,6 +1746,7 @@
 				9653B72A2567C1EA0088B16E /* TAAbstractDotView.m in Sources */,
 				9653B7242567C1EA0088B16E /* SDCycleScrollView.m in Sources */,
 				9632FA9A256F9C0700A1D181 /* LameTool.m in Sources */,
+				9632FAA0256FA85900A1D181 /* ZSKJNoticeViewController.m in Sources */,
 				96A1A86F256DF84E00876755 /* ZSKJCollectionView.m in Sources */,
 				9653B6C72567C1EA0088B16E /* SDWebImageGIFCoder.m in Sources */,
 				9653B6E42567C1EA0088B16E /* MASViewAttribute.m in Sources */,

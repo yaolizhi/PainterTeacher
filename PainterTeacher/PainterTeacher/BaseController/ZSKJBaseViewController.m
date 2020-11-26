@@ -138,7 +138,7 @@
  */
 -(void)setTabBarItemImage:(NSString*)imageName
 {
-    [self.tabBarItem setImage:[UIImage imageNamed:imageName]];
+    [self.tabBarItem setImage:[UIImage imageWithOriginalName:imageName]];
 }
 
 /**
@@ -146,7 +146,7 @@
  */
 -(void)setTabBarItemSelectedImage:(NSString*)imageName
 {
-    [self.tabBarItem setSelectedImage:[UIImage imageNamed:imageName]];
+    [self.tabBarItem setSelectedImage:[UIImage imageWithOriginalName:imageName]];
 }
 
 /**

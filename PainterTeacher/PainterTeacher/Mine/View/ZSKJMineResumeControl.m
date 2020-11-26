@@ -57,7 +57,7 @@
     if (!_iconView)
     {
         _iconView  = [[UIImageView alloc]init];
-        [_iconView setBackgroundColor:[UIColor blueColor]];
+        [_iconView setImageName:@"resume"];
     }
     return _iconView;
 }

@@ -91,9 +91,9 @@
         
         [self.headerBgView mas_makeConstraints:^(MASConstraintMaker *make) {
            
-            make.top.equalTo(self.view).offset(80);
+            make.top.equalTo(self.view).offset(self.navbarHeight);
             make.left.right.equalTo(self.view);
-            make.height.equalTo(@(230));
+            make.height.equalTo(@(300));
             
         }];
         
@@ -149,7 +149,7 @@
         
         [self.informationItems mas_makeConstraints:^(MASConstraintMaker *make) {
            
-            make.top.equalTo(self.coursedetailsItems.mas_bottom).offset(40);
+            make.top.equalTo(self.coursedetailsItems.mas_bottom).offset(20);
             make.left.height.right.equalTo(self.coursedetailsItems);
         }];
         
@@ -301,6 +301,7 @@
     if (!_headerBgView)
     {
         _headerBgView = [[UIImageView alloc]init];
+        [_headerBgView setImageName:@"mineBg"];
         [_headerBgView setBackgroundColor:KMainColor];
         [_headerBgView setUserInteractionEnabled:YES];
     }
@@ -313,6 +314,7 @@
     if (!_headerView)
     {
         _headerView = [[UIImageView alloc]init];
+        [_headerView setImageName:@"mineHeader"];
         [_headerView setCornerRadius:25];
         [_headerView setBackgroundColor:KWhiteColor];
     }
@@ -378,7 +380,7 @@
     if (!_coursedetailsItems)
     {
         _coursedetailsItems = [[ZSKJMineCellItemControl alloc]init];
-        [_coursedetailsItems setIcon:nil title:@"课时明细" accessory:nil];
+        [_coursedetailsItems setIcon:@"coursedetails" title:@"课时明细" accessory:@"arrowRight"];
         [_coursedetailsItems setTag:3];
         [_coursedetailsItems addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -390,7 +392,7 @@
     if (!_informationItems)
     {
         _informationItems = [[ZSKJMineCellItemControl alloc]init];
-        [_informationItems setIcon:nil title:@"个人信息" accessory:nil];
+        [_informationItems setIcon:@"information" title:@"个人信息" accessory:@"arrowRight"];
         [_informationItems setTag:4];
         [_informationItems addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -403,7 +405,7 @@
     if (!_courseItems)
     {
         _courseItems = [[ZSKJMineCellItemControl alloc]init];
-        [_courseItems setIcon:nil title:@"历程" accessory:nil];
+        [_courseItems setIcon:@"course" title:@"历程" accessory:@"arrowRight"];
         [_courseItems setTag:5];
         [_courseItems addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -417,7 +419,7 @@
     if (!_temporaryItems)
     {
         _temporaryItems = [[ZSKJMineCellItemControl alloc]init];
-        [_temporaryItems setIcon:nil title:@"临时课堂" accessory:nil];
+        [_temporaryItems setIcon:@"temporary" title:@"临时课堂" accessory:@"arrowRight"];
         [_temporaryItems setTag:6];
         [_temporaryItems addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -431,7 +433,7 @@
     if (!_scheduleItems)
     {
         _scheduleItems = [[ZSKJMineCellItemControl alloc]init];
-        [_scheduleItems setIcon:nil title:@"排课信息" accessory:nil];
+        [_scheduleItems setIcon:@"schedule" title:@"排课信息" accessory:@"arrowRight"];
         [_scheduleItems setTag:7];
         [_scheduleItems addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -445,7 +447,7 @@
     if (!_deviceItems)
     {
         _deviceItems = [[ZSKJMineCellItemControl alloc]init];
-        [_deviceItems setIcon:nil title:@"设备检查" accessory:nil];
+        [_deviceItems setIcon:@"device" title:@"设备检查" accessory:@"arrowRight"];
         [_deviceItems setTag:8];
         [_deviceItems addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -458,7 +460,7 @@
     if (!_serviceItems)
     {
         _serviceItems = [[ZSKJMineCellItemControl alloc]init];
-        [_serviceItems setIcon:nil title:@"客服" accessory:nil];
+        [_serviceItems setIcon:@"service" title:@"客服" accessory:@"arrowRight"];
         [_serviceItems setTag:9];
         [_serviceItems addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -471,7 +473,7 @@
     if (!_settItems)
     {
         _settItems = [[ZSKJMineCellItemControl alloc]init];
-        [_settItems setIcon:nil title:@"设置" accessory:nil];
+        [_settItems setIcon:@"sett" title:@"设置" accessory:@"arrowRight"];
         [_settItems setTag:10];
         [_settItems addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
     }

@@ -13,6 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
+//设置通知数量
+-(void)setNotice:(NSString*)notice;
+
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END
