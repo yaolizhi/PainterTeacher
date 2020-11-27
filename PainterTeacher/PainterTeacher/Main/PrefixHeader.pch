@@ -41,6 +41,9 @@
 #import "ZSKJHelper.h"
 #import "UIImage+RoundedRectImage.h"
 #import "UIImageView+Category.h"
+#import "SSKJ_TableView.h"
+#import "SSKJ_ScrollView.h"
+
 
 
 
@@ -84,7 +87,11 @@ alpha:a]
 
 
 
-#define CornerRadius  8
+#define CornerRadius_8  8
+#define CornerRadius_5  5
+#define CornerRadius_4  4
+#define CornerRadius_3  3
+
 
 
 

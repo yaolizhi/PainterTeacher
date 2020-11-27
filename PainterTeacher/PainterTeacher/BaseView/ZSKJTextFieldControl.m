@@ -126,7 +126,6 @@
         _titleLabel = [[UILabel alloc]init];
         [_titleLabel setTextColor:KTextColor];
         [_titleLabel setFont:[UIFont systemFontOfSize:14]];
-        [_titleLabel setBackgroundColor:KMainColor];
     }
     return _titleLabel;
 }

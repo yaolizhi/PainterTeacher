@@ -6,7 +6,7 @@
 //
 
 #import "ZSKJCourseViewController.h"
-#import "ZSKJDeviceAlertView.h"
+
 
 
 @interface ZSKJCourseViewController ()
@@ -36,17 +36,4 @@
 
 
 
-
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    [super touchesBegan:touches withEvent:event];
-    
-    
-    [ZSKJDeviceAlertView showWithTitle:@"" witIcon:@"" submitBlock:^(NSString * _Nonnull code) {
-    }];
-    
-    
-    
-}
 @end

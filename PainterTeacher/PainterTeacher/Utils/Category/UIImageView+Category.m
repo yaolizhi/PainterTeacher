@@ -9,6 +9,20 @@
 
 @implementation UIImageView (Category)
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self)
+    {
+        [self setContentMode:UIViewContentModeScaleAspectFit];
+    }
+    return self;
+}
+
+
+
+
+
 /// 设置图片名称
 /// @param name 图片名称
 -(void)setImageName:(NSString*)name

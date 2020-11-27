@@ -15,9 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)setIcon:(NSString*)icon title:(NSString*)title accessory:(NSString*)accessory;
 
+
+
 -(void)setTitle:(NSString*)title subtitle:(NSString*)subtitle;
 
 -(void)setTitle:(NSString*)title;
+-(void)setIcon:(NSString*)icon;
+-(void)accessory:(NSString*)accessory;
 
 
 

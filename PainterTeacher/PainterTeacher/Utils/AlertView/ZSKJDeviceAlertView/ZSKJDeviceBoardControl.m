@@ -62,7 +62,7 @@
     if (self)
     {
         [self setBackgroundColor:KWhiteColor];
-        [self setCornerRadius:CornerRadius];
+        [self setCornerRadius:CornerRadius_8];
         
         [self addSubview:self.tipLabel];
         [self addSubview:self.step1View];

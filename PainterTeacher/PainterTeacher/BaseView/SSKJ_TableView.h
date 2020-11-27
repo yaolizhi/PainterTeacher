@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SSKJ_TableViewCell.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (instancetype)initWithFrame:(CGRect)frame witDeletage:(UIViewController*)delegate;
+
+
+-(void)setItemArray:(NSArray*)array;
 
 
 -(void)endRefresh;

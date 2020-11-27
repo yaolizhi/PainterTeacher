@@ -126,7 +126,7 @@
     if (!_soonView)
     {
         _soonView = [[ZSKJHomeHeaderSoonView alloc]init];
-        [_soonView setCornerRadius:CornerRadius];
+        [_soonView setCornerRadius:CornerRadius_8];
     }
     return _soonView;
 }
@@ -138,7 +138,7 @@
     {
         _timeControl = [[ZSKJHomeHeaderOptionControl alloc]initWithType:1];
         [_timeControl setBackgroundColor:KMainColor];
-        [_timeControl setCornerRadius:CornerRadius];
+        [_timeControl setCornerRadius:CornerRadius_8];
         [_timeControl setTitle:@"时间管理" subtitle:@"教师课时明细，请假开关上课时间段" withIcon:@"timeGL"];
         [_timeControl setTag:1];
         [_timeControl addTarget:self action:@selector(itemACtion:) forControlEvents:UIControlEventTouchUpInside];
@@ -153,7 +153,7 @@
     {
         _formalControl = [[ZSKJHomeHeaderOptionControl alloc]initWithType:2];
         [_formalControl setBackgroundColor:KBlueColor];
-        [_formalControl setCornerRadius:CornerRadius];
+        [_formalControl setCornerRadius:CornerRadius_8];
         [_formalControl setTitle:@"正式课报告" subtitle:@"学生的课程学习提交报告" withIcon:@"formalBG"];
         [_formalControl setTag:1];
         [_formalControl addTarget:self action:@selector(itemACtion:) forControlEvents:UIControlEventTouchUpInside];
@@ -167,7 +167,7 @@
     {
         _auditionlControl = [[ZSKJHomeHeaderOptionControl alloc]initWithType:3];
         [_auditionlControl setBackgroundColor:KGreenColor];
-        [_auditionlControl setCornerRadius:CornerRadius];
+        [_auditionlControl setCornerRadius:CornerRadius_8];
         [_auditionlControl setTitle:@"试听课报告" subtitle:@"教师课时明细，请假，开关上课时间段" withIcon:@"auditionlBG"];
         [_auditionlControl setTag:3];
         [_auditionlControl addTarget:self action:@selector(itemACtion:) forControlEvents:UIControlEventTouchUpInside];

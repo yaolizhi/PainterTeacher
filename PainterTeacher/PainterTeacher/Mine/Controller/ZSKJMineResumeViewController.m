@@ -199,7 +199,7 @@
     {
         _topBaordView = [[UIView alloc]initWithFrame:CGRectMake(30, 250, ScreenWidth-60, 275)];
         [_topBaordView setBackgroundColor:KWhiteColor];
-        [_topBaordView setCornerRadius:CornerRadius];
+        [_topBaordView setCornerRadius:CornerRadius_8];
     }
     return _topBaordView;
 }
@@ -237,7 +237,7 @@
     {
         _bottomBaordView = [[UIView alloc]initWithFrame:CGRectMake(30, (self.topBaordView.bottom+60), (ScreenWidth-60), 400)];
         [_bottomBaordView setBackgroundColor:KWhiteColor];
-        [_bottomBaordView setCornerRadius:CornerRadius];
+        [_bottomBaordView setCornerRadius:CornerRadius_8];
     }
     return _bottomBaordView;
 }

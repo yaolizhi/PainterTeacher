@@ -62,7 +62,7 @@
             make.height.equalTo(@(1));
         }];
         
-        [self setCornerRadius:5.0];
+        [self setCornerRadius:CornerRadius_5];
     }
     return self;
 }

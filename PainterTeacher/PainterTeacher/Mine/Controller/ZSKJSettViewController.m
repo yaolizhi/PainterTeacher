@@ -75,6 +75,7 @@
     if (!_setpwdControl)
     {
         _setpwdControl = [[ZSKJMineinformationCellItemControl alloc]initType:3];
+        [_setpwdControl setIcon:@"arrowRight" title:@"修改密码" accessory:@"arrowRight"];
         [_setpwdControl setTitle:@"修改密码"];
         [_setpwdControl setTag:1];
         [_setpwdControl addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];

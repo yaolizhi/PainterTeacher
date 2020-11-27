@@ -80,7 +80,7 @@
     {
         _bgView = [[UIView alloc]init];
         [_bgView setBackgroundColor:KWhiteColor];
-        [_bgView setCornerRadius:5];
+        [_bgView setCornerRadius:CornerRadius_5];
     }
     return _bgView;
 }

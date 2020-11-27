@@ -24,7 +24,7 @@
     self = [super initWithFrame:frame];
     if (self)
     {
-        [self setCornerRadius:CornerRadius];
+        [self setCornerRadius:CornerRadius_8];
         
         [self.contentView addSubview:self.preview];
         

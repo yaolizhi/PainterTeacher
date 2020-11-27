@@ -34,10 +34,6 @@
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:KSubTextColor, NSForegroundColorAttributeName, [UIFont systemFontOfSize:12], NSFontAttributeName,nil] forState:UIControlStateNormal];
     
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:KMainColor, NSForegroundColorAttributeName, [UIFont systemFontOfSize:12], NSFontAttributeName,nil] forState:UIControlStateSelected];
-    
-    UITabBar *tabBar = [UITabBar appearance];
-    [tabBar setBarTintColor:KWhiteColor];
-    tabBar.translucent = NO;
 }
 
 

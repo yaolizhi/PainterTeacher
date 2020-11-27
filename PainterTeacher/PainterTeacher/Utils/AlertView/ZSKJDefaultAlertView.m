@@ -29,7 +29,6 @@
 {
     ZSKJDefaultAlertView *alert = [[ZSKJDefaultAlertView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
     [alert.titleLabel setText:title];
-    [alert.iconView setBackgroundColor:KMainColor];
     [alert.iconView setImageName:icon];
     [alert addTarget:alert action:@selector(hide) forControlEvents:UIControlEventTouchUpInside];
     

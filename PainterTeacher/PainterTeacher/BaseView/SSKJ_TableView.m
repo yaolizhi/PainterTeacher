@@ -8,32 +8,40 @@
 
 #import "SSKJ_TableView.h"
 
+@interface SSKJ_TableView ()
+
+@property (nonatomic, strong) UIImageView *iconView;
+
+
+@end
+
 @implementation SSKJ_TableView
 
 
 
 
-- (instancetype)initWitDeletage:(UIViewController*)delegate
+- (instancetype)initWitDeletage:(UIViewController*)delegate 
 {
     self = [super init];
     if (self)
     {
         [self setDelegate:(id)delegate];
-        [self  setDataSource:(id)delegate];
+        [self setDataSource:(id)delegate];
         [self setBackgroundColor:[UIColor clearColor]];
         [self setSeparatorStyle:UITableViewCellSeparatorStyleNone];
         
-        if (@available(iOS 11.0, *))
-        {
-            [self setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
-            [self setEstimatedRowHeight:0];
-            [self setEstimatedSectionHeaderHeight:0];
-            [self setEstimatedSectionFooterHeight:0];
-        }
-        else
-        {
-            [self setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
-        }
+        [self setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+        [self setEstimatedRowHeight:0];
+        [self setEstimatedSectionHeaderHeight:0];
+        [self setEstimatedSectionFooterHeight:0];
+        
+        [self addSubview:self.iconView];
+        [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
+           
+            make.centerX.equalTo(self.mas_centerX);
+            make.centerY.equalTo(self.mas_centerY);
+                    
+        }];
     }
     return self;
 }
@@ -51,21 +59,29 @@
         [self setBackgroundColor:[UIColor clearColor]];
         [self setSeparatorStyle:UITableViewCellSeparatorStyleNone];
         
-        if (@available(iOS 11.0, *))
-        {
-            [self setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
-            [self setEstimatedRowHeight:0];
-            [self setEstimatedSectionHeaderHeight:0];
-            [self setEstimatedSectionFooterHeight:0];
-        }
-        else
-        {
-            [self setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
-        }
+        [self setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+        [self setEstimatedRowHeight:0];
+        [self setEstimatedSectionHeaderHeight:0];
+        [self setEstimatedSectionFooterHeight:0];
+        
+        
+        [self addSubview:self.iconView];
+        [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
+           
+            make.centerX.equalTo(self.mas_centerX);
+            make.centerY.equalTo(self.mas_centerY);
+                    
+        }];
     }
     return self;
 }
 
+
+
+-(void)setItemArray:(NSArray*)array
+{
+    [self.iconView setHidden:(BOOL)[array count]];
+}
 
 
 -(void)endRefresh
@@ -81,6 +97,22 @@
 //        [self.mj_footer endRefreshing];
 //    }
 }
+
+
+
+#pragma mark - Getter / Setter
+-(UIImageView *)iconView
+{
+    if (!_iconView)
+    {
+        _iconView = [[UIImageView alloc]init];
+        [_iconView setImageName:@"noticeEmpty"];
+        [_iconView setHidden:YES];
+    }
+    return _iconView;
+}
+
+
 
 
 

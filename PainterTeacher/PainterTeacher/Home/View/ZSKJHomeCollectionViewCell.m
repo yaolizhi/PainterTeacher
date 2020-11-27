@@ -35,7 +35,7 @@
         [self.contentView setBackgroundColor:KWhiteColor];
         [self.contentView setLayerBorderColor:KLineColor];
         [self.contentView setLayerBorderWidth:1];
-        [self.contentView setCornerRadius:CornerRadius];
+        [self.contentView setCornerRadius:CornerRadius_8];
         [self.contentView addSubview:self.dataLabel];
         [self.contentView addSubview:self.titleLabel];
         [self.contentView addSubview:self.subtitleLabel];

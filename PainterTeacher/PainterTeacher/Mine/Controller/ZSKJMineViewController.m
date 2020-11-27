@@ -10,6 +10,8 @@
 #import "ZSKJMineCellItemControl.h"
 #import "ZSKJMineNoticeControl.h"
 #import "ZSKJMineResumeControl.h"
+#import "ZSKJDeviceAlertView.h"
+
 #import "ZSKJMineinformationViewController.h" //!< 个人信息
 #import "ZSKJMineServiceViewController.h" //!< 客服
 #import "ZSKJSettViewController.h" //!< 设置
@@ -17,6 +19,8 @@
 #import "ZSKJScheduleViewController.h" //!< 排课
 #import "ZSKJTemporaryViewController.h"  //!<临时课堂
 #import "ZSKJMineResumeViewController.h" //!< 我的简历
+#import "ZSKJNoticeViewController.h" //!< 我的消息
+
 
 
 
@@ -207,7 +211,7 @@
 #pragma mark case 1 通知消息
         case 1:
         {
-            
+            [self pushViewController:[[ZSKJNoticeViewController alloc]init] animated:YES];
         }
             break;
 #pragma mark case 2 简历
@@ -260,6 +264,8 @@
         case 8:
         {
             
+            [ZSKJDeviceAlertView showWithTitle:@"" witIcon:@"" submitBlock:^(NSString * _Nonnull code) {
+            }];
         }
             break;
 #pragma mark case 9 客服
@@ -363,7 +369,7 @@
     if (!_resumeControl)
     {
         _resumeControl = [[ZSKJMineResumeControl alloc]init];
-        [_resumeControl setCornerRadius:5];
+        [_resumeControl setCornerRadius:CornerRadius_5];
         [_resumeControl setTag:2];
         [_resumeControl addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
     }

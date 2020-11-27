@@ -47,7 +47,7 @@
            
             make.top.equalTo(self.view).offset(self.navbarHeight);
             make.left.right.equalTo(self.view);
-            make.height.equalTo(@(50));
+            make.height.equalTo(@(60));
         }];
         
         
@@ -85,7 +85,9 @@
 #pragma mark 登录
 -(void)submitBtnAction:(UIButton*)sender
 {
-    [ZSKJDefaultAlertView showWithTitle:@"密码修改成功！" witIcon:@"" submitBlock:^(NSString * _Nonnull code) {
+    [ZSKJDefaultAlertView showWithTitle:@"密码修改成功！" witIcon:@"tipSucceed" submitBlock:^(NSString * _Nonnull code)
+    {
+        
         
     }];
     
