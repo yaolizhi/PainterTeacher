@@ -1,26 +1,28 @@
 //
-//  ZSKJScheduleOptionControl.m
+//  ZSKJNoticeOptionControl.m
 //  PainterTeacher
 //
-//  Created by 姚立志 on 2020/11/23.
+//  Created by 姚立志 on 2020/11/30.
 //
 
-#define ScheduleDuration 0.2
-
-#import "ZSKJScheduleOptionControl.h"
+#define NoticeDuration 0.2
 
 
-@interface ZSKJScheduleOptionControl ()
+#import "ZSKJNoticeOptionControl.h"
+
+
+@interface ZSKJNoticeOptionControl ()
 
 @property (nonatomic, strong) UIButton *oneBtn;
 @property (nonatomic, strong) UIButton *twoBtn;
-@property (nonatomic, strong) UIButton *threeBtn;
+@property (nonatomic, strong) UIView *oneDotView;
+@property (nonatomic, strong) UIView *twoDotView;
 @property (nonatomic, strong) UIView *lineView;
 @property (nonatomic, assign) NSInteger index; //!< 记住当前选中的
 
 
 
-@property (nonatomic,weak) id <ZSKJScheduleOptionControlDeletage> deletage;
+@property (nonatomic,weak) id <ZSKJNoticeOptionControlDeletage> deletage;
 
 
 
@@ -31,12 +33,12 @@
 
 
 
-@implementation ZSKJScheduleOptionControl
+@implementation ZSKJNoticeOptionControl
 
 
 
 
-- (instancetype)initWithFrame:(CGRect)frame withDeletage:(id<ZSKJScheduleOptionControlDeletage>)deletage
+- (instancetype)initWithFrame:(CGRect)frame withDeletage:(id<ZSKJNoticeOptionControlDeletage>)deletage
 {
     self = [super initWithFrame:frame];
     if (self)
@@ -46,14 +48,28 @@
         [self setBackgroundColor:KWhiteColor];
         [self addSubview:self.oneBtn];
         [self addSubview:self.twoBtn];
-        [self addSubview:self.threeBtn];
+        [self.oneBtn addSubview:self.oneDotView];
+        [self.twoBtn addSubview:self.twoDotView];
         [self addSubview:self.lineView];
         
         [self.oneBtn setFrame:CGRectMake(0, 0, 100, frame.size.height)];
-        [self.twoBtn setFrame:CGRectMake((frame.size.width-self.oneBtn.width)/2.0, 0, self.oneBtn.width, self.oneBtn.height)];
-        [self.threeBtn setFrame:CGRectMake(frame.size.width-(self.oneBtn.width), 0, self.oneBtn.width, self.oneBtn.height)];
+        [self.twoBtn setFrame:CGRectMake(self.oneBtn.right, 0, self.oneBtn.width, self.oneBtn.height)];
         
         [self.lineView setFrame:CGRectMake((self.oneBtn.width-30)/2.0, (frame.size.height-1.5),30 ,1.5)];
+
+        [self.oneDotView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.height.equalTo(@(10));
+            make.right.equalTo(self.oneBtn.mas_right);
+            make.top.equalTo(self.oneBtn.mas_top);
+        }];
+        
+        
+        [self.twoDotView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.equalTo(self.twoBtn.mas_right);
+            make.top.equalTo(self.twoBtn.mas_top);
+            make.width.height.equalTo(self.oneDotView);
+        }];
+
         
         //默认选中第一个
         [self setIndexTag:0];
@@ -62,11 +78,10 @@
 }
 
 
--(void)setOneTitle:(NSString*)oneTitle withTwoTitle:(NSString*)twoTitle withThreeTitle:(NSString*)threeTitle
+-(void)setOneTitle:(NSString*)oneTitle withTwoTitle:(NSString*)twoTitle
 {
     [self.oneBtn setTitle:oneTitle forState:UIControlStateNormal];
     [self.twoBtn setTitle:twoTitle forState:UIControlStateNormal];
-    [self.threeBtn setTitle:threeTitle forState:UIControlStateNormal];
 }
 
 
@@ -76,13 +91,12 @@
 {
     [self.oneBtn setSelected:NO];
     [self.twoBtn setSelected:NO];
-    [self.threeBtn setSelected:NO];
     switch (index)
     {
         case 0:
         {
             [self.oneBtn setSelected:YES];
-            [UIView animateWithDuration:ScheduleDuration animations:^{
+            [UIView animateWithDuration:NoticeDuration animations:^{
                     
                 
                 [self.lineView setCenterX:self.oneBtn.centerX];
@@ -94,7 +108,7 @@
         case 1:
         {
             [self.twoBtn setSelected:YES];
-            [UIView animateWithDuration:ScheduleDuration animations:^{
+            [UIView animateWithDuration:NoticeDuration animations:^{
                     
                 
                 [self.lineView setCenterX:self.twoBtn.centerX];
@@ -102,18 +116,8 @@
             }];
         }
             break;
-        case 2:
-        {
-            [self.threeBtn setSelected:YES];
-            [UIView animateWithDuration:ScheduleDuration animations:^{
-                    
-                
-                [self.lineView setCenterX:self.threeBtn.centerX];
-                    
-            }];
-        }
-            break;
     }
+    
     
     if ([self.deletage respondsToSelector:@selector(optionItemAction:)])
     {
@@ -126,10 +130,9 @@
 {
     [self.oneBtn setSelected:NO];
     [self.twoBtn setSelected:NO];
-    [self.threeBtn setSelected:NO];
     [sender setSelected:YES];
     
-    [UIView animateWithDuration:ScheduleDuration animations:^{
+    [UIView animateWithDuration:NoticeDuration animations:^{
             
         
         [self.lineView setCenterX:sender.centerX];
@@ -182,18 +185,31 @@
 
 
 
--(UIButton *)threeBtn
+-(UIView *)oneDotView
 {
-    if (!_threeBtn)
+    if (!_oneDotView)
     {
-        _threeBtn = [[UIButton alloc]init];
-        [_threeBtn addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_threeBtn setTitleColor:KTextColor forState:UIControlStateNormal];
-        [_threeBtn setTitleColor:KMainColor forState:UIControlStateSelected];
-        [_threeBtn setTag:2];
+        _oneDotView = [[UIView alloc]init];
+        [_oneDotView setBackgroundColor:KRedColor];
+        [_oneDotView setCornerRadius:5];
     }
-    return _threeBtn;
+    return _oneDotView;
 }
+
+
+-(UIView *)twoDotView
+{
+    if (!_twoDotView)
+    {
+        _twoDotView = [[UIView alloc]init];
+        [_twoDotView setBackgroundColor:KRedColor];
+        [_twoDotView setCornerRadius:5];
+    }
+    return _twoDotView;
+}
+
+
+
 
 -(UIView *)lineView
 {

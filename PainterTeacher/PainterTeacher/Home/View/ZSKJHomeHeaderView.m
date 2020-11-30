@@ -8,14 +8,14 @@
 #import "ZSKJHomeHeaderView.h"
 #import "ZSKJHomeHeaderSoonView.h"
 #import "ZSKJHomeHeaderOptionControl.h"
-
+#import "ZSKJExhibitionControl.h" //!< 轮播图
 
 
 
 
 @interface ZSKJHomeHeaderView ()
 
-@property (nonatomic, strong) UIView *topView;
+@property (nonatomic, strong) ZSKJExhibitionControl *topView;
 @property (nonatomic, strong) ZSKJHomeHeaderSoonView *soonView;
 @property (nonatomic, strong) ZSKJHomeHeaderOptionControl *timeControl;
 @property (nonatomic, strong) ZSKJHomeHeaderOptionControl *formalControl; //!< 正式报告
@@ -49,11 +49,18 @@
         [self addSubview:self.auditionlControl];
         
         
-        [self.topView mas_makeConstraints:^(MASConstraintMaker *make) {
+        NSMutableArray *aray = [NSMutableArray array];
+        for (int i = 0; i < 5; i++)
+        {
+            ZSKJExhibitionModel *model = [[ZSKJExhibitionModel alloc]init];
+            [model setUrl:[NSString stringWithFormat:@"banner%d",i]];
             
-            make.left.top.right.equalTo(self);
-            make.height.equalTo(@(250));
-        }];
+            [aray addObject:model];
+        }
+        
+        [self.topView setItemsArray:aray];
+        
+        
         
         [self.soonView mas_makeConstraints:^(MASConstraintMaker *make) {
            
@@ -114,11 +121,11 @@
 
 
 #pragma mark - Getter / Setter
-- (UIView *)topView
+- (ZSKJExhibitionControl *)topView
 {
     if (!_topView)
     {
-        _topView = [[UIView alloc]init];
+        _topView = [[ZSKJExhibitionControl alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 250) withType:HorizontalType];
         [_topView setBackgroundColor:[UIColor blueColor]];
     }
     return _topView;

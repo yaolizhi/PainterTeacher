@@ -6,12 +6,16 @@
 //
 
 #import "ZSKJNoticeViewController.h"
+#import "ZSKJNoticeDetailsViewController.h"
 #import "ZSKJNoticeTableViewCell.h"
+#import "ZSKJNoticeOptionControl.h"
 
 
-@interface ZSKJNoticeViewController () <UITableViewDelegate,UITableViewDataSource>
+
+@interface ZSKJNoticeViewController () <UITableViewDelegate,UITableViewDataSource,ZSKJNoticeOptionControlDeletage>
 
 
+@property (nonatomic, strong) ZSKJNoticeOptionControl *optionControl;
 @property (nonatomic, strong) NSMutableArray *itemArray;
 
 @property (nonatomic, strong) SSKJ_TableView *tableView;
@@ -34,11 +38,12 @@
 {
     if (views)
     {
+        [self.view addSubview:self.optionControl];
         [self.view addSubview:self.tableView];
         
         [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
            
-            make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(self.navbarHeight, 0, 0, 0));
+            make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(self.optionControl.bottom, 0, 0, 0));
         }];
         
         
@@ -57,6 +62,16 @@
 
 
 #pragma mark - Deletage Method
+#pragma mark ZSKJNoticeOptionControlDeletage
+-(void)optionItemAction:(NSInteger)index
+{
+    
+    
+    
+}
+
+
+
 #pragma mark UITableViewDataSource
 - (NSInteger)tableView:(SSKJ_TableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -85,8 +100,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    
-    
+    ZSKJNoticeDetailsViewController *notice = [[ZSKJNoticeDetailsViewController alloc]initWithType:NoticeCourseType];
+    [self pushViewController:notice animated:YES];
     
 }
 
@@ -111,6 +126,16 @@
 
 
 #pragma mark - Getter / Setter
+-(ZSKJNoticeOptionControl *)optionControl
+{
+    if (!_optionControl)
+    {
+        _optionControl = [[ZSKJNoticeOptionControl alloc]initWithFrame:CGRectMake(0, self.navbarHeight, ScreenWidth, 50) withDeletage:self];
+        [_optionControl setOneTitle:@"课程通知" withTwoTitle:@"系统消息"];
+    }
+    return _optionControl;
+}
+
 -(SSKJ_TableView *)tableView
 {
     if (!_tableView)

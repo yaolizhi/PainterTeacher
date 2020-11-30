@@ -14,6 +14,11 @@
 		9632FAA4256FB57100A1D181 /* ZSKJNoticeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9632FAA3256FB57100A1D181 /* ZSKJNoticeTableViewCell.m */; };
 		9633BC3825747971008666A1 /* ZSKJEvaluationOptionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9633BC3725747971008666A1 /* ZSKJEvaluationOptionControl.m */; };
 		9633BC3D2574884F008666A1 /* ZSKJHomeExaminationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9633BC3C2574884F008666A1 /* ZSKJHomeExaminationModel.m */; };
+		9633BC4225749100008666A1 /* ZSKJExhibitionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9633BC4125749100008666A1 /* ZSKJExhibitionControl.m */; };
+		9633BC4725749171008666A1 /* ZSKJExhibitionCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9633BC4625749171008666A1 /* ZSKJExhibitionCollectionViewCell.m */; };
+		9633BC4B25749598008666A1 /* ZSKJExhibitionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9633BC4A25749598008666A1 /* ZSKJExhibitionModel.m */; };
+		9633BC622574E3C6008666A1 /* ZSKJNoticeOptionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9633BC612574E3C6008666A1 /* ZSKJNoticeOptionControl.m */; };
+		9633BC662574EB8A008666A1 /* ZSKJNoticeDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9633BC652574EB8A008666A1 /* ZSKJNoticeDetailsViewController.m */; };
 		9653B5072567717E0088B16E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653B5062567717E0088B16E /* SceneDelegate.m */; };
 		9653B50A2567717E0088B16E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653B5092567717E0088B16E /* ViewController.m */; };
 		9653B50F256771800088B16E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9653B50E256771800088B16E /* Assets.xcassets */; };
@@ -220,6 +225,16 @@
 		9633BC3725747971008666A1 /* ZSKJEvaluationOptionControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJEvaluationOptionControl.m; sourceTree = "<group>"; };
 		9633BC3B2574884F008666A1 /* ZSKJHomeExaminationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeExaminationModel.h; sourceTree = "<group>"; };
 		9633BC3C2574884F008666A1 /* ZSKJHomeExaminationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeExaminationModel.m; sourceTree = "<group>"; };
+		9633BC4025749100008666A1 /* ZSKJExhibitionControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJExhibitionControl.h; sourceTree = "<group>"; };
+		9633BC4125749100008666A1 /* ZSKJExhibitionControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJExhibitionControl.m; sourceTree = "<group>"; };
+		9633BC4525749171008666A1 /* ZSKJExhibitionCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJExhibitionCollectionViewCell.h; sourceTree = "<group>"; };
+		9633BC4625749171008666A1 /* ZSKJExhibitionCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJExhibitionCollectionViewCell.m; sourceTree = "<group>"; };
+		9633BC4925749598008666A1 /* ZSKJExhibitionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJExhibitionModel.h; sourceTree = "<group>"; };
+		9633BC4A25749598008666A1 /* ZSKJExhibitionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJExhibitionModel.m; sourceTree = "<group>"; };
+		9633BC602574E3C6008666A1 /* ZSKJNoticeOptionControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJNoticeOptionControl.h; sourceTree = "<group>"; };
+		9633BC612574E3C6008666A1 /* ZSKJNoticeOptionControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJNoticeOptionControl.m; sourceTree = "<group>"; };
+		9633BC642574EB8A008666A1 /* ZSKJNoticeDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJNoticeDetailsViewController.h; sourceTree = "<group>"; };
+		9633BC652574EB8A008666A1 /* ZSKJNoticeDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJNoticeDetailsViewController.m; sourceTree = "<group>"; };
 		9653B4FF2567717E0088B16E /* PainterTeacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PainterTeacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9653B5052567717E0088B16E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		9653B5062567717E0088B16E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
@@ -644,6 +659,19 @@
 			path = Libmp3lame;
 			sourceTree = "<group>";
 		};
+		9633BC3F257490C8008666A1 /* Exhibition */ = {
+			isa = PBXGroup;
+			children = (
+				9633BC4925749598008666A1 /* ZSKJExhibitionModel.h */,
+				9633BC4A25749598008666A1 /* ZSKJExhibitionModel.m */,
+				9633BC4025749100008666A1 /* ZSKJExhibitionControl.h */,
+				9633BC4125749100008666A1 /* ZSKJExhibitionControl.m */,
+				9633BC4525749171008666A1 /* ZSKJExhibitionCollectionViewCell.h */,
+				9633BC4625749171008666A1 /* ZSKJExhibitionCollectionViewCell.m */,
+			);
+			path = Exhibition;
+			sourceTree = "<group>";
+		};
 		9653B4F62567717E0088B16E = {
 			isa = PBXGroup;
 			children = (
@@ -775,6 +803,8 @@
 				96A1A85F256DF3A800876755 /* ZSKJMineResumeViewController.m */,
 				9632FA9E256FA85900A1D181 /* ZSKJNoticeViewController.h */,
 				9632FA9F256FA85900A1D181 /* ZSKJNoticeViewController.m */,
+				9633BC642574EB8A008666A1 /* ZSKJNoticeDetailsViewController.h */,
+				9633BC652574EB8A008666A1 /* ZSKJNoticeDetailsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -803,6 +833,8 @@
 				96A0C89D256BB13500DA0AA5 /* ZSKJCoursesCellItemControl.m */,
 				96A0C8A4256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.h */,
 				96A0C8A5256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.m */,
+				9633BC602574E3C6008666A1 /* ZSKJNoticeOptionControl.h */,
+				9633BC612574E3C6008666A1 /* ZSKJNoticeOptionControl.m */,
 				96A1A88B256E0BA100876755 /* ZSKJMineResumeCollectionView.h */,
 				96A1A88C256E0BA100876755 /* ZSKJMineResumeCollectionView.m */,
 				96A1A88F256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.h */,
@@ -849,6 +881,7 @@
 		9653B5912567C1CD0088B16E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9633BC3F257490C8008666A1 /* Exhibition */,
 				9632FA95256F9C0700A1D181 /* Libmp3lame */,
 				9632FA82256F8F6300A1D181 /* AVAudio */,
 				96A1AA24256F533F00876755 /* AVAsset */,
@@ -1783,7 +1816,9 @@
 				9653B6CC2567C1EA0088B16E /* UIButton+WebCache.m in Sources */,
 				96A1AA1F256F3C2C00876755 /* ZSKJDeviceAlertView.m in Sources */,
 				9653B72A2567C1EA0088B16E /* TAAbstractDotView.m in Sources */,
+				9633BC4725749171008666A1 /* ZSKJExhibitionCollectionViewCell.m in Sources */,
 				9653B7242567C1EA0088B16E /* SDCycleScrollView.m in Sources */,
+				9633BC4B25749598008666A1 /* ZSKJExhibitionModel.m in Sources */,
 				9632FA9A256F9C0700A1D181 /* LameTool.m in Sources */,
 				9632FAA0256FA85900A1D181 /* ZSKJNoticeViewController.m in Sources */,
 				96A1A86F256DF84E00876755 /* ZSKJCollectionView.m in Sources */,
@@ -1796,9 +1831,11 @@
 				9653B6B42567C1EA0088B16E /* UIImageView+HighlightedWebCache.m in Sources */,
 				96A0C85A256B396500DA0AA5 /* UITextField+Helper.m in Sources */,
 				96A1AA2A256F533F00876755 /* FMWModel.m in Sources */,
+				9633BC622574E3C6008666A1 /* ZSKJNoticeOptionControl.m in Sources */,
 				966FB1A52570B92100DDFFF9 /* ZSKJHomeReportTableView.m in Sources */,
 				9653B6EB2567C1EA0088B16E /* UIWebView+AFNetworking.m in Sources */,
 				9653B71F2567C1EA0088B16E /* IQUITextFieldView+Additions.m in Sources */,
+				9633BC4225749100008666A1 /* ZSKJExhibitionControl.m in Sources */,
 				966FB18E25708BA900DDFFF9 /* ZSKJHomeHeaderView.m in Sources */,
 				9653B6DD2567C1EA0088B16E /* MASCompositeConstraint.m in Sources */,
 				9653B7092567C1EA0088B16E /* MJRefreshBackStateFooter.m in Sources */,
@@ -1813,6 +1850,7 @@
 				966FB1AA2570BE1400DDFFF9 /* ZSKJHomeReportTableViewCell.m in Sources */,
 				966FB18C25708BA900DDFFF9 /* ZSKJHomeHeaderSoonView.m in Sources */,
 				9653B6B92567C1EA0088B16E /* UIImage+GIF.m in Sources */,
+				9633BC662574EB8A008666A1 /* ZSKJNoticeDetailsViewController.m in Sources */,
 				9653B6FD2567C1EA0088B16E /* YYSpriteSheetImage.m in Sources */,
 				96A0C85D256B396500DA0AA5 /* UIView+Layout.m in Sources */,
 				9653B6B62567C1EA0088B16E /* UIImage+ForceDecode.m in Sources */,

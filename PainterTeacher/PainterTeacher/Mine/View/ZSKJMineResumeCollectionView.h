@@ -9,7 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZSKJMineResumeCollectionView : ZSKJCollectionView
+@interface ZSKJMineResumeCollectionView : ZSKJCollectionView <UICollectionViewDelegate,UICollectionViewDataSource>
+
 
 @end
 
