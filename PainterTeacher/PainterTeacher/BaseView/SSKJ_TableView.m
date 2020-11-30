@@ -36,7 +36,7 @@
         [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
            
             make.centerX.equalTo(self.mas_centerX);
-            make.centerY.equalTo(self.mas_centerY);
+            make.centerY.equalTo(self.mas_centerY).offset(-60);
                     
         }];
     }
@@ -63,7 +63,7 @@
         [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
            
             make.centerX.equalTo(self.mas_centerX);
-            make.centerY.equalTo(self.mas_centerY);
+            make.centerY.equalTo(self.mas_centerY).offset(-60);
                     
         }];
     }

@@ -109,7 +109,7 @@
     if (!_titleLabel)
     {
         _titleLabel = [[UILabel alloc]init];
-        [_titleLabel setFont:[UIFont systemFontOfSize:16]];
+        [_titleLabel setFont:[UIFont boldSystemFontOfSize:18]];
         [_titleLabel setTextColor:KTextColor];
     }
     return _titleLabel;
@@ -120,7 +120,7 @@
     if (!_contentLabel)
     {
         _contentLabel = [[UILabel alloc]init];
-        [_contentLabel setFont:[UIFont systemFontOfSize:14]];
+        [_contentLabel setFont:[UIFont systemFontOfSize:16]];
         [_contentLabel setTextColor:KSubTextColor];
         [_contentLabel setNumberOfLines:0];
     }

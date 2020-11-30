@@ -96,14 +96,15 @@
 }
 
 
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     ZSKJNoticeDetailsViewController *notice = [[ZSKJNoticeDetailsViewController alloc]initWithType:NoticeCourseType];
     [self pushViewController:notice animated:YES];
-    
 }
+
+
+
 
 
 
@@ -153,7 +154,7 @@
     if (!_itemArray)
     {
         _itemArray = [NSMutableArray array];
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 0; i++)
         {
             ZSKJNoticeModel *model = [[ZSKJNoticeModel alloc]init];
             [model setType:UnreadNoticeType];
@@ -165,7 +166,7 @@
         
         
         
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 0; i++)
         {
             ZSKJNoticeModel *model = [[ZSKJNoticeModel alloc]init];
             [model setType:UnreadNoticeType];
