@@ -131,18 +131,41 @@
 }
 
 
+/**
+ 查看课件触发方法
+ */
+-(void)browseAddTarget:(nullable id)target action:(nonnull SEL)action forControlEvents:(UIControlEvents)events
+{
+    [self.browseBtn addTarget:target action:action forControlEvents:events];
+}
+
+/**
+ 开始上课触发方法
+ */
+-(void)lectureAddTarget:(nullable id)target action:(nonnull SEL)action forControlEvents:(UIControlEvents)events
+{
+    [self.lectureBtn addTarget:target action:action forControlEvents:events];
+}
+
+
 
 -(void)itemAction:(UIButton*)sender
 {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     switch (sender.tag)
     {
         case 1:
         {
-            [ZSKJDefaultAlertView showWithTitle:@"还有10分钟就要开始上课啦" witIcon:nil submitBlock:^(NSString * _Nonnull code){
-                
-                
-                [ZSKJHelper pushViewController:[[ZSKJHomeBrowseViewController alloc]init] animated:YES];
-            }];
             
             
             
@@ -278,7 +301,6 @@
         [_browseBtn setLayerBorderColor:KMainColor];
         [_browseBtn setLayerBorderWidth:1];
         [_browseBtn setCornerRadius:15];
-        [_browseBtn addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
         [_browseBtn setTag:1];
     }
     return _browseBtn;
@@ -295,7 +317,6 @@
         [_lectureBtn setTitle:@"开始讲课" forState:UIControlStateNormal];
         [_lectureBtn setTitleColor:KWhiteColor forState:UIControlStateNormal];
         [_lectureBtn setBackgroundColor:KMainColor];
-        [_lectureBtn addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
         [_lectureBtn setTag:2];
     }
     return _lectureBtn;

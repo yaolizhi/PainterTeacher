@@ -12,6 +12,8 @@
 		9632FA9B256F9C0700A1D181 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9632FA97256F9C0700A1D181 /* libmp3lame.a */; };
 		9632FAA0256FA85900A1D181 /* ZSKJNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9632FA9F256FA85900A1D181 /* ZSKJNoticeViewController.m */; };
 		9632FAA4256FB57100A1D181 /* ZSKJNoticeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9632FAA3256FB57100A1D181 /* ZSKJNoticeTableViewCell.m */; };
+		9633BC3825747971008666A1 /* ZSKJEvaluationOptionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9633BC3725747971008666A1 /* ZSKJEvaluationOptionControl.m */; };
+		9633BC3D2574884F008666A1 /* ZSKJHomeExaminationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9633BC3C2574884F008666A1 /* ZSKJHomeExaminationModel.m */; };
 		9653B5072567717E0088B16E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653B5062567717E0088B16E /* SceneDelegate.m */; };
 		9653B50A2567717E0088B16E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653B5092567717E0088B16E /* ViewController.m */; };
 		9653B50F256771800088B16E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9653B50E256771800088B16E /* Assets.xcassets */; };
@@ -147,9 +149,7 @@
 		966FB18225708BA900DDFFF9 /* ZSKJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB16425708BA900DDFFF9 /* ZSKJLoginViewController.m */; };
 		966FB18325708BA900DDFFF9 /* ZSKJHomeBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB16825708BA900DDFFF9 /* ZSKJHomeBrowseViewController.m */; };
 		966FB18425708BA900DDFFF9 /* ZSKJHomeExaminationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB16925708BA900DDFFF9 /* ZSKJHomeExaminationViewController.m */; };
-		966FB18525708BA900DDFFF9 /* ZSKJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB16B25708BA900DDFFF9 /* ZSKJHomeViewController.m */; };
 		966FB18625708BA900DDFFF9 /* ZSKJHomeAuditionlCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB16E25708BA900DDFFF9 /* ZSKJHomeAuditionlCollectionView.m */; };
-		966FB18725708BA900DDFFF9 /* ZSKJHomeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB16F25708BA900DDFFF9 /* ZSKJHomeCollectionView.m */; };
 		966FB18825708BA900DDFFF9 /* ZSKJHomeBrowseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB17025708BA900DDFFF9 /* ZSKJHomeBrowseCollectionViewCell.m */; };
 		966FB18925708BA900DDFFF9 /* ZSKJHomeFormalCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB17225708BA900DDFFF9 /* ZSKJHomeFormalCollectionView.m */; };
 		966FB18A25708BA900DDFFF9 /* ZSKJHomeHeaderOptionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB17425708BA900DDFFF9 /* ZSKJHomeHeaderOptionControl.m */; };
@@ -159,6 +159,11 @@
 		966FB18E25708BA900DDFFF9 /* ZSKJHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB17F25708BA900DDFFF9 /* ZSKJHomeHeaderView.m */; };
 		966FB18F25708BA900DDFFF9 /* ZSKJHomeBrowseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB18125708BA900DDFFF9 /* ZSKJHomeBrowseHeaderView.m */; };
 		966FB19325708DD100DDFFF9 /* ZSKJNoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB19225708DD100DDFFF9 /* ZSKJNoticeModel.m */; };
+		966FB1982570A0A500DDFFF9 /* ZSKJUserinfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB1972570A0A500DDFFF9 /* ZSKJUserinfoModel.m */; };
+		966FB19D2570A70F00DDFFF9 /* ZSKJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB19C2570A70F00DDFFF9 /* ZSKJHomeViewController.m */; };
+		966FB1A12570AF2200DDFFF9 /* ZSKJHomeATimeArrangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB1A02570AF2200DDFFF9 /* ZSKJHomeATimeArrangeViewController.m */; };
+		966FB1A52570B92100DDFFF9 /* ZSKJHomeReportTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB1A42570B92100DDFFF9 /* ZSKJHomeReportTableView.m */; };
+		966FB1AA2570BE1400DDFFF9 /* ZSKJHomeReportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB1A92570BE1400DDFFF9 /* ZSKJHomeReportTableViewCell.m */; };
 		96A0C83E256B38A900DA0AA5 /* ZSKJMineCellItemControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A0C83D256B38A900DA0AA5 /* ZSKJMineCellItemControl.m */; };
 		96A0C859256B396500DA0AA5 /* UIImage+GIFS.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A0C841256B396500DA0AA5 /* UIImage+GIFS.m */; };
 		96A0C85A256B396500DA0AA5 /* UITextField+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A0C842256B396500DA0AA5 /* UITextField+Helper.m */; };
@@ -211,6 +216,10 @@
 		9632FA9F256FA85900A1D181 /* ZSKJNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJNoticeViewController.m; sourceTree = "<group>"; };
 		9632FAA2256FB57100A1D181 /* ZSKJNoticeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJNoticeTableViewCell.h; sourceTree = "<group>"; };
 		9632FAA3256FB57100A1D181 /* ZSKJNoticeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJNoticeTableViewCell.m; sourceTree = "<group>"; };
+		9633BC3625747971008666A1 /* ZSKJEvaluationOptionControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJEvaluationOptionControl.h; sourceTree = "<group>"; };
+		9633BC3725747971008666A1 /* ZSKJEvaluationOptionControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJEvaluationOptionControl.m; sourceTree = "<group>"; };
+		9633BC3B2574884F008666A1 /* ZSKJHomeExaminationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeExaminationModel.h; sourceTree = "<group>"; };
+		9633BC3C2574884F008666A1 /* ZSKJHomeExaminationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeExaminationModel.m; sourceTree = "<group>"; };
 		9653B4FF2567717E0088B16E /* PainterTeacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PainterTeacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9653B5052567717E0088B16E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		9653B5062567717E0088B16E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
@@ -496,9 +505,7 @@
 		966FB16825708BA900DDFFF9 /* ZSKJHomeBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeBrowseViewController.m; sourceTree = "<group>"; };
 		966FB16925708BA900DDFFF9 /* ZSKJHomeExaminationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeExaminationViewController.m; sourceTree = "<group>"; };
 		966FB16A25708BA900DDFFF9 /* ZSKJLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJLoginViewController.h; sourceTree = "<group>"; };
-		966FB16B25708BA900DDFFF9 /* ZSKJHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeViewController.m; sourceTree = "<group>"; };
 		966FB16E25708BA900DDFFF9 /* ZSKJHomeAuditionlCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeAuditionlCollectionView.m; sourceTree = "<group>"; };
-		966FB16F25708BA900DDFFF9 /* ZSKJHomeCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeCollectionView.m; sourceTree = "<group>"; };
 		966FB17025708BA900DDFFF9 /* ZSKJHomeBrowseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeBrowseCollectionViewCell.m; sourceTree = "<group>"; };
 		966FB17125708BA900DDFFF9 /* ZSKJHomeHeaderSoonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeHeaderSoonView.h; sourceTree = "<group>"; };
 		966FB17225708BA900DDFFF9 /* ZSKJHomeFormalCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeFormalCollectionView.m; sourceTree = "<group>"; };
@@ -509,7 +516,6 @@
 		966FB17725708BA900DDFFF9 /* ZSKJHomeBrowseHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeBrowseHeaderView.h; sourceTree = "<group>"; };
 		966FB17825708BA900DDFFF9 /* ZSKJHomeHeaderSoonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeHeaderSoonView.m; sourceTree = "<group>"; };
 		966FB17925708BA900DDFFF9 /* ZSKJHomeBrowseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeBrowseCollectionViewCell.h; sourceTree = "<group>"; };
-		966FB17A25708BA900DDFFF9 /* ZSKJHomeCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeCollectionView.h; sourceTree = "<group>"; };
 		966FB17B25708BA900DDFFF9 /* ZSKJHomeAuditionlCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeAuditionlCollectionView.h; sourceTree = "<group>"; };
 		966FB17C25708BA900DDFFF9 /* ZSKJHomeHeaderOptionControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeHeaderOptionControl.h; sourceTree = "<group>"; };
 		966FB17D25708BA900DDFFF9 /* ZSKJHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeCollectionViewCell.m; sourceTree = "<group>"; };
@@ -519,6 +525,15 @@
 		966FB18125708BA900DDFFF9 /* ZSKJHomeBrowseHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeBrowseHeaderView.m; sourceTree = "<group>"; };
 		966FB19125708DD100DDFFF9 /* ZSKJNoticeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJNoticeModel.h; sourceTree = "<group>"; };
 		966FB19225708DD100DDFFF9 /* ZSKJNoticeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJNoticeModel.m; sourceTree = "<group>"; };
+		966FB1962570A0A500DDFFF9 /* ZSKJUserinfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJUserinfoModel.h; sourceTree = "<group>"; };
+		966FB1972570A0A500DDFFF9 /* ZSKJUserinfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJUserinfoModel.m; sourceTree = "<group>"; };
+		966FB19C2570A70F00DDFFF9 /* ZSKJHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeViewController.m; sourceTree = "<group>"; };
+		966FB19F2570AF2200DDFFF9 /* ZSKJHomeATimeArrangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeATimeArrangeViewController.h; sourceTree = "<group>"; };
+		966FB1A02570AF2200DDFFF9 /* ZSKJHomeATimeArrangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeATimeArrangeViewController.m; sourceTree = "<group>"; };
+		966FB1A32570B92100DDFFF9 /* ZSKJHomeReportTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeReportTableView.h; sourceTree = "<group>"; };
+		966FB1A42570B92100DDFFF9 /* ZSKJHomeReportTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeReportTableView.m; sourceTree = "<group>"; };
+		966FB1A82570BE1400DDFFF9 /* ZSKJHomeReportTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeReportTableViewCell.h; sourceTree = "<group>"; };
+		966FB1A92570BE1400DDFFF9 /* ZSKJHomeReportTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeReportTableViewCell.m; sourceTree = "<group>"; };
 		96A0C83C256B38A900DA0AA5 /* ZSKJMineCellItemControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJMineCellItemControl.h; sourceTree = "<group>"; };
 		96A0C83D256B38A900DA0AA5 /* ZSKJMineCellItemControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJMineCellItemControl.m; sourceTree = "<group>"; };
 		96A0C841256B396500DA0AA5 /* UIImage+GIFS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIFS.m"; sourceTree = "<group>"; };
@@ -731,6 +746,8 @@
 		9653B5632567B3B50088B16E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9633BC3625747971008666A1 /* ZSKJEvaluationOptionControl.h */,
+				9633BC3725747971008666A1 /* ZSKJEvaluationOptionControl.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1415,14 +1432,16 @@
 		966FB16325708BA900DDFFF9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				966FB16425708BA900DDFFF9 /* ZSKJLoginViewController.m */,
-				966FB16525708BA900DDFFF9 /* ZSKJHomeExaminationViewController.h */,
-				966FB16625708BA900DDFFF9 /* ZSKJHomeBrowseViewController.h */,
-				966FB16725708BA900DDFFF9 /* ZSKJHomeViewController.h */,
-				966FB16825708BA900DDFFF9 /* ZSKJHomeBrowseViewController.m */,
-				966FB16925708BA900DDFFF9 /* ZSKJHomeExaminationViewController.m */,
 				966FB16A25708BA900DDFFF9 /* ZSKJLoginViewController.h */,
-				966FB16B25708BA900DDFFF9 /* ZSKJHomeViewController.m */,
+				966FB16425708BA900DDFFF9 /* ZSKJLoginViewController.m */,
+				966FB16725708BA900DDFFF9 /* ZSKJHomeViewController.h */,
+				966FB19C2570A70F00DDFFF9 /* ZSKJHomeViewController.m */,
+				966FB16625708BA900DDFFF9 /* ZSKJHomeBrowseViewController.h */,
+				966FB16825708BA900DDFFF9 /* ZSKJHomeBrowseViewController.m */,
+				966FB16525708BA900DDFFF9 /* ZSKJHomeExaminationViewController.h */,
+				966FB16925708BA900DDFFF9 /* ZSKJHomeExaminationViewController.m */,
+				966FB19F2570AF2200DDFFF9 /* ZSKJHomeATimeArrangeViewController.h */,
+				966FB1A02570AF2200DDFFF9 /* ZSKJHomeATimeArrangeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1430,6 +1449,10 @@
 		966FB16C25708BA900DDFFF9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				966FB1962570A0A500DDFFF9 /* ZSKJUserinfoModel.h */,
+				966FB1972570A0A500DDFFF9 /* ZSKJUserinfoModel.m */,
+				9633BC3B2574884F008666A1 /* ZSKJHomeExaminationModel.h */,
+				9633BC3C2574884F008666A1 /* ZSKJHomeExaminationModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1437,26 +1460,28 @@
 		966FB16D25708BA900DDFFF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				966FB16E25708BA900DDFFF9 /* ZSKJHomeAuditionlCollectionView.m */,
-				966FB16F25708BA900DDFFF9 /* ZSKJHomeCollectionView.m */,
-				966FB17025708BA900DDFFF9 /* ZSKJHomeBrowseCollectionViewCell.m */,
-				966FB17125708BA900DDFFF9 /* ZSKJHomeHeaderSoonView.h */,
-				966FB17225708BA900DDFFF9 /* ZSKJHomeFormalCollectionView.m */,
-				966FB17325708BA900DDFFF9 /* ZSKJHomeCollectionViewCell.h */,
-				966FB17425708BA900DDFFF9 /* ZSKJHomeHeaderOptionControl.m */,
-				966FB17525708BA900DDFFF9 /* ZSKJHomeBrowseCollectionView.m */,
 				966FB17625708BA900DDFFF9 /* ZSKJHomeHeaderView.h */,
-				966FB17725708BA900DDFFF9 /* ZSKJHomeBrowseHeaderView.h */,
-				966FB17825708BA900DDFFF9 /* ZSKJHomeHeaderSoonView.m */,
-				966FB17925708BA900DDFFF9 /* ZSKJHomeBrowseCollectionViewCell.h */,
-				966FB17A25708BA900DDFFF9 /* ZSKJHomeCollectionView.h */,
-				966FB17B25708BA900DDFFF9 /* ZSKJHomeAuditionlCollectionView.h */,
-				966FB17C25708BA900DDFFF9 /* ZSKJHomeHeaderOptionControl.h */,
-				966FB17D25708BA900DDFFF9 /* ZSKJHomeCollectionViewCell.m */,
-				966FB17E25708BA900DDFFF9 /* ZSKJHomeFormalCollectionView.h */,
 				966FB17F25708BA900DDFFF9 /* ZSKJHomeHeaderView.m */,
-				966FB18025708BA900DDFFF9 /* ZSKJHomeBrowseCollectionView.h */,
+				966FB17125708BA900DDFFF9 /* ZSKJHomeHeaderSoonView.h */,
+				966FB17825708BA900DDFFF9 /* ZSKJHomeHeaderSoonView.m */,
+				966FB17325708BA900DDFFF9 /* ZSKJHomeCollectionViewCell.h */,
+				966FB17D25708BA900DDFFF9 /* ZSKJHomeCollectionViewCell.m */,
+				966FB17725708BA900DDFFF9 /* ZSKJHomeBrowseHeaderView.h */,
 				966FB18125708BA900DDFFF9 /* ZSKJHomeBrowseHeaderView.m */,
+				966FB18025708BA900DDFFF9 /* ZSKJHomeBrowseCollectionView.h */,
+				966FB17525708BA900DDFFF9 /* ZSKJHomeBrowseCollectionView.m */,
+				966FB17C25708BA900DDFFF9 /* ZSKJHomeHeaderOptionControl.h */,
+				966FB17425708BA900DDFFF9 /* ZSKJHomeHeaderOptionControl.m */,
+				966FB17E25708BA900DDFFF9 /* ZSKJHomeFormalCollectionView.h */,
+				966FB17225708BA900DDFFF9 /* ZSKJHomeFormalCollectionView.m */,
+				966FB17B25708BA900DDFFF9 /* ZSKJHomeAuditionlCollectionView.h */,
+				966FB16E25708BA900DDFFF9 /* ZSKJHomeAuditionlCollectionView.m */,
+				966FB17925708BA900DDFFF9 /* ZSKJHomeBrowseCollectionViewCell.h */,
+				966FB17025708BA900DDFFF9 /* ZSKJHomeBrowseCollectionViewCell.m */,
+				966FB1A32570B92100DDFFF9 /* ZSKJHomeReportTableView.h */,
+				966FB1A42570B92100DDFFF9 /* ZSKJHomeReportTableView.m */,
+				966FB1A82570BE1400DDFFF9 /* ZSKJHomeReportTableViewCell.h */,
+				966FB1A92570BE1400DDFFF9 /* ZSKJHomeReportTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1607,6 +1632,7 @@
 				9653B6CD2567C1EA0088B16E /* MJPropertyType.m in Sources */,
 				9653B6F52567C1EA0088B16E /* YYWebImageManager.m in Sources */,
 				9653B7102567C1EA0088B16E /* MJRefreshGifHeader.m in Sources */,
+				9633BC3D2574884F008666A1 /* ZSKJHomeExaminationModel.m in Sources */,
 				9653B50A2567717E0088B16E /* ViewController.m in Sources */,
 				96A0C8A6256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.m in Sources */,
 				9653B6E32567C1EA0088B16E /* MASViewConstraint.m in Sources */,
@@ -1617,7 +1643,6 @@
 				9653B5532567AF2B0088B16E /* ZSKJTabBarController.m in Sources */,
 				966FB18625708BA900DDFFF9 /* ZSKJHomeAuditionlCollectionView.m in Sources */,
 				9653B515256771800088B16E /* main.m in Sources */,
-				966FB18525708BA900DDFFF9 /* ZSKJHomeViewController.m in Sources */,
 				9653B7072567C1EA0088B16E /* UIView+MJExtension.m in Sources */,
 				96A0C85F256B396500DA0AA5 /* UITextField+PlaceHolder.m in Sources */,
 				9653B7222567C1EA0088B16E /* IQUIViewController+Additions.m in Sources */,
@@ -1641,7 +1666,6 @@
 				966FB19325708DD100DDFFF9 /* ZSKJNoticeModel.m in Sources */,
 				9653B6BF2567C1EA0088B16E /* NSButton+WebCache.m in Sources */,
 				9653B6CE2567C1EA0088B16E /* NSObject+MJKeyValue.m in Sources */,
-				966FB18725708BA900DDFFF9 /* ZSKJHomeCollectionView.m in Sources */,
 				9653B6B72567C1EA0088B16E /* SDWebImageCodersManager.m in Sources */,
 				96D7E86E256D14D3002D1E90 /* TPPasswordTextView.m in Sources */,
 				966FB18325708BA900DDFFF9 /* ZSKJHomeBrowseViewController.m in Sources */,
@@ -1658,6 +1682,7 @@
 				9653B6C02567C1EA0088B16E /* SDAnimatedImageRep.m in Sources */,
 				9653B6C42567C1EA0088B16E /* NSData+ImageContentType.m in Sources */,
 				9653B6D02567C1EA0088B16E /* NSObject+MJCoding.m in Sources */,
+				966FB19D2570A70F00DDFFF9 /* ZSKJHomeViewController.m in Sources */,
 				9653B6C12567C1EA0088B16E /* SDImageCache.m in Sources */,
 				96A0C871256B4EC000DA0AA5 /* ZSKJMineResumeControl.m in Sources */,
 				9653B7142567C1EA0088B16E /* MJRefreshAutoFooter.m in Sources */,
@@ -1675,6 +1700,7 @@
 				96A1AA29256F533F00876755 /* AVAssetWriteManager.m in Sources */,
 				9632FAA4256FB57100A1D181 /* ZSKJNoticeTableViewCell.m in Sources */,
 				9653B6FB2567C1EA0088B16E /* CALayer+YYWebImage.m in Sources */,
+				9633BC3825747971008666A1 /* ZSKJEvaluationOptionControl.m in Sources */,
 				9653B6BE2567C1EA0088B16E /* SDWebImageCoder.m in Sources */,
 				9653B6C62567C1EA0088B16E /* NSImage+WebCache.m in Sources */,
 				9653B7252567C1EA0088B16E /* UIView+SDExtension.m in Sources */,
@@ -1701,6 +1727,7 @@
 				9653B6B82567C1EA0088B16E /* SDWebImageDownloader.m in Sources */,
 				9653B6E62567C1EA0088B16E /* UIRefreshControl+AFNetworking.m in Sources */,
 				9653B6BC2567C1EA0088B16E /* SDWebImageCompat.m in Sources */,
+				966FB1982570A0A500DDFFF9 /* ZSKJUserinfoModel.m in Sources */,
 				9653B5752567B4290088B16E /* ZSKJEvaluationViewController.m in Sources */,
 				9653B71E2567C1EA0088B16E /* IQNSArray+Sort.m in Sources */,
 				9653B6F32567C1EA0088B16E /* AFSecurityPolicy.m in Sources */,
@@ -1743,6 +1770,7 @@
 				9653B6D22567C1EA0088B16E /* NSObject+MJProperty.m in Sources */,
 				9653B6E12567C1EA0088B16E /* View+MASAdditions.m in Sources */,
 				9653B6E52567C1EA0088B16E /* UIProgressView+AFNetworking.m in Sources */,
+				966FB1A12570AF2200DDFFF9 /* ZSKJHomeATimeArrangeViewController.m in Sources */,
 				9653B7012567C1EA0088B16E /* YYAnimatedImageView.m in Sources */,
 				9653B70C2567C1EA0088B16E /* MJRefreshAutoGifFooter.m in Sources */,
 				9653B7182567C1EA0088B16E /* IQTitleBarButtonItem.m in Sources */,
@@ -1768,6 +1796,7 @@
 				9653B6B42567C1EA0088B16E /* UIImageView+HighlightedWebCache.m in Sources */,
 				96A0C85A256B396500DA0AA5 /* UITextField+Helper.m in Sources */,
 				96A1AA2A256F533F00876755 /* FMWModel.m in Sources */,
+				966FB1A52570B92100DDFFF9 /* ZSKJHomeReportTableView.m in Sources */,
 				9653B6EB2567C1EA0088B16E /* UIWebView+AFNetworking.m in Sources */,
 				9653B71F2567C1EA0088B16E /* IQUITextFieldView+Additions.m in Sources */,
 				966FB18E25708BA900DDFFF9 /* ZSKJHomeHeaderView.m in Sources */,
@@ -1781,6 +1810,7 @@
 				9653B6D42567C1EA0088B16E /* NSString+MJExtension.m in Sources */,
 				9653B6DC2567C1EA0088B16E /* ViewController+MASAdditions.m in Sources */,
 				96A0C875256B4EFE00DA0AA5 /* ZSKJMineNoticeControl.m in Sources */,
+				966FB1AA2570BE1400DDFFF9 /* ZSKJHomeReportTableViewCell.m in Sources */,
 				966FB18C25708BA900DDFFF9 /* ZSKJHomeHeaderSoonView.m in Sources */,
 				9653B6B92567C1EA0088B16E /* UIImage+GIF.m in Sources */,
 				9653B6FD2567C1EA0088B16E /* YYSpriteSheetImage.m in Sources */,

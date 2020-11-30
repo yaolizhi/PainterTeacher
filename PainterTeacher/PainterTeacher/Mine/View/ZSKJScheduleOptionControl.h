@@ -9,17 +9,24 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol ZSKJScheduleOptionControlDeletage <NSObject>
+
+-(void)optionItemAction:(NSInteger)index;
+
+@end
+
+
+
+
 @interface ZSKJScheduleOptionControl : UIControl
 
+
+- (instancetype)initWithFrame:(CGRect)frame withDeletage:(id<ZSKJScheduleOptionControlDeletage>)deletage;
 
 -(void)setOneTitle:(NSString*)oneTitle withTwoTitle:(NSString*)twoTitle withThreeTitle:(NSString*)threeTitle;
 
 
 -(void)setIndexTag:(NSInteger)index;
-
-
-
-
 
 @end
 

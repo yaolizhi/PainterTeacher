@@ -19,6 +19,30 @@
 
 
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self)
+    {
+        [self setBackgroundColor:KLineColor];
+        [self setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+        
+        [self setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+        [self setEstimatedRowHeight:0];
+        [self setEstimatedSectionHeaderHeight:0];
+        [self setEstimatedSectionFooterHeight:0];
+        
+        [self addSubview:self.iconView];
+        [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
+           
+            make.centerX.equalTo(self.mas_centerX);
+            make.centerY.equalTo(self.mas_centerY);
+                    
+        }];
+    }
+    return self;
+}
+
 
 - (instancetype)initWitDeletage:(UIViewController*)delegate 
 {

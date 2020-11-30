@@ -147,7 +147,7 @@
             make.centerY.equalTo(self.headerBgView.mas_bottom);
             make.left.equalTo(self.view.mas_left).offset(30);
             make.right.equalTo(self.view.mas_right).offset(-30);
-            make.height.equalTo(@(50));
+            make.height.equalTo(@(60));
             
         }];
         

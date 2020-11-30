@@ -9,6 +9,18 @@
 
 
 
+typedef NS_ENUM(NSInteger,InitType)
+{
+    AuditionlType = 1, //!< 试听课程
+    FormalType = 2,    //!< 正式课
+};
+
+
+
+
+
+
+
 
 #import "ZSKJBaseViewController.h"
 
@@ -16,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZSKJHomeExaminationViewController : ZSKJBaseViewController
 
+
+- (instancetype)initWithType:(InitType)type;
 
 
 

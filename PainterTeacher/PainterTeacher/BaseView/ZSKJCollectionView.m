@@ -35,4 +35,17 @@
 }
 
 
+
+#pragma mark - Getter / Setter
+-(NSMutableArray *)itemArry
+{
+    if (!_itemArry)
+    {
+        _itemArry = [NSMutableArray array];
+    }
+    return _itemArry;
+}
+
+
+
 @end

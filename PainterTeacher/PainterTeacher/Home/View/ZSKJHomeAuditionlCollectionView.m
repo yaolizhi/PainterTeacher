@@ -31,6 +31,13 @@
         self.dataSource = self;
         [self registerClass:[ZSKJHomeHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ZSKJHomeHeaderView"];
         [self registerClass:[ZSKJHomeCollectionViewCell class] forCellWithReuseIdentifier:@"ZSKJHomeCollectionViewCell"];
+        
+        for (int i = 0; i < 20; i++)
+        {
+            ZSKJHomeExaminationModel *model = [[ZSKJHomeExaminationModel alloc]init];
+            [model setType:AuditionlExaminationType];
+            [self.itemArry addObject:model];
+        }
     }
     return self;
 }
@@ -47,15 +54,16 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 20;
+    return [self.itemArry count];
 }
+
 
 
 
 - (ZSKJHomeCollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ZSKJHomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ZSKJHomeCollectionViewCell" forIndexPath:indexPath];
-    
+    [cell setModel:[self.itemArry objectAtIndex:indexPath.row]];
     return cell;
 }
 
@@ -74,7 +82,7 @@
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(0, 15, 15, 15);
+    return UIEdgeInsetsMake(15, 15, 15, 15);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section

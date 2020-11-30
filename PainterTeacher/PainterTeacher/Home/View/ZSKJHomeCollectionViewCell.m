@@ -127,6 +127,51 @@
 }
 
 
+
+
+
+#pragma mark - 设置数据
+-(void)setModel:(ZSKJHomeExaminationModel *)model
+{
+    _model = model;
+    
+
+    switch (model.type)
+    {
+        case FormalExaminationType:
+        {
+            [self.typeView setImageName:@"typeitems"];
+            [self.typeLabel setText:@"正式课"];
+        }
+            break;
+        case AuditionlExaminationType:
+        {
+            [self.typeView setImageName:@"auditionl"];
+            [self.typeLabel setText:@"试听课"];
+        }
+            break;
+        default:
+            break;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
 #pragma mark - Getter / Setter
 -(UILabel *)dataLabel
 {

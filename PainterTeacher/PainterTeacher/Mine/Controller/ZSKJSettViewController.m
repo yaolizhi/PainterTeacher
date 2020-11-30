@@ -52,7 +52,7 @@
            
             make.top.equalTo(self.view.mas_top).offset(self.navbarHeight);
             make.left.right.equalTo(self.view);
-            make.height.mas_equalTo(@(50));
+            make.height.mas_equalTo(@(60));
 
         }];
         

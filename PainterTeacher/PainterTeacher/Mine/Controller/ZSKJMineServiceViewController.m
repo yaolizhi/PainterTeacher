@@ -91,7 +91,7 @@
     if (!_iconImageView)
     {
         _iconImageView  = [[UIImageView alloc]init];
-        [_iconImageView setBackgroundColor:[UIColor orangeColor]];
+        [_iconImageView setImageName:@"hotline"];
     }
     return _iconImageView;
 }

@@ -8,7 +8,7 @@
 #import "ZSKJHomeHeaderView.h"
 #import "ZSKJHomeHeaderSoonView.h"
 #import "ZSKJHomeHeaderOptionControl.h"
-#import "ZSKJHomeExaminationViewController.h"
+
 
 
 
@@ -36,7 +36,7 @@
 
 @implementation ZSKJHomeHeaderView
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame 
 {
     self = [super initWithFrame:frame];
     if (self)
@@ -105,7 +105,10 @@
 #pragma mark - Private Method
 -(void)itemACtion:(UIControl*)sender
 {
-    [ZSKJHelper pushViewController:[[ZSKJHomeExaminationViewController alloc]init] animated:YES];
+    if ([self.deletage respondsToSelector:@selector(headerOptionAction:)])
+    {
+        [self.deletage headerOptionAction:sender.tag];
+    }
 }
 
 
@@ -127,6 +130,8 @@
     {
         _soonView = [[ZSKJHomeHeaderSoonView alloc]init];
         [_soonView setCornerRadius:CornerRadius_8];
+        [_soonView browseAddTarget:self action:@selector(itemACtion:) forControlEvents:UIControlEventTouchUpInside];
+        [_soonView lectureAddTarget:self action:@selector(itemACtion:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _soonView;
 }
@@ -140,7 +145,7 @@
         [_timeControl setBackgroundColor:KMainColor];
         [_timeControl setCornerRadius:CornerRadius_8];
         [_timeControl setTitle:@"时间管理" subtitle:@"教师课时明细，请假开关上课时间段" withIcon:@"timeGL"];
-        [_timeControl setTag:1];
+        [_timeControl setTag:3];
         [_timeControl addTarget:self action:@selector(itemACtion:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _timeControl;
@@ -155,7 +160,7 @@
         [_formalControl setBackgroundColor:KBlueColor];
         [_formalControl setCornerRadius:CornerRadius_8];
         [_formalControl setTitle:@"正式课报告" subtitle:@"学生的课程学习提交报告" withIcon:@"formalBG"];
-        [_formalControl setTag:1];
+        [_formalControl setTag:4];
         [_formalControl addTarget:self action:@selector(itemACtion:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _formalControl;
@@ -169,7 +174,7 @@
         [_auditionlControl setBackgroundColor:KGreenColor];
         [_auditionlControl setCornerRadius:CornerRadius_8];
         [_auditionlControl setTitle:@"试听课报告" subtitle:@"教师课时明细，请假，开关上课时间段" withIcon:@"auditionlBG"];
-        [_auditionlControl setTag:3];
+        [_auditionlControl setTag:5];
         [_auditionlControl addTarget:self action:@selector(itemACtion:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _auditionlControl;

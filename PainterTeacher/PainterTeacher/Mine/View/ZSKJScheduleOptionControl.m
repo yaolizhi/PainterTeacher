@@ -16,7 +16,11 @@
 @property (nonatomic, strong) UIButton *twoBtn;
 @property (nonatomic, strong) UIButton *threeBtn;
 @property (nonatomic, strong) UIView *lineView;
+@property (nonatomic, assign) NSInteger index; //!< 记住当前选中的
 
+
+
+@property (nonatomic,weak) id <ZSKJScheduleOptionControlDeletage> deletage;
 
 
 
@@ -32,11 +36,13 @@
 
 
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame withDeletage:(id<ZSKJScheduleOptionControlDeletage>)deletage
 {
     self = [super initWithFrame:frame];
     if (self)
     {
+        [self setDeletage:deletage];
+        
         [self setBackgroundColor:KWhiteColor];
         [self addSubview:self.oneBtn];
         [self addSubview:self.twoBtn];
@@ -109,8 +115,11 @@
             break;
     }
     
+    if ([self.deletage respondsToSelector:@selector(optionItemAction:)])
+    {
+        [self.deletage optionItemAction:index];
+    }
 }
-
 
 
 -(void)itemAction:(UIButton*)sender
@@ -129,6 +138,15 @@
     
     
     
+    if (sender.tag != self.index)
+    {
+        [self setIndex:sender.tag];
+        if ([self.deletage respondsToSelector:@selector(optionItemAction:)])
+        {
+            [self.deletage optionItemAction:sender.tag];
+        }
+        
+    }
 }
 
 

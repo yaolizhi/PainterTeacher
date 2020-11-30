@@ -43,6 +43,7 @@
 #import "UIImageView+Category.h"
 #import "SSKJ_TableView.h"
 #import "SSKJ_ScrollView.h"
+#import "ZSKJCollectionView.h"
 
 
 

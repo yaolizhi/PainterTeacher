@@ -9,7 +9,8 @@
 #import "ZSKJScheduleOptionControl.h"
 
 
-@interface ZSKJScheduleViewController ()
+@interface ZSKJScheduleViewController () <ZSKJScheduleOptionControlDeletage>
+
 
 @property (nonatomic, strong) ZSKJScheduleOptionControl *optionControl;
 
@@ -38,6 +39,18 @@
 
 
 
+#pragma mark - Deletage Method
+#pragma mark ZSKJScheduleOptionControlDeletage
+-(void)optionItemAction:(NSInteger)index
+{
+    
+    
+    
+    
+    
+}
+
+
 
 
 #pragma mark - Getter / Setter
@@ -45,8 +58,9 @@
 {
     if (!_optionControl)
     {
-        _optionControl = [[ZSKJScheduleOptionControl alloc]initWithFrame:CGRectMake(0, self.navbarHeight, ScreenWidth, 50)];
+        _optionControl = [[ZSKJScheduleOptionControl alloc]initWithFrame:CGRectMake(0, self.navbarHeight, ScreenWidth, 50) withDeletage:self];
         [_optionControl setOneTitle:@"待确认" withTwoTitle:@"已确认" withThreeTitle:@"已拒绝"];
+
     }
     return _optionControl;
 }

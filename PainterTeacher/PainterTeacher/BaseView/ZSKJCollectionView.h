@@ -17,7 +17,10 @@ typedef NS_ENUM(NSInteger,FlowLayoutType)
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZSKJCollectionView : UICollectionView <UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+@interface ZSKJCollectionView : UICollectionView
+
+
+@property (nonatomic, strong) NSMutableArray *itemArry;
 
 
 - (instancetype)initWithFrame:(CGRect)frame withType:(FlowLayoutType)type;
