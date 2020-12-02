@@ -98,6 +98,25 @@
 
 
 
+/// 头部刷新
+-(void)headerRefresh
+{
+    [self.homeCollectionView endRefresh];
+}
+
+
+
+
+
+/// 脚步刷新
+-(void)footerRefresh
+{
+    [self.homeCollectionView resetNoMoreData];
+}
+
+
+
+
 #pragma mark UICollectionViewDataSource
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -202,6 +221,9 @@
         [_homeCollectionView setDataSource:self];
         [_homeCollectionView registerClass:[ZSKJHomeHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ZSKJHomeHeaderView"];
         [_homeCollectionView registerClass:[ZSKJHomeCollectionViewCell class] forCellWithReuseIdentifier:@"ZSKJHomeCollectionViewCell"];
+        
+        [_homeCollectionView headerTarget:self action:@selector(headerRefresh)];
+        [_homeCollectionView footerTarget:self action:@selector(footerRefresh)];
     }
     return _homeCollectionView;
 }

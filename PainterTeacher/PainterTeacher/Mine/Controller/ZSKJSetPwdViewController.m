@@ -85,8 +85,10 @@
 #pragma mark 登录
 -(void)submitBtnAction:(UIButton*)sender
 {
-    [ZSKJDefaultAlertView showWithTitle:@"密码修改成功！" witIcon:@"tipSucceed" submitBlock:^(NSString * _Nonnull code)
-    {
+    [ZSKJDefaultAlertView showWithTitle:@"密码修改成功！" witIcon:@"tipSucceed" submitBlock:^(BOOL action) {
+        
+       
+        
         
         
     }];

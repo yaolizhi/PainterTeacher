@@ -38,6 +38,7 @@
             make.centerX.equalTo(self.mas_centerX);
             make.centerY.equalTo(self.mas_centerY).offset(-60);
                     
+            
         }];
     }
     return self;
@@ -102,24 +103,51 @@
 
 
 
--(void)setItemArray:(NSArray*)array
+
+
+
+#pragma mark - Public Method
+/// 添加头部刷新
+/// @param target 代理对象
+/// @param action 刷新方法
+-(void)headerTarget:(id)target action:(SEL)action
 {
-    [self.iconView setHidden:(BOOL)[array count]];
+    self.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:target refreshingAction:action];
 }
 
+/// 添加脚部刷新
+/// @param target 代理对象
+/// @param action 刷新方法
+-(void)footerTarget:(id)target action:(SEL)action
+{
+    self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:target refreshingAction:action];
+}
+
+
+/// 没有更多数据
+-(void)endNoMoreData
+{
+    [self.mj_footer endRefreshingWithNoMoreData];
+}
+
+//重置数据
+-(void)resetNoMoreData
+{
+    [self.mj_footer resetNoMoreData];
+}
 
 -(void)endRefresh
 {
     [self reloadData];
-//    if (self.mj_header.state == MJRefreshStateRefreshing)
-//    {
-//        [self.mj_header endRefreshing];
-//    }
-//    
-//    if (self.mj_footer.state == MJRefreshStateRefreshing)
-//    {
-//        [self.mj_footer endRefreshing];
-//    }
+    if (self.mj_header.state == MJRefreshStateRefreshing)
+    {
+        [self.mj_header endRefreshing];
+    }
+    
+    if (self.mj_footer.state == MJRefreshStateRefreshing)
+    {
+        [self.mj_footer endRefreshing];
+    }
 }
 
 
@@ -134,6 +162,11 @@
         [_iconView setHidden:YES];
     }
     return _iconView;
+}
+
+-(void)setItemArray:(NSArray*)array
+{
+    [self.iconView setHidden:(BOOL)[array count]];
 }
 
 

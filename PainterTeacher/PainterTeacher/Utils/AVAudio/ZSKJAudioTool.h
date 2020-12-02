@@ -16,8 +16,7 @@
 @interface ZSKJAudioTool : NSObject <AVAudioPlayerDelegate,AVAudioRecorderDelegate>
 
 
-@property (nonatomic, strong) AVAudioRecorder *audioRecorder;
-@property (nonatomic, copy) NSString *documentPath;
+
 
 
 
@@ -25,7 +24,8 @@
 #pragma mark - 实例方法
 /// 根据录音名称进行初始化
 /// @param name 录音文件
-- (instancetype)initWithName:(NSString*)name;
+- (void)setName:(NSString*)name;
+
 
 
 
@@ -37,6 +37,19 @@
 
 /// 停止录音
 -(void)stopRecord;
+
+
+
+/// 录制的时间
+-(CGFloat)recordTime;
+
+
+/// 录制的路径
+-(NSString*)recordPath;
+
+
+///销毁当前录音当前对象
+-(void)recordDestroy;
 
 
 

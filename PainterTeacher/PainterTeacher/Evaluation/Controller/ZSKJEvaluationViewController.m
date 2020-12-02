@@ -9,10 +9,13 @@
 #import "ZSKJEvaluationOptionControl.h"
 #import "ZSKJHomeFormalCollectionView.h"
 #import "ZSKJHomeAuditionlCollectionView.h"
+#import "ZSKJCommentViewController.h"  //!< 点评
 
 
 
-@interface ZSKJEvaluationViewController () <ZSKJEvaluationOptionControlDeletage>
+
+
+@interface ZSKJEvaluationViewController () <ZSKJEvaluationOptionControlDeletage,ZSKJHomeFormalCollectionViewDeletage,ZSKJHomeAuditionlCollectionViewDeletage>
 
 
 
@@ -76,6 +79,22 @@
     }
 }
 
+#pragma mark ZSKJHomeAuditionlCollectionViewDeletage
+-(void)didAuditionlItem:(ZSKJHomeExaminationModel *)model
+{
+    ZSKJCommentViewController *comment = [[ZSKJCommentViewController alloc]init];
+    [comment setModel:model];
+    [self pushViewController:comment animated:YES];
+}
+
+
+#pragma mark ZSKJHomeFormalCollectionViewDeletage
+-(void)didFormalItem:(ZSKJHomeExaminationModel *)model
+{
+    ZSKJCommentViewController *comment = [[ZSKJCommentViewController alloc]init];
+    [comment setModel:model];
+    [self pushViewController:comment animated:YES];
+}
 
 
 
@@ -96,7 +115,7 @@
 {
     if (!_formalCollectionView)
     {
-        _formalCollectionView = [[ZSKJHomeFormalCollectionView alloc]initWithFrame:CGRectMake(0, self.optionControl.bottom, ScreenWidth, (ScreenHeight-(self.navbarHeight+50))) withType:VerticalType];
+        _formalCollectionView = [[ZSKJHomeFormalCollectionView alloc]initWithFrame:CGRectMake(0, self.optionControl.bottom, ScreenWidth, (ScreenHeight-(self.navbarHeight+50))) withType:VerticalType withDeletage:self];
     }
     return _formalCollectionView;
 }
@@ -107,7 +126,7 @@
 {
     if (!_auditionlCollectionView)
     {
-        _auditionlCollectionView = [[ZSKJHomeAuditionlCollectionView alloc]initWithFrame:CGRectMake(0, self.optionControl.bottom, ScreenWidth, (ScreenHeight-(self.navbarHeight+50))) withType:VerticalType];
+        _auditionlCollectionView = [[ZSKJHomeAuditionlCollectionView alloc]initWithFrame:CGRectMake(0, self.optionControl.bottom, ScreenWidth, (ScreenHeight-(self.navbarHeight+50))) withType:VerticalType withDeletage:self];
     }
     return _auditionlCollectionView;
 }

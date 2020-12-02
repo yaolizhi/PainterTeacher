@@ -290,6 +290,12 @@
 
 
 
+-(void)setSelected:(BOOL)selected
+{
+    NSLog(@"1");
+    
+}
+
 
 
 @end

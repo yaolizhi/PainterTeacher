@@ -10,14 +10,28 @@
 
 
 
+
+
 #import <UIKit/UIKit.h>
 #import "ZSKJCollectionView.h"
+#import "ZSKJHomeCollectionViewCell.h"
+#import "ZSKJHomeHeaderView.h"
+
+
+@protocol ZSKJHomeFormalCollectionViewDeletage <NSObject>
+
+-(void)didFormalItem:(ZSKJHomeExaminationModel*_Nullable)model;
+
+
+@end
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZSKJHomeFormalCollectionView : ZSKJCollectionView
 
-- (instancetype)initWithFrame:(CGRect)frame withType:(FlowLayoutType)type;
+- (instancetype)initWithFrame:(CGRect)frame withType:(FlowLayoutType)type withDeletage:(id<ZSKJHomeFormalCollectionViewDeletage>)deletage;
+
 
 
 

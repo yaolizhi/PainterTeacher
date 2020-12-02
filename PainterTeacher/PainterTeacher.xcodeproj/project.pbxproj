@@ -205,6 +205,12 @@
 		96A1AA29256F533F00876755 /* AVAssetWriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1AA25256F533F00876755 /* AVAssetWriteManager.m */; };
 		96A1AA2A256F533F00876755 /* FMWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1AA26256F533F00876755 /* FMWModel.m */; };
 		96A1AA2F256F536B00876755 /* XCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1AA2E256F536B00876755 /* XCFileManager.m */; };
+		96BF56732575E7CE00B50BAC /* ZSKJAFHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF56722575E7CE00B50BAC /* ZSKJAFHTTPManager.m */; };
+		96BF56812575F4F800B50BAC /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF56802575F4F800B50BAC /* NSString+Category.m */; };
+		96BF5685257610D400B50BAC /* ZSKJCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF5684257610D400B50BAC /* ZSKJCommentViewController.m */; };
+		96BF568F257624D400B50BAC /* ZSKJAudioBtnControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF568E257624D400B50BAC /* ZSKJAudioBtnControl.m */; };
+		96BF56E125772C4000B50BAC /* ZSKJAudioStatusBoardControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF56DF25772C4000B50BAC /* ZSKJAudioStatusBoardControl.m */; };
+		96BF56E62577625000B50BAC /* ZSKJAudioBubbleBoardControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF56E52577625000B50BAC /* ZSKJAudioBubbleBoardControl.m */; };
 		96D7E862256D0E11002D1E90 /* ZSKJHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E861256D0E11002D1E90 /* ZSKJHelper.m */; };
 		96D7E869256D1463002D1E90 /* ZSKJTemporaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E868256D1463002D1E90 /* ZSKJTemporaryViewController.m */; };
 		96D7E86E256D14D3002D1E90 /* TPPasswordTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E86C256D14D3002D1E90 /* TPPasswordTextView.m */; };
@@ -619,6 +625,18 @@
 		96A1AA28256F533F00876755 /* FMWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMWModel.h; sourceTree = "<group>"; };
 		96A1AA2D256F536B00876755 /* XCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFileManager.h; sourceTree = "<group>"; };
 		96A1AA2E256F536B00876755 /* XCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFileManager.m; sourceTree = "<group>"; };
+		96BF56712575E7CE00B50BAC /* ZSKJAFHTTPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJAFHTTPManager.h; sourceTree = "<group>"; };
+		96BF56722575E7CE00B50BAC /* ZSKJAFHTTPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJAFHTTPManager.m; sourceTree = "<group>"; };
+		96BF567F2575F4F800B50BAC /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		96BF56802575F4F800B50BAC /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		96BF5683257610D400B50BAC /* ZSKJCommentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJCommentViewController.h; sourceTree = "<group>"; };
+		96BF5684257610D400B50BAC /* ZSKJCommentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJCommentViewController.m; sourceTree = "<group>"; };
+		96BF568D257624D400B50BAC /* ZSKJAudioBtnControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJAudioBtnControl.h; sourceTree = "<group>"; };
+		96BF568E257624D400B50BAC /* ZSKJAudioBtnControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJAudioBtnControl.m; sourceTree = "<group>"; };
+		96BF56DF25772C4000B50BAC /* ZSKJAudioStatusBoardControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJAudioStatusBoardControl.m; sourceTree = "<group>"; };
+		96BF56E025772C4000B50BAC /* ZSKJAudioStatusBoardControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJAudioStatusBoardControl.h; sourceTree = "<group>"; };
+		96BF56E42577625000B50BAC /* ZSKJAudioBubbleBoardControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJAudioBubbleBoardControl.h; sourceTree = "<group>"; };
+		96BF56E52577625000B50BAC /* ZSKJAudioBubbleBoardControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJAudioBubbleBoardControl.m; sourceTree = "<group>"; };
 		96D7E860256D0E11002D1E90 /* ZSKJHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHelper.h; sourceTree = "<group>"; };
 		96D7E861256D0E11002D1E90 /* ZSKJHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHelper.m; sourceTree = "<group>"; };
 		96D7E867256D1463002D1E90 /* ZSKJTemporaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJTemporaryViewController.h; sourceTree = "<group>"; };
@@ -644,6 +662,12 @@
 			children = (
 				9632FA86256F8F6300A1D181 /* ZSKJAudioTool.h */,
 				9632FA83256F8F6300A1D181 /* ZSKJAudioTool.m */,
+				96BF568D257624D400B50BAC /* ZSKJAudioBtnControl.h */,
+				96BF568E257624D400B50BAC /* ZSKJAudioBtnControl.m */,
+				96BF56E025772C4000B50BAC /* ZSKJAudioStatusBoardControl.h */,
+				96BF56DF25772C4000B50BAC /* ZSKJAudioStatusBoardControl.m */,
+				96BF56E42577625000B50BAC /* ZSKJAudioBubbleBoardControl.h */,
+				96BF56E52577625000B50BAC /* ZSKJAudioBubbleBoardControl.m */,
 			);
 			path = AVAudio;
 			sourceTree = "<group>";
@@ -760,6 +784,8 @@
 			children = (
 				9653B5732567B4290088B16E /* ZSKJEvaluationViewController.h */,
 				9653B5742567B4290088B16E /* ZSKJEvaluationViewController.m */,
+				96BF5683257610D400B50BAC /* ZSKJCommentViewController.h */,
+				96BF5684257610D400B50BAC /* ZSKJCommentViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1110,18 +1136,20 @@
 			children = (
 				9653B61C2567C1E80088B16E /* AFSecurityPolicy.h */,
 				9653B61D2567C1E80088B16E /* AFNetworkReachabilityManager.h */,
+				9653B6262567C1E80088B16E /* AFNetworkReachabilityManager.m */,
 				9653B61E2567C1E80088B16E /* AFURLSessionManager.h */,
 				9653B61F2567C1E80088B16E /* AFURLRequestSerialization.h */,
 				9653B6202567C1E80088B16E /* AFURLResponseSerialization.m */,
-				9653B6212567C1E80088B16E /* AFHTTPSessionManager.m */,
 				9653B6222567C1E80088B16E /* AFURLResponseSerialization.h */,
 				9653B6232567C1E80088B16E /* AFURLSessionManager.m */,
 				9653B6242567C1E80088B16E /* AFURLRequestSerialization.m */,
 				9653B6252567C1E80088B16E /* AFNetworking.h */,
-				9653B6262567C1E80088B16E /* AFNetworkReachabilityManager.m */,
 				9653B6272567C1E80088B16E /* AFSecurityPolicy.m */,
 				9653B6282567C1E80088B16E /* AFCompatibilityMacros.h */,
 				9653B6292567C1E80088B16E /* AFHTTPSessionManager.h */,
+				9653B6212567C1E80088B16E /* AFHTTPSessionManager.m */,
+				96BF56712575E7CE00B50BAC /* ZSKJAFHTTPManager.h */,
+				96BF56722575E7CE00B50BAC /* ZSKJAFHTTPManager.m */,
 			);
 			path = AFNetworking;
 			sourceTree = "<group>";
@@ -1540,6 +1568,8 @@
 				96A0C84B256B396500DA0AA5 /* UIImage+RoundedRectImage.m */,
 				96A1A887256E030700876755 /* UIImageView+Category.h */,
 				96A1A888256E030700876755 /* UIImageView+Category.m */,
+				96BF567F2575F4F800B50BAC /* NSString+Category.h */,
+				96BF56802575F4F800B50BAC /* NSString+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1669,6 +1699,7 @@
 				9653B50A2567717E0088B16E /* ViewController.m in Sources */,
 				96A0C8A6256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.m in Sources */,
 				9653B6E32567C1EA0088B16E /* MASViewConstraint.m in Sources */,
+				96BF5685257610D400B50BAC /* ZSKJCommentViewController.m in Sources */,
 				9632FA87256F8F6300A1D181 /* ZSKJAudioTool.m in Sources */,
 				9653B71A2567C1EA0088B16E /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				9653B7132567C1EA0088B16E /* MJRefreshBackFooter.m in Sources */,
@@ -1691,6 +1722,7 @@
 				96A1A889256E030700876755 /* UIImageView+Category.m in Sources */,
 				9653B7162567C1EA0088B16E /* IQTextView.m in Sources */,
 				9653B6D52567C1EA0088B16E /* MJPropertyKey.m in Sources */,
+				96BF56812575F4F800B50BAC /* NSString+Category.m in Sources */,
 				966FB18A25708BA900DDFFF9 /* ZSKJHomeHeaderOptionControl.m in Sources */,
 				966FB18925708BA900DDFFF9 /* ZSKJHomeFormalCollectionView.m in Sources */,
 				9653B6E72567C1EA0088B16E /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1790,6 +1822,7 @@
 				9653B6F82567C1EA0088B16E /* UIImageView+YYWebImage.m in Sources */,
 				96A0C890256B8EFF00DA0AA5 /* ZSKJSetPwdViewController.m in Sources */,
 				9653B70A2567C1EA0088B16E /* MJRefreshBackNormalFooter.m in Sources */,
+				96BF56E62577625000B50BAC /* ZSKJAudioBubbleBoardControl.m in Sources */,
 				9653B7022567C1EA0088B16E /* UIScrollView+MJRefresh.m in Sources */,
 				9653B6BB2567C1EA0088B16E /* SDWebImageCoderHelper.m in Sources */,
 				96A0C895256B9B8E00DA0AA5 /* ZSKJDefaultAlertView.m in Sources */,
@@ -1797,6 +1830,7 @@
 				9653B6F92567C1EA0088B16E /* MKAnnotationView+YYWebImage.m in Sources */,
 				96A1A860256DF3A800876755 /* ZSKJMineResumeViewController.m in Sources */,
 				9653B5822567B74A0088B16E /* AppDelegate.m in Sources */,
+				96BF568F257624D400B50BAC /* ZSKJAudioBtnControl.m in Sources */,
 				96A1A891256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.m in Sources */,
 				9653B6E22567C1EA0088B16E /* MASConstraint.m in Sources */,
 				9653B6DF2567C1EA0088B16E /* MASLayoutConstraint.m in Sources */,
@@ -1809,6 +1843,7 @@
 				9653B7182567C1EA0088B16E /* IQTitleBarButtonItem.m in Sources */,
 				9653B6D62567C1EA0088B16E /* MJFoundation.m in Sources */,
 				96A0C888256B88AD00DA0AA5 /* ZSKJSettViewController.m in Sources */,
+				96BF56E125772C4000B50BAC /* ZSKJAudioStatusBoardControl.m in Sources */,
 				9653B7212567C1EA0088B16E /* IQUIView+Hierarchy.m in Sources */,
 				9653B6F22567C1EA0088B16E /* AFNetworkReachabilityManager.m in Sources */,
 				9653B7262567C1EA0088B16E /* SDCollectionViewCell.m in Sources */,
@@ -1825,6 +1860,7 @@
 				9653B6C72567C1EA0088B16E /* SDWebImageGIFCoder.m in Sources */,
 				9653B6E42567C1EA0088B16E /* MASViewAttribute.m in Sources */,
 				96A1A866256DF52900876755 /* SSKJ_TableViewCell.m in Sources */,
+				96BF56732575E7CE00B50BAC /* ZSKJAFHTTPManager.m in Sources */,
 				9653B6ED2567C1EA0088B16E /* AFImageDownloader.m in Sources */,
 				96A1AA20256F3C2C00876755 /* ZSKJDeviceBoardControl.m in Sources */,
 				9653B55A2567B0430088B16E /* ZSKJBaseViewController.m in Sources */,
@@ -1996,6 +2032,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Benjamin Hammock (JY7J43NMBT)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2VZPDQKTU8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2012,7 +2049,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZSKJ.PainterTeacher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -2021,6 +2059,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Benjamin Hammock (JY7J43NMBT)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2VZPDQKTU8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2037,7 +2076,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZSKJ.PainterTeacher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

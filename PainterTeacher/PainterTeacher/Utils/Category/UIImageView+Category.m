@@ -27,7 +27,11 @@
 /// @param name 图片名称
 -(void)setImageName:(NSString*)name
 {
-    [self setImage:[UIImage imageNamed:name]];
+    UIImage *image = [UIImage imageNamed:name];
+    if (image)
+    {
+        [self setImage:image];
+    }
 }
 
 -(void)setAnimationImagesArray:(NSArray*)images
@@ -35,7 +39,7 @@
     [self setAnimationImages:images];
     [self setContentMode:UIViewContentModeScaleAspectFit];
     //切换动作的时间0.3秒，来控制图像显示的速度有多快
-    [self setAnimationDuration:1];
+    [self setAnimationDuration:1.0];
     //动画的重复次数，想让它无限循环就赋成0
     [self setAnimationRepeatCount:0];
 }

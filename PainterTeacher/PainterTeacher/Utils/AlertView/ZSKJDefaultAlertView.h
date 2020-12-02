@@ -12,8 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZSKJDefaultAlertView : UIControl
 
 
+//@"tipSucceed"
++(void)showWithTitle:(NSString*)title witIcon:(NSString*)icon submitBlock:(void(^)(BOOL action))submitBlcok;
 
-+(void)showWithTitle:(NSString*)title witIcon:(NSString*)icon submitBlock:(void(^)(NSString *code))submitBlcok;
+//@"tipSucceed"
++(void)showWithTitle:(NSString*)title witIcon:(NSString*)icon actionBlock:(void(^)(BOOL action))actionBlock;
 
 
 -(void)hide;

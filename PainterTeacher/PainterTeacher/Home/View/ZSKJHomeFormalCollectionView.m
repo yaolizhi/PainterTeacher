@@ -6,14 +6,15 @@
 //
 
 #import "ZSKJHomeFormalCollectionView.h"
-#import "ZSKJHomeCollectionViewCell.h"
-#import "ZSKJHomeHeaderView.h"
+
 
 
 
 
 
 @interface ZSKJHomeFormalCollectionView() <UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+
+@property (nonatomic,weak) id <ZSKJHomeFormalCollectionViewDeletage> itemDeletage;
 
 
 
@@ -23,13 +24,15 @@
 
 @implementation ZSKJHomeFormalCollectionView
 
-- (instancetype)initWithFrame:(CGRect)frame withType:(FlowLayoutType)type
+- (instancetype)initWithFrame:(CGRect)frame withType:(FlowLayoutType)type withDeletage:(id<ZSKJHomeFormalCollectionViewDeletage>)deletage
 {
     self = [super initWithFrame:frame withType:type];
     if (self)
     {
-        self.delegate = self;
-        self.dataSource = self;
+        [self setItemDeletage:deletage];
+        [self setDelegate:self];
+        [self setDataSource:self];
+        
         [self registerClass:[ZSKJHomeHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ZSKJHomeHeaderView"];
         [self registerClass:[ZSKJHomeCollectionViewCell class] forCellWithReuseIdentifier:@"ZSKJHomeCollectionViewCell"];
         
@@ -71,8 +74,10 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    
+    if ([self.itemDeletage respondsToSelector:@selector(didFormalItem:)])
+    {
+        [self.itemDeletage didFormalItem:[self.itemArry objectAtIndex:indexPath.row]];
+    }
 }
 
 

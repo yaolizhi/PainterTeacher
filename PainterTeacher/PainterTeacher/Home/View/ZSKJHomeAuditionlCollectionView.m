@@ -6,8 +6,7 @@
 //
 
 #import "ZSKJHomeAuditionlCollectionView.h"
-#import "ZSKJHomeCollectionViewCell.h"
-#import "ZSKJHomeHeaderView.h"
+
 
 
 
@@ -15,6 +14,7 @@
 
 @interface ZSKJHomeAuditionlCollectionView() <UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
+@property (nonatomic,weak) id <ZSKJHomeAuditionlCollectionViewDeletage> itemDeletage;
 
 
 @end
@@ -22,13 +22,14 @@
 
 @implementation ZSKJHomeAuditionlCollectionView
 
-- (instancetype)initWithFrame:(CGRect)frame withType:(FlowLayoutType)type
+- (instancetype)initWithFrame:(CGRect)frame withType:(FlowLayoutType)type withDeletage:(nonnull id<ZSKJHomeAuditionlCollectionViewDeletage>)deletage
 {
     self = [super initWithFrame:frame withType:type];
     if (self)
     {
-        self.delegate = self;
-        self.dataSource = self;
+        [self setItemDeletage:deletage];
+        [self setDelegate:self];
+        [self setDataSource:self];
         [self registerClass:[ZSKJHomeHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ZSKJHomeHeaderView"];
         [self registerClass:[ZSKJHomeCollectionViewCell class] forCellWithReuseIdentifier:@"ZSKJHomeCollectionViewCell"];
         
@@ -69,8 +70,10 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    
+    if ([self.itemDeletage respondsToSelector:@selector(didAuditionlItem:)])
+    {
+        [self.itemDeletage didAuditionlItem:[self.itemArry objectAtIndex:indexPath.row]];
+    }
 }
 
 

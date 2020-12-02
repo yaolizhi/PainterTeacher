@@ -195,7 +195,10 @@
         
         
 //        self.fmodel = [[FMWModel alloc]initWithFMVideoViewType:TypeDefine superView:self.preview];
-//        
+//
+        
+        
+        [self.audioRecorder setName:@"audio"];
         
         
         
@@ -440,7 +443,7 @@
             [self.iconView setAnimationImagesArray:@[imageName(@"play"),imageName(@"play1"),imageName(@"play2"),imageName(@"play3")]];
             [self.iconView startAnimating];
             
-            [ZSKJAudioTool playMusicWithMusicName:@"audio.caf"];
+            [ZSKJAudioTool playMusicWithMusicName:@"audio"];
         }
             break;
 #pragma mark case 5
@@ -622,7 +625,7 @@
     if (!_leftBtn)
     {
         _leftBtn = [[UIButton alloc]init];
-        [_leftBtn setBackgroundColor:KSubTextColor];
+        [_leftBtn setBackgroundColor:KLineColor];
         [_leftBtn addTarget:self action:@selector(leftBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _leftBtn;
@@ -659,7 +662,7 @@
 {
     if (!_audioRecorder)
     {
-        _audioRecorder = [[ZSKJAudioTool alloc]initWithName:@"audio"];
+        _audioRecorder = [[ZSKJAudioTool alloc]init];
     }
     return _audioRecorder;
 }

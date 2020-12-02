@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>NSCameraUsageDescription</key>
-	<string>相机权限</string>
+	<string>允许小画家使用相机，否则不能直播学习</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>使用麦克风</string>
+	<string>允许小画家使用麦克风，否则不能语音点评！</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>访问相册权限</string>
+	<string>允许小画家访问相册，否则不能上传教学素材</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

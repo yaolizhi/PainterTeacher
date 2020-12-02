@@ -154,7 +154,7 @@
     if (!_itemArray)
     {
         _itemArray = [NSMutableArray array];
-        for (int i = 0; i < 0; i++)
+        for (int i = 0; i < 2; i++)
         {
             ZSKJNoticeModel *model = [[ZSKJNoticeModel alloc]init];
             [model setType:UnreadNoticeType];
@@ -164,9 +164,7 @@
             [_itemArray addObject:model];
         }
         
-        
-        
-        for (int i = 0; i < 0; i++)
+        for (int i = 0; i < 3; i++)
         {
             ZSKJNoticeModel *model = [[ZSKJNoticeModel alloc]init];
             [model setType:UnreadNoticeType];
