@@ -55,6 +55,7 @@
         _imageView = [[UIImageView alloc]init];
         [_imageView setContentMode:UIViewContentModeScaleAspectFill];
         [_imageView setBackgroundColor:KLineColor];
+        [_imageView setCornerRadius:CornerRadius_8];
     }
     return _imageView;
 }
