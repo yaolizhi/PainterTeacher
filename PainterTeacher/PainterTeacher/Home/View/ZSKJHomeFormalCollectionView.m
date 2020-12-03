@@ -58,6 +58,7 @@
 
 
 
+#pragma mark - Deletage Method
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return [self.itemArry count];
@@ -101,6 +102,8 @@
 {
     return 15;
 }
+
+
 
 
 

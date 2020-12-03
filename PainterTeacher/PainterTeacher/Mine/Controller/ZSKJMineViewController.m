@@ -70,6 +70,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated bottomBar:NO];
+    [self getUsserInfo];
 }
 
 -(void)addSubVies:(BOOL)views
@@ -203,7 +204,7 @@
 
 
 
-
+#pragma mark - Private Method
 -(void)itemAction:(UIControl*)sender
 {
     switch (sender.tag)
@@ -229,12 +230,6 @@
 #pragma mark case 4 个人信息
         case 4:
         {
-            
-            
-            
-            
-            
-
             ZSKJMineinformationViewController *information = [[ZSKJMineinformationViewController alloc]init];
             [self pushViewController:information animated:YES];
             
@@ -287,6 +282,43 @@
         default:
             break;
     }
+}
+
+
+
+
+
+#pragma mark - NetWork Method 网络请求
+-(void)getUsserInfo
+{
+    
+    NSDictionary *parameters = @{@"token":[ZSKJUserinfoModel shareUserinfo].token};
+    [[ZSKJAFHTTPManager shareManager] postUrl:UserInfoByToken_URL parameters:parameters success:^(id  _Nonnull responseObject)
+    {
+        ZSKJNetworkModel *netWorkModel = [ZSKJNetworkModel mj_objectWithKeyValues:responseObject];
+        if (netWorkModel.code.integerValue == 1)
+        {
+            [[ZSKJUserinfoModel shareUserinfo] setItemObject:netWorkModel.data];
+            
+            [self setModel:[ZSKJUserinfoModel shareUserinfo]];
+        }
+        
+    } failure:^(NSError * _Nonnull error) {}];
+}
+
+
+
+
+
+
+#pragma mark 设置用户信息
+/// 设置数据
+/// @param model 数据
+-(void)setModel:(ZSKJUserinfoModel *)model
+{
+    [self.headerView sd_setImageWithURL:[NSURL URLWithString:model.headimgurl] placeholderImage:imageName(@"mineHeader")];
+    [self.nameLabel setText:model.name];
+    [self.uidLabel setText:[NSString stringWithFormat:@"ID: %@",model.uid]];
 }
 
 

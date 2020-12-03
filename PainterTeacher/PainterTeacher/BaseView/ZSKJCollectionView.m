@@ -29,6 +29,38 @@
     self = [super initWithFrame:frame collectionViewLayout:layouts];
     if (self)
     {
+        [self setShowsHorizontalScrollIndicator:NO];
+        [self setShowsVerticalScrollIndicator:NO];
+        [self setBackgroundColor:KLineColor];
+    }
+    return self;
+}
+
+
+
+
+- (instancetype)initWithType:(FlowLayoutType)type
+{
+    UICollectionViewFlowLayout *layouts = [[UICollectionViewFlowLayout alloc] init];
+    
+    switch (type)
+    {
+        case VerticalType:
+        {
+            [layouts setScrollDirection:UICollectionViewScrollDirectionVertical];
+        }
+            break;
+        case HorizontalType:
+        {
+            [layouts setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+        }
+            break;
+    }
+    self = [super initWithFrame:CGRectZero collectionViewLayout:layouts];
+    if (self)
+    {
+        [self setShowsHorizontalScrollIndicator:NO];
+        [self setShowsVerticalScrollIndicator:NO];
         [self setBackgroundColor:KLineColor];
     }
     return self;
@@ -96,3 +128,63 @@
 
 
 @end
+
+
+
+/**
+ 
+ 
+ #pragma mark - Deletage Method
+ - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+ {
+     return 1;
+ }
+
+
+
+
+ - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+ {
+     return 100;
+ }
+
+
+
+ - (ZSKJMineResumeCollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+ {
+     ZSKJMineResumeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ZSKJMineResumeCollectionViewCell" forIndexPath:indexPath];
+     
+     return cell;
+ }
+
+ - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+ {
+     
+     
+ }
+
+
+ #pragma mark UICollectionViewDelegateFlowLayout
+ - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+ {
+     return CGSizeMake((ScreenWidth-120)/3.0, 150);
+ }
+
+ - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+ {
+     return UIEdgeInsetsMake(0, 15.0, 15.0, 15.0);
+ }
+
+ - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
+ {
+     return 7.5;
+ }
+
+ - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+ {
+     return 7.5;
+ }
+
+ 
+ 
+ */

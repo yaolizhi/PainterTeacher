@@ -23,6 +23,85 @@ static ZSKJUserinfoModel *shareUserinfo = nil;
 }
 
 
+-(void)setToken:(NSString *)token
+{
+    _token = token;
+    [NSUserDefaults setToken:token];
+}
+
+- (BOOL)isLogin
+{
+    [self setToken:[NSUserDefaults tokenForKey:@"token"]];
+    if ([self.token isEqualToString:@"token"])
+    {
+        [self setIsLogin:NO];
+        return NO;
+    }
+    else
+    {
+        [self setIsLogin:YES];
+        return YES;
+    }
+    
+}
+
+
+
+
+
+
+/// 设置数据源对象
+/// @param object 数据源对象
+-(void)setItemObject:(NSDictionary*)object
+{
+    [self setName:[object objectForKey:@"name"]];
+    [self setAge:[object objectForKey:@"age"]];
+    [self setAddress:[object objectForKey:@"address"]];
+    [self setMobile:[object objectForKey:@"mobile"]];
+    [self setSchool:[object objectForKey:@"school"]];
+    [self setHeadimgurl:[object objectForKey:@"headimgurl"]];
+    [self setSex:[[object objectForKey:@"sex"] integerValue]];
+    [self setUid:[object objectForKey:@"id"]];
+    
+    [self.imgs setArray:[object objectForKey:@"imgs"]];
+    [self.nature setArray:[object objectForKey:@"nature"]];
+    [self.hobby setArray:[object objectForKey:@"hobby"]];
+    
+}
+
+
+-(NSMutableArray *)imgs
+{
+    if (!_imgs)
+    {
+        _imgs = [NSMutableArray array];
+    }
+    return _imgs;
+}
+
+
+-(NSMutableArray *)nature
+{
+    if (!_nature)
+    {
+        _nature = [NSMutableArray array];
+    }
+    return _nature;
+}
+
+-(NSMutableArray *)hobby
+{
+    if (!_hobby)
+    {
+        _hobby = [NSMutableArray array];
+    }
+    return _hobby;
+}
+
+
+
+
+
 
 
 @end

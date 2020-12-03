@@ -37,14 +37,24 @@
 }
 
 
+
+#pragma mark
+/// 设置url
+/// @param url 图像Url
+-(void)setUrl:(NSString*)url
+{
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@",ProductBaseServer,url]] placeholderImage:imageName(@"")];
+    
+}
+
 #pragma mark - Getter / Setter
 -(UIImageView *)imageView
 {
     if (!_imageView)
     {
         _imageView = [[UIImageView alloc]init];
-        [_imageView setContentMode:UIViewContentModeScaleAspectFit];
-        [_imageView setImageName:@"placeholder"];
+        [_imageView setContentMode:UIViewContentModeScaleAspectFill];
+        [_imageView setBackgroundColor:KLineColor];
     }
     return _imageView;
 }

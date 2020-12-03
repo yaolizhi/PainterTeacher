@@ -6,6 +6,9 @@
 //
 
 #import "ZSKJBaseViewController.h"
+#import "ZSKJTabBarController.h"
+#import "ZSKJLoginViewController.h"
+
 
 @interface ZSKJBaseViewController ()
 
@@ -183,6 +186,21 @@
 }
 
 
+
+//设置根目录
+-(void)setLoginRoot:(BOOL)root
+{
+    if (root)
+    {
+        ZSKJTabBarController *tabBarVC = [[ZSKJTabBarController alloc]init];
+        [AppWindow setRootViewController:tabBarVC];
+    }
+    else
+    {
+        ZSKJLoginViewController *login = [[ZSKJLoginViewController alloc]init];
+        [AppWindow setRootViewController:login];
+    }
+}
 
 
 @end

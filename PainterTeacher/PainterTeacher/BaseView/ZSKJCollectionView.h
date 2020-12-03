@@ -25,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithFrame:(CGRect)frame withType:(FlowLayoutType)type;
 
+- (instancetype)initWithType:(FlowLayoutType)type;
+
+
 
 
 

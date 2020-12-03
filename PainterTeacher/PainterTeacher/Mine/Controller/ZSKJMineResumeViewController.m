@@ -8,6 +8,7 @@
 #import "ZSKJMineResumeViewController.h"
 #import "ZSKJMineResumeCollectionView.h"
 #import "SSKJ_ScrollView.h"
+#import "ZSKJNatureCollectionView.h"
 
 
 @interface ZSKJMineResumeViewController ()
@@ -20,12 +21,26 @@
 @property (nonatomic, strong) ZSKJMineResumeCollectionView *resumeCollectionView;
 @property (nonatomic, strong) UIImageView *bgView;
 @property (nonatomic, strong) UIView *topBaordView;
+@property (nonatomic, strong) UILabel *tipSchoolLabel; //!< 毕业院校
+@property (nonatomic, strong) UILabel *schoolLabel; //!< 毕业院校
+@property (nonatomic, strong) UILabel *tipNatureLabel; //!< 性格
+@property (nonatomic, strong) UILabel *tipHobbyLabel; //!< 特点
+
+@property (nonatomic, strong) ZSKJNatureCollectionView *natureCollectionView;
+@property (nonatomic, strong) ZSKJNatureCollectionView *hobbyCollectionView;
+
+
+
+
+
 @property (nonatomic, strong) UIImageView *topDecorateView;
 @property (nonatomic, strong) UILabel *topLabel;
 @property (nonatomic, strong) UIView *bottomBaordView;
 @property (nonatomic, strong) UIImageView *bottomDecorateView;
-@property (nonatomic, strong) UILabel *bottomLabel;
 
+
+
+@property (nonatomic, strong) UILabel *bottomLabel;
 @property (nonatomic, strong) UIButton *moreBtn; //!< 更多
 
 
@@ -52,6 +67,22 @@
     [super viewDidLoad];
     [self setTitle:@"我的简历"];
     [self.view setBackgroundColor:KMainColor];
+    
+    
+    
+    
+    
+    #pragma mark 设置用户信息
+    [self.headerView sd_setImageWithURL:[NSURL URLWithString:[ZSKJUserinfoModel shareUserinfo].headimgurl] placeholderImage:imageName(@"")];
+    [self.titleLabel setText:[NSString stringWithFormat:@"%@ | %@岁",[ZSKJUserinfoModel shareUserinfo].name,[ZSKJUserinfoModel shareUserinfo].age]];
+    [self.schoolLabel setText:[ZSKJUserinfoModel shareUserinfo].school];
+    [self.natureCollectionView setItemObjectArry:[ZSKJUserinfoModel shareUserinfo].nature];
+    [self.hobbyCollectionView setItemObjectArry:[ZSKJUserinfoModel shareUserinfo].hobby];
+    [self.resumeCollectionView setItemObjectArry:[ZSKJUserinfoModel shareUserinfo].imgs];
+    
+    
+    
+    
 }
 
 
@@ -66,9 +97,12 @@
         [self.scrollView addSubview:self.topBaordView];
         [self.scrollView addSubview:self.topDecorateView];
         [self.topDecorateView addSubview:self.topLabel];
-        
-        
-        
+        [self.topBaordView addSubview:self.tipSchoolLabel];
+        [self.topBaordView addSubview:self.schoolLabel];
+        [self.topBaordView addSubview:self.tipNatureLabel];
+        [self.topBaordView addSubview:self.tipHobbyLabel];
+        [self.topBaordView addSubview:self.natureCollectionView];
+        [self.topBaordView addSubview:self.hobbyCollectionView];
         
         
         
@@ -78,6 +112,9 @@
         [self.bottomBaordView addSubview:self.resumeCollectionView];
         [self.bottomBaordView addSubview:self.moreBtn];
         
+        
+        
+        #pragma mark 基本信息
         [self.bgView mas_makeConstraints:^(MASConstraintMaker *make) {
            
             make.top.equalTo(self.scrollView.mas_top);
@@ -89,7 +126,7 @@
         [self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
            
             make.top.equalTo(self.bgView.mas_top).offset(40);
-            make.height.width.equalTo(@(60));
+            make.height.width.equalTo(@(80));
             make.centerX.equalTo(self.bgView);
         }];
         
@@ -114,6 +151,64 @@
         }];
         
 
+        
+        [self.tipSchoolLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+
+            make.bottom.equalTo(self.tipNatureLabel.mas_top).offset(-40);
+            make.left.width.equalTo(self.tipNatureLabel);
+        }];
+        
+        
+        [self.schoolLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+
+            make.left.equalTo(self.tipSchoolLabel.mas_right).offset(10);
+            make.centerY.equalTo(self.tipSchoolLabel);
+                    
+        }];
+        
+        
+        [self.tipNatureLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+
+            make.centerY.equalTo(self.topBaordView.mas_centerY);
+            make.left.equalTo(self.topBaordView.mas_left).offset(50);
+            make.width.equalTo(@(150));
+        }];
+        
+        
+        [self.natureCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+           
+            make.left.equalTo(self.tipNatureLabel.mas_right);
+            make.centerY.equalTo(self.tipNatureLabel.mas_centerY);
+            make.right.equalTo(self.topBaordView.mas_right);
+            make.height.equalTo(@(50));
+        }];
+        
+        
+        [self.tipHobbyLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+
+            make.top.equalTo(self.tipNatureLabel.mas_bottom).offset(40);
+            make.left.width.equalTo(self.tipNatureLabel);
+        }];
+        
+        [self.hobbyCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+           
+            make.left.equalTo(self.tipHobbyLabel.mas_right);
+            make.centerY.equalTo(self.tipHobbyLabel.mas_centerY);
+            make.right.equalTo(self.topBaordView.mas_right);
+            make.height.equalTo(self.natureCollectionView);
+            
+        }];
+        
+        
+        
+        
+        
+        
+        
+        
+        #pragma mark  个人作品
+        
+        
         [self.bottomDecorateView mas_makeConstraints:^(MASConstraintMaker *make) {
 
             make.centerY.equalTo(self.bottomBaordView.mas_top);
@@ -174,9 +269,8 @@
     if (!_bgView)
     {
         _bgView = [[UIImageView alloc]init];
-//        [_bgView setImageName:@"mineResume"];
+        [_bgView setImageName:@"mineResume"];
         [_bgView setContentMode:UIViewContentModeScaleAspectFit];
-        [_bgView setBackgroundColor:[UIColor redColor]];
     }
     return _bgView;
 }
@@ -285,7 +379,8 @@
     if (!_headerView)
     {
         _headerView = [[UIImageView alloc]init];
-        [_headerView setBackgroundColor:[UIColor blueColor]];
+        [_headerView setCornerRadius:40];
+        [_headerView setBackgroundColor:KLineColor];
     }
     return _headerView;
 }
@@ -298,10 +393,88 @@
         _titleLabel = [[UILabel alloc]init];
         [_titleLabel setFont:[UIFont systemFontOfSize:15]];
         [_titleLabel setTextColor:KWhiteColor];
-        [_titleLabel setText:@"李嘉 | 28岁"];
     }
     return _titleLabel;
 }
+
+
+-(UILabel *)tipSchoolLabel
+{
+    if (!_tipSchoolLabel)
+    {
+        _tipSchoolLabel = [[UILabel alloc]init];
+        [_tipSchoolLabel setFont:[UIFont systemFontOfSize:18]];
+        [_tipSchoolLabel setTextAlignment:NSTextAlignmentRight];
+        [_tipSchoolLabel setTextColor:KTextColor];
+        [_tipSchoolLabel setText:@"毕业院校："];
+    }
+    return _tipSchoolLabel;
+}
+
+
+-(UILabel *)schoolLabel
+{
+    if (!_schoolLabel)
+    {
+        _schoolLabel = [[UILabel alloc]init];
+        [_schoolLabel setFont:[UIFont systemFontOfSize:18]];
+        [_schoolLabel setTextColor:KTextColor];
+    }
+    return _schoolLabel;
+}
+
+
+-(UILabel *)tipNatureLabel
+{
+    if (!_tipNatureLabel)
+    {
+        _tipNatureLabel = [[UILabel alloc]init];
+        [_tipNatureLabel setFont:[UIFont systemFontOfSize:18]];
+        [_tipNatureLabel setTextAlignment:NSTextAlignmentRight];
+        [_tipNatureLabel setTextColor:KTextColor];
+        [_tipNatureLabel setText:@"性格特点："];
+    }
+    return _tipNatureLabel;
+}
+
+
+-(UILabel *)tipHobbyLabel
+{
+    if (!_tipHobbyLabel)
+    {
+        _tipHobbyLabel = [[UILabel alloc]init];
+        [_tipHobbyLabel setFont:[UIFont systemFontOfSize:18]];
+        [_tipHobbyLabel setTextAlignment:NSTextAlignmentRight];
+        [_tipHobbyLabel setTextColor:KTextColor];
+        [_tipHobbyLabel setText:@"爱好："];
+    }
+    return _tipHobbyLabel;
+}
+
+
+-(ZSKJNatureCollectionView *)natureCollectionView
+{
+    if (!_natureCollectionView)
+    {
+        _natureCollectionView = [[ZSKJNatureCollectionView alloc]initWithType:2];
+    }
+    return _natureCollectionView;
+}
+
+
+-(ZSKJNatureCollectionView *)hobbyCollectionView
+{
+    if (!_hobbyCollectionView)
+    {
+        _hobbyCollectionView = [[ZSKJNatureCollectionView alloc]initWithType:2];
+
+    }
+    return _hobbyCollectionView;
+}
+
+
+
+
 
 
 

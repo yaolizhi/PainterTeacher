@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZSKJMineResumeCollectionView : ZSKJCollectionView <UICollectionViewDelegate,UICollectionViewDataSource>
 
 
+
+-(void)setItemObjectArry:(NSArray *)itemArry;
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

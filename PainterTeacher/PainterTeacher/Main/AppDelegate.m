@@ -7,12 +7,10 @@
 
 #import "AppDelegate.h"
 #import "ZSKJTabBarController.h"
+#import "ZSKJLoginViewController.h"
+
 
 @interface AppDelegate ()
-
-
-
-
 
 @end
 
@@ -24,11 +22,32 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    ZSKJTabBarController *launchVc = [[ZSKJTabBarController alloc]init];
-    self.window.rootViewController = launchVc;
+    [self isLogin:YES];
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+
+
+-(void)isLogin:(BOOL)login
+{
+    if ([ZSKJUserinfoModel shareUserinfo].isLogin)
+    {
+        ZSKJTabBarController *tabBarVC = [[ZSKJTabBarController alloc]init];
+        [self.window setRootViewController:tabBarVC];
+    }
+    else
+    {
+        ZSKJLoginViewController *loginVC = [[ZSKJLoginViewController alloc]init];
+        [self.window setRootViewController:loginVC];
+    }
+}
+
+
+
+
+
+
 
 
 @end

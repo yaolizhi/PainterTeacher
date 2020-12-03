@@ -85,14 +85,44 @@
 #pragma mark 登录
 -(void)submitBtnAction:(UIButton*)sender
 {
-    [ZSKJDefaultAlertView showWithTitle:@"密码修改成功！" witIcon:@"tipSucceed" submitBlock:^(BOOL action) {
-        
-       
-        
-        
-        
-    }];
     
+    NSString *originalPwd = self.originalPwdControl.text;
+    NSString *newPwd = self.newPwdControl.text;
+    NSString *confirmPwd = self.confirmPwdControl.text;
+    
+    if ([originalPwd isEqualToString:@""])
+    {
+        [MBHUD showError:@"原密码的不能为空"];
+    }
+    else if ([newPwd isEqualToString:@""])
+    {
+        [MBHUD showError:@"新密码的不能为空"];
+    }
+    else if ([confirmPwd isEqualToString:@""])
+    {
+        [MBHUD showError:@"确认新密码的不能为空"];
+    }
+    else if (![newPwd isEqualToString:confirmPwd])
+    {
+        [MBHUD showError:@"两次密码不一致"];
+    }
+    else
+    {
+        NSDictionary *parameters = @{@"token":[ZSKJUserinfoModel shareUserinfo].token,@"oldpassword":originalPwd,@"password":newPwd,@"repassword":confirmPwd};
+        [[ZSKJAFHTTPManager shareManager] postUrl:SetPasswod_URL parameters:parameters success:^(id  _Nonnull responseObject)
+                
+        {
+            ZSKJNetworkModel *netWorkModel = [ZSKJNetworkModel mj_objectWithKeyValues:responseObject];
+            if (netWorkModel.code.integerValue == 1)
+            {
+                [ZSKJDefaultAlertView showWithTitle:@"密码修改成功！" witIcon:@"tipSucceed" submitBlock:^(BOOL action)
+                {
+                    [self setLoginRoot:NO];
+                }];
+            }
+                    
+        } failure:^(NSError * _Nonnull error){}];
+    }
 }
 
 

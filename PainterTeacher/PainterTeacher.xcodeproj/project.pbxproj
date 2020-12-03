@@ -151,6 +151,14 @@
 		9653B7292567C1EA0088B16E /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653B6AE2567C1EA0088B16E /* TAAnimatedDotView.m */; };
 		9653B72A2567C1EA0088B16E /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653B6AF2567C1EA0088B16E /* TAAbstractDotView.m */; };
 		9653B72F2567C2960088B16E /* ZSKJTextFieldControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653B72E2567C2960088B16E /* ZSKJTextFieldControl.m */; };
+		9665B23825787EB1003EF07C /* ZSKJNetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9665B23725787EB1003EF07C /* ZSKJNetworkModel.m */; };
+		9665B28A25788AB6003EF07C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9665B28925788AB6003EF07C /* MBProgressHUD.m */; };
+		9665B28E25789010003EF07C /* MBHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9665B28D25789010003EF07C /* MBHUD.m */; };
+		9665B29225789055003EF07C /* MBProgressHUD+FR.m in Sources */ = {isa = PBXBuildFile; fileRef = 9665B29125789055003EF07C /* MBProgressHUD+FR.m */; };
+		9665B29525789532003EF07C /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9665B29425789532003EF07C /* loading.gif */; };
+		9665B29D2578CE3D003EF07C /* NSUserDefaults+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 9665B29C2578CE3D003EF07C /* NSUserDefaults+Category.m */; };
+		9665B2A12578D578003EF07C /* ZSKJNatureCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9665B2A02578D578003EF07C /* ZSKJNatureCollectionView.m */; };
+		9665B2A52578D604003EF07C /* ZSKJNatureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9665B2A42578D604003EF07C /* ZSKJNatureCollectionViewCell.m */; };
 		966FB18225708BA900DDFFF9 /* ZSKJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB16425708BA900DDFFF9 /* ZSKJLoginViewController.m */; };
 		966FB18325708BA900DDFFF9 /* ZSKJHomeBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB16825708BA900DDFFF9 /* ZSKJHomeBrowseViewController.m */; };
 		966FB18425708BA900DDFFF9 /* ZSKJHomeExaminationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966FB16925708BA900DDFFF9 /* ZSKJHomeExaminationViewController.m */; };
@@ -519,6 +527,22 @@
 		9653B72D2567C2960088B16E /* ZSKJTextFieldControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJTextFieldControl.h; sourceTree = "<group>"; };
 		9653B72E2567C2960088B16E /* ZSKJTextFieldControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJTextFieldControl.m; sourceTree = "<group>"; };
 		9653B7372567C4B30088B16E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9665B2272578747E003EF07C /* ZSKJURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJURL.h; sourceTree = "<group>"; };
+		9665B23625787EB1003EF07C /* ZSKJNetworkModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJNetworkModel.h; sourceTree = "<group>"; };
+		9665B23725787EB1003EF07C /* ZSKJNetworkModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJNetworkModel.m; sourceTree = "<group>"; };
+		9665B28825788AB5003EF07C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9665B28925788AB6003EF07C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9665B28C25789010003EF07C /* MBHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBHUD.h; sourceTree = "<group>"; };
+		9665B28D25789010003EF07C /* MBHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBHUD.m; sourceTree = "<group>"; };
+		9665B29025789055003EF07C /* MBProgressHUD+FR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+FR.h"; sourceTree = "<group>"; };
+		9665B29125789055003EF07C /* MBProgressHUD+FR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+FR.m"; sourceTree = "<group>"; };
+		9665B29425789532003EF07C /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		9665B29B2578CE3D003EF07C /* NSUserDefaults+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Category.h"; sourceTree = "<group>"; };
+		9665B29C2578CE3D003EF07C /* NSUserDefaults+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Category.m"; sourceTree = "<group>"; };
+		9665B29F2578D578003EF07C /* ZSKJNatureCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJNatureCollectionView.h; sourceTree = "<group>"; };
+		9665B2A02578D578003EF07C /* ZSKJNatureCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJNatureCollectionView.m; sourceTree = "<group>"; };
+		9665B2A32578D604003EF07C /* ZSKJNatureCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJNatureCollectionViewCell.h; sourceTree = "<group>"; };
+		9665B2A42578D604003EF07C /* ZSKJNatureCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJNatureCollectionViewCell.m; sourceTree = "<group>"; };
 		966FB16425708BA900DDFFF9 /* ZSKJLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKJLoginViewController.m; sourceTree = "<group>"; };
 		966FB16525708BA900DDFFF9 /* ZSKJHomeExaminationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeExaminationViewController.h; sourceTree = "<group>"; };
 		966FB16625708BA900DDFFF9 /* ZSKJHomeBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeBrowseViewController.h; sourceTree = "<group>"; };
@@ -867,6 +891,10 @@
 				96A1A890256E0BCE00876755 /* ZSKJMineResumeCollectionViewCell.m */,
 				9632FAA2256FB57100A1D181 /* ZSKJNoticeTableViewCell.h */,
 				9632FAA3256FB57100A1D181 /* ZSKJNoticeTableViewCell.m */,
+				9665B29F2578D578003EF07C /* ZSKJNatureCollectionView.h */,
+				9665B2A02578D578003EF07C /* ZSKJNatureCollectionView.m */,
+				9665B2A32578D604003EF07C /* ZSKJNatureCollectionViewCell.h */,
+				9665B2A42578D604003EF07C /* ZSKJNatureCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -900,6 +928,7 @@
 				9653B5802567B74A0088B16E /* AppDelegate.h */,
 				9653B5812567B74A0088B16E /* AppDelegate.m */,
 				9653B7372567C4B30088B16E /* PrefixHeader.pch */,
+				9665B2272578747E003EF07C /* ZSKJURL.h */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -907,6 +936,7 @@
 		9653B5912567C1CD0088B16E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9665B28725788AAB003EF07C /* MBProgressHUD */,
 				9633BC3F257490C8008666A1 /* Exhibition */,
 				9632FA95256F9C0700A1D181 /* Libmp3lame */,
 				9632FA82256F8F6300A1D181 /* AVAudio */,
@@ -1150,6 +1180,8 @@
 				9653B6212567C1E80088B16E /* AFHTTPSessionManager.m */,
 				96BF56712575E7CE00B50BAC /* ZSKJAFHTTPManager.h */,
 				96BF56722575E7CE00B50BAC /* ZSKJAFHTTPManager.m */,
+				9665B23625787EB1003EF07C /* ZSKJNetworkModel.h */,
+				9665B23725787EB1003EF07C /* ZSKJNetworkModel.m */,
 			);
 			path = AFNetworking;
 			sourceTree = "<group>";
@@ -1480,6 +1512,20 @@
 			path = BaseView;
 			sourceTree = "<group>";
 		};
+		9665B28725788AAB003EF07C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				9665B29425789532003EF07C /* loading.gif */,
+				9665B28C25789010003EF07C /* MBHUD.h */,
+				9665B28D25789010003EF07C /* MBHUD.m */,
+				9665B28825788AB5003EF07C /* MBProgressHUD.h */,
+				9665B28925788AB6003EF07C /* MBProgressHUD.m */,
+				9665B29025789055003EF07C /* MBProgressHUD+FR.h */,
+				9665B29125789055003EF07C /* MBProgressHUD+FR.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		966FB16225708BA900DDFFF9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -1570,6 +1616,8 @@
 				96A1A888256E030700876755 /* UIImageView+Category.m */,
 				96BF567F2575F4F800B50BAC /* NSString+Category.h */,
 				96BF56802575F4F800B50BAC /* NSString+Category.m */,
+				9665B29B2578CE3D003EF07C /* NSUserDefaults+Category.h */,
+				9665B29C2578CE3D003EF07C /* NSUserDefaults+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1677,6 +1725,7 @@
 				9653B7042567C1EA0088B16E /* MJRefresh.bundle in Resources */,
 				96A1A885256DFFF100876755 /* Main.storyboard in Resources */,
 				96A1A884256DFFF100876755 /* LaunchScreen.storyboard in Resources */,
+				9665B29525789532003EF07C /* loading.gif in Resources */,
 				9653B50F256771800088B16E /* Assets.xcassets in Resources */,
 				9653B71C2567C1EA0088B16E /* IQKeyboardManager.bundle in Resources */,
 			);
@@ -1743,6 +1792,7 @@
 				9653B6DB2567C1EA0088B16E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				9653B70D2567C1EA0088B16E /* MJRefreshAutoNormalFooter.m in Sources */,
 				966FB18D25708BA900DDFFF9 /* ZSKJHomeCollectionViewCell.m in Sources */,
+				9665B28E25789010003EF07C /* MBHUD.m in Sources */,
 				9653B6B32567C1EA0088B16E /* SDWebImageManager.m in Sources */,
 				9653B6C02567C1EA0088B16E /* SDAnimatedImageRep.m in Sources */,
 				9653B6C42567C1EA0088B16E /* NSData+ImageContentType.m in Sources */,
@@ -1782,8 +1832,10 @@
 				9653B5072567717E0088B16E /* SceneDelegate.m in Sources */,
 				9653B6F72567C1EA0088B16E /* UIButton+YYWebImage.m in Sources */,
 				96A1A88D256E0BA100876755 /* ZSKJMineResumeCollectionView.m in Sources */,
+				9665B2A12578D578003EF07C /* ZSKJNatureCollectionView.m in Sources */,
 				9653B7172567C1EA0088B16E /* IQToolbar.m in Sources */,
 				9653B70E2567C1EA0088B16E /* MJRefreshNormalHeader.m in Sources */,
+				9665B2A52578D604003EF07C /* ZSKJNatureCollectionViewCell.m in Sources */,
 				9653B6C32567C1EA0088B16E /* SDWebImageTransition.m in Sources */,
 				9653B6DA2567C1EA0088B16E /* YYMemoryCache.m in Sources */,
 				9653B6F62567C1EA0088B16E /* _YYWebImageSetter.m in Sources */,
@@ -1806,6 +1858,7 @@
 				9653B6BA2567C1EA0088B16E /* UIImage+MultiFormat.m in Sources */,
 				9653B6F02567C1EA0088B16E /* AFURLSessionManager.m in Sources */,
 				9653B7112567C1EA0088B16E /* MJRefreshFooter.m in Sources */,
+				9665B23825787EB1003EF07C /* ZSKJNetworkModel.m in Sources */,
 				9653B7062567C1EA0088B16E /* NSBundle+MJRefresh.m in Sources */,
 				9653B6C22567C1EA0088B16E /* SDWebImageDownloaderOperation.m in Sources */,
 				9653B6FC2567C1EA0088B16E /* YYWebImageOperation.m in Sources */,
@@ -1828,6 +1881,7 @@
 				96A0C895256B9B8E00DA0AA5 /* ZSKJDefaultAlertView.m in Sources */,
 				96A0C861256B396500DA0AA5 /* UIImage+RoundedRectImage.m in Sources */,
 				9653B6F92567C1EA0088B16E /* MKAnnotationView+YYWebImage.m in Sources */,
+				9665B29D2578CE3D003EF07C /* NSUserDefaults+Category.m in Sources */,
 				96A1A860256DF3A800876755 /* ZSKJMineResumeViewController.m in Sources */,
 				9653B5822567B74A0088B16E /* AppDelegate.m in Sources */,
 				96BF568F257624D400B50BAC /* ZSKJAudioBtnControl.m in Sources */,
@@ -1841,6 +1895,7 @@
 				9653B7012567C1EA0088B16E /* YYAnimatedImageView.m in Sources */,
 				9653B70C2567C1EA0088B16E /* MJRefreshAutoGifFooter.m in Sources */,
 				9653B7182567C1EA0088B16E /* IQTitleBarButtonItem.m in Sources */,
+				9665B28A25788AB6003EF07C /* MBProgressHUD.m in Sources */,
 				9653B6D62567C1EA0088B16E /* MJFoundation.m in Sources */,
 				96A0C888256B88AD00DA0AA5 /* ZSKJSettViewController.m in Sources */,
 				96BF56E125772C4000B50BAC /* ZSKJAudioStatusBoardControl.m in Sources */,
@@ -1887,6 +1942,7 @@
 				966FB18C25708BA900DDFFF9 /* ZSKJHomeHeaderSoonView.m in Sources */,
 				9653B6B92567C1EA0088B16E /* UIImage+GIF.m in Sources */,
 				9633BC662574EB8A008666A1 /* ZSKJNoticeDetailsViewController.m in Sources */,
+				9665B29225789055003EF07C /* MBProgressHUD+FR.m in Sources */,
 				9653B6FD2567C1EA0088B16E /* YYSpriteSheetImage.m in Sources */,
 				96A0C85D256B396500DA0AA5 /* UIView+Layout.m in Sources */,
 				9653B6B62567C1EA0088B16E /* UIImage+ForceDecode.m in Sources */,

@@ -1,28 +1,31 @@
 //
-//  ZSKJMineResumeCollectionView.m
+//  ZSKJNatureCollectionView.m
 //  PainterTeacher
 //
-//  Created by 姚立志 on 2020/11/25.
+//  Created by 姚立志 on 2020/12/3.
 //
 
-#import "ZSKJMineResumeCollectionView.h"
-#import "ZSKJMineResumeCollectionViewCell.h"
+#import "ZSKJNatureCollectionView.h"
+#import "ZSKJNatureCollectionViewCell.h"
 
 
-@implementation ZSKJMineResumeCollectionView
+@implementation ZSKJNatureCollectionView
 
 
 
-- (instancetype)initWithFrame:(CGRect)frame withType:(FlowLayoutType)type
+- (instancetype)initWithType:(FlowLayoutType)type
 {
-    self = [super initWithFrame:frame withType:type];
+    self = [super initWithType:type];
     if (self)
     {
-        [self setBackgroundColor:KWhiteColor];
-        self.delegate = self;
-        self.dataSource = self;
         
-        [self registerClass:[ZSKJMineResumeCollectionViewCell class] forCellWithReuseIdentifier:@"ZSKJMineResumeCollectionViewCell"];
+        [self setBackgroundColor:KWhiteColor];
+        [self setDelegate:self];
+        [self setDataSource:self];
+        [self registerClass:[ZSKJNatureCollectionViewCell class] forCellWithReuseIdentifier:@"ZSKJNatureCollectionViewCell"];
+        
+        
+        
     }
     return self;
 }
@@ -33,6 +36,9 @@
     [self.itemArry setArray:itemArry];
     [self reloadData];
 }
+
+
+
 
 
 
@@ -53,10 +59,12 @@
 
 
 
-- (ZSKJMineResumeCollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+
+
+- (ZSKJNatureCollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    ZSKJMineResumeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ZSKJMineResumeCollectionViewCell" forIndexPath:indexPath];
-    [cell setUrl:[self.itemArry objectAtIndex:indexPath.row]];
+    ZSKJNatureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ZSKJNatureCollectionViewCell" forIndexPath:indexPath];
+    [cell setTitle:[self.itemArry objectAtIndex:indexPath.row]];
     return cell;
 }
 
@@ -70,37 +78,23 @@
 #pragma mark UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake((ScreenWidth-120)/3.0, 150);
+    return CGSizeMake(120, 40);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(0, 15.0, 15.0, 15.0);
+    return UIEdgeInsetsMake(0, 15.0, 0, 15.0);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 7.5;
+    return 15;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 7.5;
+    return 15;
 }
-
-
-
-
-
-
-
-#pragma mark - Getter / Setter
-- (void)setArray:(NSArray *)array
-{
-    
-    [self reloadData];
-}
-
 
 
 

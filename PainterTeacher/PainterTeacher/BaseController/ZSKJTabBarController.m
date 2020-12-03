@@ -34,6 +34,16 @@
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:KSubTextColor, NSForegroundColorAttributeName, [UIFont systemFontOfSize:12], NSFontAttributeName,nil] forState:UIControlStateNormal];
     
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:KMainColor, NSForegroundColorAttributeName, [UIFont systemFontOfSize:12], NSFontAttributeName,nil] forState:UIControlStateSelected];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 
@@ -51,7 +61,7 @@
     [self addChildViewController:homeNav];
     
     
-    //添加home
+    //添加课程表
     ZSKJCourseViewController *course = [[ZSKJCourseViewController alloc]init];
     ZSKJNavigationViewController *courseNav = [[ZSKJNavigationViewController alloc] initWithRootViewController:course];
     [course setTabBarItemImage:@"courseItemsNormal"];
@@ -60,7 +70,7 @@
     [self addChildViewController:courseNav];
     
     
-    //添加home
+    //添加课后单
     ZSKJEvaluationViewController *evaluation = [[ZSKJEvaluationViewController alloc]init];
     ZSKJNavigationViewController *evaluationNav = [[ZSKJNavigationViewController alloc] initWithRootViewController:evaluation];
     [evaluation setTabBarItemImage:@"evaluationItemsNormal"];
@@ -69,7 +79,7 @@
     [self addChildViewController:evaluationNav];
     
     
-    //添加home
+    //添加我的
     ZSKJMineViewController *mine = [[ZSKJMineViewController alloc]init];
     ZSKJNavigationViewController *mineNav = [[ZSKJNavigationViewController alloc] initWithRootViewController:mine];
     [mine setTabBarItemImage:@"mineItemsNormal"];
@@ -77,7 +87,10 @@
     [mine setTabBarItemTitle:@"我的"];
     [self addChildViewController:mineNav];
     
-
+    
+    
+    
+    
 }
 
 

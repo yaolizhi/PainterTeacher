@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import "AFHTTPSessionManager.h"
+#import "ZSKJNetworkModel.h"
+
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -18,8 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)postUrl:(NSString *)url
  parameters:(nullable id)parameters
-    success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-       failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+       success:(nullable void (^)(id responseObject))success
+       failure:(nullable void (^)(NSError *error))failure;
 
 - (void)getUrl:(NSString *)url
                    parameters:(nullable id)parameters

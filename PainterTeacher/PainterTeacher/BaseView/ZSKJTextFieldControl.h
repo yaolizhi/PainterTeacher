@@ -24,6 +24,11 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setPlaceholder:(NSString*)placeholder;
 -(void)setFont:(UIFont*)font;
 -(void)setTitle:(NSString*)title;
+-(void)setIcon:(NSString*)icon;
+-(void)setLineHidden:(BOOL)hidden;
+-(NSString*)text;
+
+
 
 
 

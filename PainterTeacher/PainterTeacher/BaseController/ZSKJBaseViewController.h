@@ -83,6 +83,14 @@ NS_ASSUME_NONNULL_BEGIN
 -(float)navbarHeight;
 -(float)tabbarHeight;
 
+//设置根目录
+-(void)setLoginRoot:(BOOL)root;
+
+
+
+
+
+
 
 @end
 
