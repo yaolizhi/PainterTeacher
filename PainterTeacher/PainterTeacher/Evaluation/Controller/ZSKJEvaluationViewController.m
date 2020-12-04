@@ -10,16 +10,18 @@
 #import "ZSKJHomeFormalCollectionView.h"
 #import "ZSKJHomeAuditionlCollectionView.h"
 #import "ZSKJCommentViewController.h"  //!< 点评
+#import "ZSKJOptionScrollView.h"
 
 
 
 
 
-@interface ZSKJEvaluationViewController () <ZSKJEvaluationOptionControlDeletage,ZSKJHomeFormalCollectionViewDeletage,ZSKJHomeAuditionlCollectionViewDeletage>
+@interface ZSKJEvaluationViewController () <ZSKJEvaluationOptionControlDeletage,ZSKJHomeFormalCollectionViewDeletage,ZSKJHomeAuditionlCollectionViewDeletage,ZSKJOptionScrollViewDeletage>
 
 
 
 @property (nonatomic, strong) ZSKJEvaluationOptionControl *optionControl;
+@property (nonatomic, strong) ZSKJOptionScrollView *optionScrollView;
 
 @property (nonatomic, strong) ZSKJHomeFormalCollectionView *formalCollectionView;
 @property (nonatomic, strong) ZSKJHomeAuditionlCollectionView *auditionlCollectionView;
@@ -47,8 +49,9 @@
     if (views)
     {
         [self.view addSubview:self.optionControl];
-        [self.view addSubview:self.auditionlCollectionView];
-        [self.view addSubview:self.formalCollectionView];
+        [self.view addSubview:self.optionScrollView];
+        [self.optionScrollView addSubview:self.auditionlCollectionView];
+        [self.optionScrollView addSubview:self.formalCollectionView];
         
         [self.optionControl setIndexTag:0];
     }
@@ -62,22 +65,24 @@
 #pragma mark - Deletage Method
 -(void)optionItemAction:(NSInteger)index
 {
-    [self.auditionlCollectionView setHidden:YES];
-    [self.formalCollectionView setHidden:YES];
-    switch (index)
-    {
-        case 0:
-        {
-            [self.formalCollectionView setHidden:NO];
-        }
-            break;
-        case 1:
-        {
-            [self.auditionlCollectionView setHidden:NO];
-        }
-            break;
-    }
+    [self.optionScrollView setContentOffPage:index];
 }
+
+
+#pragma mark ZSKJOptionScrollViewDeletage
+-(void)optionScrollPage:(NSInteger)page
+{
+    [self.optionControl setIndexTag:page];
+}
+
+
+
+
+
+
+
+
+
 
 #pragma mark ZSKJHomeAuditionlCollectionViewDeletage
 -(void)didAuditionlItem:(ZSKJHomeExaminationModel *)model
@@ -111,11 +116,27 @@
     return _optionControl;
 }
 
+
+-(ZSKJOptionScrollView *)optionScrollView
+{
+    if (!_optionScrollView)
+    {
+        _optionScrollView = [[ZSKJOptionScrollView alloc]initWithFrame:CGRectMake(0, self.optionControl.bottom, ScreenWidth, (ScreenHeight-self.optionControl.bottom)) witDeletage:self];
+        [_optionScrollView setContentSize:CGSizeMake((ScreenWidth*2), (ScreenHeight-self.optionControl.bottom))];
+    }
+    return _optionScrollView;
+}
+
+
+
+
+
+
 -(ZSKJHomeFormalCollectionView *)formalCollectionView
 {
     if (!_formalCollectionView)
     {
-        _formalCollectionView = [[ZSKJHomeFormalCollectionView alloc]initWithFrame:CGRectMake(0, self.optionControl.bottom, ScreenWidth, (ScreenHeight-(self.navbarHeight+50))) withType:VerticalType withDeletage:self];
+        _formalCollectionView = [[ZSKJHomeFormalCollectionView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, (ScreenHeight-self.optionControl.bottom)) withType:VerticalType withDeletage:self];
     }
     return _formalCollectionView;
 }
@@ -126,7 +147,7 @@
 {
     if (!_auditionlCollectionView)
     {
-        _auditionlCollectionView = [[ZSKJHomeAuditionlCollectionView alloc]initWithFrame:CGRectMake(0, self.optionControl.bottom, ScreenWidth, (ScreenHeight-(self.navbarHeight+50))) withType:VerticalType withDeletage:self];
+        _auditionlCollectionView = [[ZSKJHomeAuditionlCollectionView alloc]initWithFrame:CGRectMake(ScreenWidth, 0, ScreenWidth, (ScreenHeight-self.optionControl.bottom)) withType:VerticalType withDeletage:self];
     }
     return _auditionlCollectionView;
 }

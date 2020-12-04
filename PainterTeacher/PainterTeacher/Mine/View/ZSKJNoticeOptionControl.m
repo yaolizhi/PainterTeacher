@@ -91,6 +91,7 @@
 {
     [self.oneBtn setSelected:NO];
     [self.twoBtn setSelected:NO];
+    [self setIndex:index];
     switch (index)
     {
         case 0:

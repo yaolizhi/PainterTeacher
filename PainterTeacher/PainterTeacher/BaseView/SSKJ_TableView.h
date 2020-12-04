@@ -10,11 +10,26 @@
 #import "SSKJ_TableViewCell.h"
 
 
+typedef NS_ENUM(NSInteger,RefreshType)
+{
+    HeaderType = 1,
+    FooterType = 2,
+};
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SSKJ_TableView : UITableView
 
+
+@property (nonatomic, strong) NSMutableArray *dataArray;
+
+
+
+
 - (instancetype)initWitDeletage:(UIViewController*)delegate;
+
+
 
 
 - (instancetype)initWithFrame:(CGRect)frame witDeletage:(UIViewController*)delegate;
@@ -27,11 +42,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /// 添加头部刷新
+
+/// -(void)headerRefresh
 /// @param target 代理对象
 /// @param action 刷新方法
 -(void)headerTarget:(id)target action:(SEL)action;
 
 /// 添加脚部刷新
+/// -(void)footerRefresh
 /// @param target 代理对象
 /// @param action 刷新方法
 -(void)footerTarget:(id)target action:(SEL)action;
@@ -46,6 +64,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 刷新完毕
 -(void)endRefresh;
+
+
 
 
 

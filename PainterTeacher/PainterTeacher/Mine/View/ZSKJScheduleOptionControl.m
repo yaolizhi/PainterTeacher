@@ -55,8 +55,6 @@
         
         [self.lineView setFrame:CGRectMake((self.oneBtn.width-30)/2.0, (frame.size.height-1.5),30 ,1.5)];
         
-        //默认选中第一个
-        [self setIndexTag:0];
     }
     return self;
 }
@@ -77,6 +75,7 @@
     [self.oneBtn setSelected:NO];
     [self.twoBtn setSelected:NO];
     [self.threeBtn setSelected:NO];
+    [self setIndex:index];
     switch (index)
     {
         case 0:
@@ -113,11 +112,6 @@
             }];
         }
             break;
-    }
-    
-    if ([self.deletage respondsToSelector:@selector(optionItemAction:)])
-    {
-        [self.deletage optionItemAction:index];
     }
 }
 

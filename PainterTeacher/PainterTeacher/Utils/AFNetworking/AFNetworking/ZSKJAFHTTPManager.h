@@ -23,10 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
        success:(nullable void (^)(id responseObject))success
        failure:(nullable void (^)(NSError *error))failure;
 
-- (void)getUrl:(NSString *)url
-                   parameters:(nullable id)parameters
-                      success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-                               failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+-(void)getUrl:(NSString *)url parameters:(id)parameters success:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
 
 @end
 

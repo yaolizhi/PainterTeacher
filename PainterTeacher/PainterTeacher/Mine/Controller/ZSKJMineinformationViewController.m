@@ -31,12 +31,17 @@
     [super viewDidLoad];
     [self setTitle:@"我的"];
     
-    [self.headerControl setIcon:@"" title:@"头像" accessory:@""];
-    [self.nameControl setTitle:@"姓名" subtitle:@"姚立志"];
-    [self.genderControl setTitle:@"性别" subtitle:@"男"];
-    [self.ageControl setTitle:@"年龄" subtitle:@"12"];
-    [self.areaControl setTitle:@"地域" subtitle:@"郑州"];
-    [self.uidControl setTitle:@"UID" subtitle:@"489892902"];
+    
+    
+    
+    #pragma mark 设置用户信息
+    
+    [self.headerControl setIcon:@"" title:@"头像" accessory:@"arrowRight"];
+    [self.nameControl setTitle:@"姓名" subtitle:[ZSKJUserinfoModel shareUserinfo].name];
+    [self.genderControl setTitle:@"性别" subtitle:[ZSKJUserinfoModel shareUserinfo].sexOption];
+    [self.ageControl setTitle:@"年龄" subtitle:[ZSKJUserinfoModel shareUserinfo].age];
+    [self.areaControl setTitle:@"地域" subtitle:[ZSKJUserinfoModel shareUserinfo].address];
+    [self.uidControl setTitle:@"UID" subtitle:[ZSKJUserinfoModel shareUserinfo].uid];
     
     
 }

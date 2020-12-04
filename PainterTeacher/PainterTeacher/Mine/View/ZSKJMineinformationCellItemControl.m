@@ -34,7 +34,7 @@
         [self addSubview:self.subtitleLabel];
         [self addSubview:self.accessoryView];
         [self addSubview:self.lineView];
-        
+        [self.iconImageView setCornerRadius:0];
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
            
             make.left.equalTo(self.mas_left).offset(15);
@@ -66,6 +66,7 @@
                 break;
             case 2:
             {
+                [self.iconImageView setCornerRadius:15];
                 [self.iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
 
                     make.right.equalTo(self.accessoryView.mas_left).offset(-10);
@@ -115,14 +116,14 @@
 
 -(void)setTitle:(NSString*)title subtitle:(NSString*)subtitle
 {
-    [self.titleLabel setText:title];
-    [self.subtitleLabel setText:subtitle];
+    [self.titleLabel setText:[NSString stringWithFormat:@"%@",title]];
+    [self.subtitleLabel setText:[NSString stringWithFormat:@"%@",subtitle]];
 }
 
 
 -(void)setTitle:(NSString*)title
 {
-    [self.titleLabel setText:title];
+    [self.titleLabel setText:[NSString stringWithFormat:@"%@",title]];
 }
 
 
@@ -148,7 +149,7 @@
     if (!_iconImageView)
     {
         _iconImageView  = [[UIImageView alloc]init];
-        [_iconImageView setBackgroundColor:[UIColor orangeColor]];
+        [_iconImageView setBackgroundColor:KLineColor];
     }
     return _iconImageView;
 }

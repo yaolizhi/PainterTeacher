@@ -70,6 +70,27 @@ static ZSKJUserinfoModel *shareUserinfo = nil;
 }
 
 
+
+-(void)setSex:(NSInteger)sex
+{
+    _sex = sex;
+    switch (sex)
+    {
+        case 1:
+        {
+            [self setSexOption:@"男"];
+        }
+            break;
+        case 2:
+        {
+            [self setSexOption:@"女"];
+        }
+            break;
+    }
+}
+
+
+
 -(NSMutableArray *)imgs
 {
     if (!_imgs)

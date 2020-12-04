@@ -62,8 +62,8 @@
             filePath = "PainterTeacher/Evaluation/Controller/ZSKJEvaluationViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "-didAuditionlItem:"
             landmarkType = "7">
          </BreakpointContent>
@@ -87,48 +87,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E27CAB78-FB3D-426A-A1B0-82CB7F481D08"
+            uuid = "9484E375-AA0F-4AA4-9799-20D0748ED2A8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PainterTeacher/Mine/View/ZSKJNatureCollectionViewCell.m"
+            filePath = "PainterTeacher/Mine/View/ZSKJScheduleTableView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "-setTitle:"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "-getSchedules:withType:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5261A9AD-743F-4A27-89CF-36C5C36230AD"
+            uuid = "648085E7-0447-4CDB-85AD-78A9AB208B8E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PainterTeacher/Mine/View/ZSKJNatureCollectionView.m"
+            filePath = "PainterTeacher/Mine/View/ZSKJScheduleTableView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-setItemObjectArry:"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "-getSchedules:withType:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "377490D1-4535-4C57-8AAB-5BC83BA37C2E"
+            uuid = "CD632707-6E34-47D3-89CC-B4D1A4F8C16D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PainterTeacher/Mine/View/ZSKJNatureCollectionView.m"
+            filePath = "PainterTeacher/Mine/View/ZSKJScheduleTableView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "-headerRefresh"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

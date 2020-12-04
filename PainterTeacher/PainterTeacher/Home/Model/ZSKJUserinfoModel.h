@@ -29,7 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *headimgurl; //!< 头像
 @property (nonatomic, copy) NSString *password; //!< 密码
 @property (nonatomic, copy) NSString *uid; //!< 用户ID
+@property (nonatomic, copy) NSString *sexOption; //!< 向别
 @property (nonatomic, assign) NSInteger sex; //!<    1男 2女
+
+
 
 
 

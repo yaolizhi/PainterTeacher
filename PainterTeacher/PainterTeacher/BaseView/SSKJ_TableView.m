@@ -13,6 +13,7 @@
 @property (nonatomic, strong) UIImageView *iconView;
 
 
+
 @end
 
 @implementation SSKJ_TableView
@@ -108,6 +109,7 @@
 
 #pragma mark - Public Method
 /// 添加头部刷新
+/// -(void)headerRefresh
 /// @param target 代理对象
 /// @param action 刷新方法
 -(void)headerTarget:(id)target action:(SEL)action
@@ -116,6 +118,7 @@
 }
 
 /// 添加脚部刷新
+/// -(void)footerRefresh
 /// @param target 代理对象
 /// @param action 刷新方法
 -(void)footerTarget:(id)target action:(SEL)action
@@ -138,7 +141,6 @@
 
 -(void)endRefresh
 {
-    [self reloadData];
     if (self.mj_header.state == MJRefreshStateRefreshing)
     {
         [self.mj_header endRefreshing];
@@ -168,6 +170,18 @@
 {
     [self.iconView setHidden:(BOOL)[array count]];
 }
+
+
+-(NSMutableArray *)dataArray
+{
+    if (!_dataArray)
+    {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
+
+
 
 
 

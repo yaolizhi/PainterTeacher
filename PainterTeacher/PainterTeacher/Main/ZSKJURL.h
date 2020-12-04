@@ -16,6 +16,17 @@
 /* 个人简历|个人信息 */
 #define UserInfoByToken_URL [NSString stringWithFormat:@"%@%@",ProductBaseServer,@"index/teacher/getUserInfoByToken"]
 
+/* 教师的排课信息 */
+#define Schedules_URL [NSString stringWithFormat:@"%@%@",ProductBaseServer,@"index/teacher/tomorrowSchedules"]
+
+/* 教师下次课程 */
+#define NextSchedule_URL [NSString stringWithFormat:@"%@%@",ProductBaseServer,@"index/teacher/nextSchedule"]
+
+/* 教师学习报告 */
+#define MyReport_URL [NSString stringWithFormat:@"%@%@",ProductBaseServer,@"index/teacher/myReport"]
+
+
+
 
 
 

@@ -20,9 +20,7 @@
         [self setPagingEnabled:YES];
         [self setShowsHorizontalScrollIndicator:NO];
         [self setShowsVerticalScrollIndicator:NO];
-        
-        
-        self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        [self setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
     }
     return self;
 }

@@ -222,6 +222,10 @@
 		96D7E862256D0E11002D1E90 /* ZSKJHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E861256D0E11002D1E90 /* ZSKJHelper.m */; };
 		96D7E869256D1463002D1E90 /* ZSKJTemporaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E868256D1463002D1E90 /* ZSKJTemporaryViewController.m */; };
 		96D7E86E256D14D3002D1E90 /* TPPasswordTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E86C256D14D3002D1E90 /* TPPasswordTextView.m */; };
+		96DF1F792579C559003D6095 /* ZSKJScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DF1F782579C559003D6095 /* ZSKJScheduleTableViewCell.m */; };
+		96DF1F7D2579D5F1003D6095 /* ZSKJScheduleTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DF1F7C2579D5F1003D6095 /* ZSKJScheduleTableView.m */; };
+		96DF1F812579D753003D6095 /* ZSKJScheduleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DF1F802579D753003D6095 /* ZSKJScheduleModel.m */; };
+		96DF1F862579E8EE003D6095 /* ZSKJOptionScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DF1F852579E8EE003D6095 /* ZSKJOptionScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -667,6 +671,14 @@
 		96D7E868256D1463002D1E90 /* ZSKJTemporaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJTemporaryViewController.m; sourceTree = "<group>"; };
 		96D7E86C256D14D3002D1E90 /* TPPasswordTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPasswordTextView.m; sourceTree = "<group>"; };
 		96D7E86D256D14D3002D1E90 /* TPPasswordTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPasswordTextView.h; sourceTree = "<group>"; };
+		96DF1F772579C559003D6095 /* ZSKJScheduleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJScheduleTableViewCell.h; sourceTree = "<group>"; };
+		96DF1F782579C559003D6095 /* ZSKJScheduleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJScheduleTableViewCell.m; sourceTree = "<group>"; };
+		96DF1F7B2579D5F1003D6095 /* ZSKJScheduleTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJScheduleTableView.h; sourceTree = "<group>"; };
+		96DF1F7C2579D5F1003D6095 /* ZSKJScheduleTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJScheduleTableView.m; sourceTree = "<group>"; };
+		96DF1F7F2579D753003D6095 /* ZSKJScheduleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJScheduleModel.h; sourceTree = "<group>"; };
+		96DF1F802579D753003D6095 /* ZSKJScheduleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJScheduleModel.m; sourceTree = "<group>"; };
+		96DF1F842579E8EE003D6095 /* ZSKJOptionScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJOptionScrollView.h; sourceTree = "<group>"; };
+		96DF1F852579E8EE003D6095 /* ZSKJOptionScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJOptionScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -864,6 +876,8 @@
 			children = (
 				966FB19125708DD100DDFFF9 /* ZSKJNoticeModel.h */,
 				966FB19225708DD100DDFFF9 /* ZSKJNoticeModel.m */,
+				96DF1F7F2579D753003D6095 /* ZSKJScheduleModel.h */,
+				96DF1F802579D753003D6095 /* ZSKJScheduleModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -883,6 +897,10 @@
 				96A0C89D256BB13500DA0AA5 /* ZSKJCoursesCellItemControl.m */,
 				96A0C8A4256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.h */,
 				96A0C8A5256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.m */,
+				96DF1F7B2579D5F1003D6095 /* ZSKJScheduleTableView.h */,
+				96DF1F7C2579D5F1003D6095 /* ZSKJScheduleTableView.m */,
+				96DF1F772579C559003D6095 /* ZSKJScheduleTableViewCell.h */,
+				96DF1F782579C559003D6095 /* ZSKJScheduleTableViewCell.m */,
 				9633BC602574E3C6008666A1 /* ZSKJNoticeOptionControl.h */,
 				9633BC612574E3C6008666A1 /* ZSKJNoticeOptionControl.m */,
 				96A1A88B256E0BA100876755 /* ZSKJMineResumeCollectionView.h */,
@@ -1496,6 +1514,8 @@
 		9653B72C2567C2610088B16E /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				96D7E860256D0E11002D1E90 /* ZSKJHelper.h */,
+				96D7E861256D0E11002D1E90 /* ZSKJHelper.m */,
 				96A1A869256DF62500876755 /* SSKJ_ScrollView.h */,
 				96A1A86A256DF62500876755 /* SSKJ_ScrollView.m */,
 				96A1A862256DF52900876755 /* SSKJ_TableView.h */,
@@ -1504,10 +1524,10 @@
 				96A1A864256DF52900876755 /* SSKJ_TableViewCell.m */,
 				9653B72D2567C2960088B16E /* ZSKJTextFieldControl.h */,
 				9653B72E2567C2960088B16E /* ZSKJTextFieldControl.m */,
-				96D7E860256D0E11002D1E90 /* ZSKJHelper.h */,
-				96D7E861256D0E11002D1E90 /* ZSKJHelper.m */,
 				96A1A86D256DF84E00876755 /* ZSKJCollectionView.h */,
 				96A1A86E256DF84E00876755 /* ZSKJCollectionView.m */,
+				96DF1F842579E8EE003D6095 /* ZSKJOptionScrollView.h */,
+				96DF1F852579E8EE003D6095 /* ZSKJOptionScrollView.m */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -1767,6 +1787,7 @@
 				9653B57C2567B43E0088B16E /* ZSKJCourseViewController.m in Sources */,
 				9653B6C82567C1EA0088B16E /* SDImageCacheConfig.m in Sources */,
 				9653B70B2567C1EA0088B16E /* MJRefreshAutoStateFooter.m in Sources */,
+				96DF1F812579D753003D6095 /* ZSKJScheduleModel.m in Sources */,
 				9653B6FA2567C1EA0088B16E /* UIImage+YYWebImage.m in Sources */,
 				96A1A889256E030700876755 /* UIImageView+Category.m in Sources */,
 				9653B7162567C1EA0088B16E /* IQTextView.m in Sources */,
@@ -1845,6 +1866,7 @@
 				9653B6E62567C1EA0088B16E /* UIRefreshControl+AFNetworking.m in Sources */,
 				9653B6BC2567C1EA0088B16E /* SDWebImageCompat.m in Sources */,
 				966FB1982570A0A500DDFFF9 /* ZSKJUserinfoModel.m in Sources */,
+				96DF1F792579C559003D6095 /* ZSKJScheduleTableViewCell.m in Sources */,
 				9653B5752567B4290088B16E /* ZSKJEvaluationViewController.m in Sources */,
 				9653B71E2567C1EA0088B16E /* IQNSArray+Sort.m in Sources */,
 				9653B6F32567C1EA0088B16E /* AFSecurityPolicy.m in Sources */,
@@ -1890,6 +1912,7 @@
 				9653B6DF2567C1EA0088B16E /* MASLayoutConstraint.m in Sources */,
 				9653B6D22567C1EA0088B16E /* NSObject+MJProperty.m in Sources */,
 				9653B6E12567C1EA0088B16E /* View+MASAdditions.m in Sources */,
+				96DF1F862579E8EE003D6095 /* ZSKJOptionScrollView.m in Sources */,
 				9653B6E52567C1EA0088B16E /* UIProgressView+AFNetworking.m in Sources */,
 				966FB1A12570AF2200DDFFF9 /* ZSKJHomeATimeArrangeViewController.m in Sources */,
 				9653B7012567C1EA0088B16E /* YYAnimatedImageView.m in Sources */,
@@ -1911,6 +1934,7 @@
 				9633BC4B25749598008666A1 /* ZSKJExhibitionModel.m in Sources */,
 				9632FA9A256F9C0700A1D181 /* LameTool.m in Sources */,
 				9632FAA0256FA85900A1D181 /* ZSKJNoticeViewController.m in Sources */,
+				96DF1F7D2579D5F1003D6095 /* ZSKJScheduleTableView.m in Sources */,
 				96A1A86F256DF84E00876755 /* ZSKJCollectionView.m in Sources */,
 				9653B6C72567C1EA0088B16E /* SDWebImageGIFCoder.m in Sources */,
 				9653B6E42567C1EA0088B16E /* MASViewAttribute.m in Sources */,
@@ -2090,7 +2114,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benjamin Hammock (JY7J43NMBT)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2VZPDQKTU8;
+				DEVELOPMENT_TEAM = FD654W2952;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/$PROJECT_NAME/Main/PrefixHeader.pch;
 				INFOPLIST_FILE = PainterTeacher/Info.plist;
@@ -2117,7 +2141,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benjamin Hammock (JY7J43NMBT)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2VZPDQKTU8;
+				DEVELOPMENT_TEAM = FD654W2952;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/$PROJECT_NAME/Main/PrefixHeader.pch;
 				INFOPLIST_FILE = PainterTeacher/Info.plist;
