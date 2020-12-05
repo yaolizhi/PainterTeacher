@@ -17,6 +17,8 @@
 @property (nonatomic,weak) id <ZSKJHomeAuditionlCollectionViewDeletage> itemDeletage;
 
 
+
+
 @end
 
 
@@ -33,18 +35,95 @@
         [self registerClass:[ZSKJHomeHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ZSKJHomeHeaderView"];
         [self registerClass:[ZSKJHomeCollectionViewCell class] forCellWithReuseIdentifier:@"ZSKJHomeCollectionViewCell"];
         
-        for (int i = 0; i < 20; i++)
-        {
-            ZSKJHomeExaminationModel *model = [[ZSKJHomeExaminationModel alloc]init];
-            [model setType:AuditionlExaminationType];
-            [self.itemArry addObject:model];
-        }
+        
+        [self headerTarget:self action:@selector(headerRefresh)];
+        [self footerTarget:self action:@selector(footerRefresh)];
     }
     return self;
 }
 
 
 
+#pragma mark - Private Method
+-(void)headerRefresh
+{
+    [self setPage:1];
+    NSDictionary *parameters = @{@"token":[ZSKJUserinfoModel shareUserinfo].token,@"type":@"2",@"limit":@"10",@"page":[NSString stringWithFormat:@"%d",self.page]};
+    [self getReport:parameters withType:HeaderType];
+}
+
+
+-(void)footerRefresh
+{
+    NSDictionary *parameters = @{@"token":[ZSKJUserinfoModel shareUserinfo].token,@"type":@"2",@"limit":@"10",@"page":[NSString stringWithFormat:@"%d",self.page]};
+    [self getReport:parameters withType:FooterType];
+}
+
+
+
+
+
+
+
+#pragma mark - NetWork Method 网络请求
+-(void)getReport:(NSDictionary*)parameters withType:(RefreshType)type
+{
+    WS(weakSelf);
+    [[ZSKJAFHTTPManager shareManager] postUrl:MyReport_URL parameters:parameters success:^(id  _Nonnull responseObject) {
+        ZSKJNetworkModel *netWorkModel = [ZSKJNetworkModel mj_objectWithKeyValues:responseObject];
+        if (netWorkModel.code.integerValue == 1)
+        {
+            NSArray *array = [ZSKJHomeExaminationModel mj_objectArrayWithKeyValuesArray:[netWorkModel.data objectForKey:@"rows"]];
+            switch (type)
+            {
+                case HeaderType:
+                {
+                    [weakSelf.itemArry setArray:array];
+                }
+                    break;
+                case FooterType:
+                {
+                    [weakSelf.itemArry addObjectsFromArray:array];
+                }
+                    break;
+            }
+            
+            
+            if ([array count]>=10)
+            {
+                [self setPage:(self.page+1)];
+            }
+            else
+            {
+                [weakSelf endNoMoreData];
+            }
+        }
+        else
+        {
+            [weakSelf endNoMoreData];
+        }
+        
+        [weakSelf endRefresh];
+        
+    
+            
+    } failure:^(NSError * _Nonnull error) {
+        
+        [weakSelf endRefresh];
+        
+    }];
+    
+    
+    
+}
+
+
+
+
+
+
+
+#pragma mark - Deletage Method
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 1;
@@ -53,8 +132,9 @@
 
 
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+- (NSInteger)collectionView:(ZSKJCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
+    [collectionView setItemsArray:self.itemArry];
     return [self.itemArry count];
 }
 

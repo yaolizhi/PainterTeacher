@@ -50,6 +50,7 @@
 {
     NSInteger page = scrollView.contentOffset.x / scrollView.frame.size.width;
     
+   
     if (page != self.page)
     {
         if ([self.optionDeletage respondsToSelector:@selector(optionScrollPage:)])

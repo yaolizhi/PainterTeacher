@@ -10,7 +10,7 @@
 
 @interface SSKJ_TableView ()
 
-@property (nonatomic, strong) UIImageView *iconView;
+@property (nonatomic, strong) UIButton *iconView;
 
 
 
@@ -124,6 +124,7 @@
 -(void)footerTarget:(id)target action:(SEL)action
 {
     self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:target refreshingAction:action];
+    [self.mj_footer setAutomaticallyHidden:YES];
 }
 
 
@@ -131,6 +132,7 @@
 -(void)endNoMoreData
 {
     [self.mj_footer endRefreshingWithNoMoreData];
+    [self.mj_footer setAutomaticallyHidden:YES];
 }
 
 //重置数据
@@ -154,14 +156,24 @@
 
 
 
+-(void)beginRefreshing
+{
+    [self.mj_header beginRefreshing];
+}
+
+
+
+
+
 #pragma mark - Getter / Setter
--(UIImageView *)iconView
+-(UIButton *)iconView
 {
     if (!_iconView)
     {
-        _iconView = [[UIImageView alloc]init];
-        [_iconView setImageName:@"noticeEmpty"];
+        _iconView = [[UIButton alloc]init];
+        [_iconView setImage:imageName(@"noticeEmpty") forState:UIControlStateNormal];
         [_iconView setHidden:YES];
+        [_iconView addTarget:self action:@selector(beginRefreshing) forControlEvents:UIControlEventTouchUpInside];
     }
     return _iconView;
 }

@@ -103,6 +103,10 @@ alpha:a]
 #define CornerRadius_4  4
 #define CornerRadius_3  3
 
+#define PageSize 10
+
+
+
 
 
 
