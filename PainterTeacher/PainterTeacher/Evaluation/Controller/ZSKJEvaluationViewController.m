@@ -10,7 +10,6 @@
 #import "ZSKJHomeFormalCollectionView.h"
 #import "ZSKJHomeAuditionlCollectionView.h"
 #import "ZSKJCommentViewController.h"  //!< 点评
-#import "ZSKJOptionScrollView.h"
 
 
 

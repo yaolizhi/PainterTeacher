@@ -48,11 +48,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param action 刷新方法
 -(void)headerTarget:(id)target action:(SEL)action;
 
+-(void)headerRefresh;
+
+
 /// 添加脚部刷新
 /// -(void)footerRefresh
 /// @param target 代理对象
 /// @param action 刷新方法
 -(void)footerTarget:(id)target action:(SEL)action;
+
+-(void)footerRefresh;
 
 /// 没有更多数据
 -(void)endNoMoreData;

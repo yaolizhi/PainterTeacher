@@ -7,6 +7,8 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 #define AppWindow [[UIApplication sharedApplication].windows firstObject]
 
@@ -33,6 +35,7 @@
 
 
 
+#import "ZSKJEnumType.h"
 #import "ZSKJURL.h"
 #import "MBHUD.h"
 #import "MBProgressHUD.h"
@@ -51,6 +54,7 @@
 #import "SSKJ_TableView.h"
 #import "SSKJ_ScrollView.h"
 #import "ZSKJCollectionView.h"
+#import "ZSKJOptionScrollView.h"
 #import "ZSKJUserinfoModel.h"
 
 

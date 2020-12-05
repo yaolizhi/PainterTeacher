@@ -30,8 +30,8 @@
             filePath = "PainterTeacher/Evaluation/Controller/ZSKJEvaluationViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "-didAuditionlItem:"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "PainterTeacher/Home/View/ZSKJHomeAuditionlCollectionView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "-getReport:withType:"
             landmarkType = "7">
          </BreakpointContent>

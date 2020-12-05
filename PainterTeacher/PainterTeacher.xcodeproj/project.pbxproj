@@ -219,6 +219,10 @@
 		96BF568F257624D400B50BAC /* ZSKJAudioBtnControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF568E257624D400B50BAC /* ZSKJAudioBtnControl.m */; };
 		96BF56E125772C4000B50BAC /* ZSKJAudioStatusBoardControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF56DF25772C4000B50BAC /* ZSKJAudioStatusBoardControl.m */; };
 		96BF56E62577625000B50BAC /* ZSKJAudioBubbleBoardControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF56E52577625000B50BAC /* ZSKJAudioBubbleBoardControl.m */; };
+		96C80800257B225C00DDDB1E /* ZSKJHomeATimeArrangeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C807FF257B225C00DDDB1E /* ZSKJHomeATimeArrangeTableView.m */; };
+		96C80804257B226600DDDB1E /* ZSKJHomeATimeArrangeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C80803257B226600DDDB1E /* ZSKJHomeATimeArrangeTableViewCell.m */; };
+		96C80808257B24D500DDDB1E /* ZSKJHomeATimeArrangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C80807257B24D500DDDB1E /* ZSKJHomeATimeArrangeModel.m */; };
+		96C8080C257B24FA00DDDB1E /* ZSKJHomeReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C8080B257B24FA00DDDB1E /* ZSKJHomeReportModel.m */; };
 		96D7E862256D0E11002D1E90 /* ZSKJHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E861256D0E11002D1E90 /* ZSKJHelper.m */; };
 		96D7E869256D1463002D1E90 /* ZSKJTemporaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E868256D1463002D1E90 /* ZSKJTemporaryViewController.m */; };
 		96D7E86E256D14D3002D1E90 /* TPPasswordTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7E86C256D14D3002D1E90 /* TPPasswordTextView.m */; };
@@ -665,6 +669,15 @@
 		96BF56E025772C4000B50BAC /* ZSKJAudioStatusBoardControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKJAudioStatusBoardControl.h; sourceTree = "<group>"; };
 		96BF56E42577625000B50BAC /* ZSKJAudioBubbleBoardControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJAudioBubbleBoardControl.h; sourceTree = "<group>"; };
 		96BF56E52577625000B50BAC /* ZSKJAudioBubbleBoardControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJAudioBubbleBoardControl.m; sourceTree = "<group>"; };
+		96C807FE257B225C00DDDB1E /* ZSKJHomeATimeArrangeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeATimeArrangeTableView.h; sourceTree = "<group>"; };
+		96C807FF257B225C00DDDB1E /* ZSKJHomeATimeArrangeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeATimeArrangeTableView.m; sourceTree = "<group>"; };
+		96C80802257B226600DDDB1E /* ZSKJHomeATimeArrangeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeATimeArrangeTableViewCell.h; sourceTree = "<group>"; };
+		96C80803257B226600DDDB1E /* ZSKJHomeATimeArrangeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeATimeArrangeTableViewCell.m; sourceTree = "<group>"; };
+		96C80806257B24D500DDDB1E /* ZSKJHomeATimeArrangeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeATimeArrangeModel.h; sourceTree = "<group>"; };
+		96C80807257B24D500DDDB1E /* ZSKJHomeATimeArrangeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeATimeArrangeModel.m; sourceTree = "<group>"; };
+		96C8080A257B24FA00DDDB1E /* ZSKJHomeReportModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHomeReportModel.h; sourceTree = "<group>"; };
+		96C8080B257B24FA00DDDB1E /* ZSKJHomeReportModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHomeReportModel.m; sourceTree = "<group>"; };
+		96C8080E257B258E00DDDB1E /* ZSKJEnumType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJEnumType.h; sourceTree = "<group>"; };
 		96D7E860256D0E11002D1E90 /* ZSKJHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJHelper.h; sourceTree = "<group>"; };
 		96D7E861256D0E11002D1E90 /* ZSKJHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKJHelper.m; sourceTree = "<group>"; };
 		96D7E867256D1463002D1E90 /* ZSKJTemporaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKJTemporaryViewController.h; sourceTree = "<group>"; };
@@ -947,6 +960,7 @@
 				9653B5812567B74A0088B16E /* AppDelegate.m */,
 				9653B7372567C4B30088B16E /* PrefixHeader.pch */,
 				9665B2272578747E003EF07C /* ZSKJURL.h */,
+				96C8080E257B258E00DDDB1E /* ZSKJEnumType.h */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1580,6 +1594,10 @@
 				966FB1972570A0A500DDFFF9 /* ZSKJUserinfoModel.m */,
 				9633BC3B2574884F008666A1 /* ZSKJHomeExaminationModel.h */,
 				9633BC3C2574884F008666A1 /* ZSKJHomeExaminationModel.m */,
+				96C80806257B24D500DDDB1E /* ZSKJHomeATimeArrangeModel.h */,
+				96C80807257B24D500DDDB1E /* ZSKJHomeATimeArrangeModel.m */,
+				96C8080A257B24FA00DDDB1E /* ZSKJHomeReportModel.h */,
+				96C8080B257B24FA00DDDB1E /* ZSKJHomeReportModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1609,6 +1627,10 @@
 				966FB1A42570B92100DDFFF9 /* ZSKJHomeReportTableView.m */,
 				966FB1A82570BE1400DDFFF9 /* ZSKJHomeReportTableViewCell.h */,
 				966FB1A92570BE1400DDFFF9 /* ZSKJHomeReportTableViewCell.m */,
+				96C807FE257B225C00DDDB1E /* ZSKJHomeATimeArrangeTableView.h */,
+				96C807FF257B225C00DDDB1E /* ZSKJHomeATimeArrangeTableView.m */,
+				96C80802257B226600DDDB1E /* ZSKJHomeATimeArrangeTableViewCell.h */,
+				96C80803257B226600DDDB1E /* ZSKJHomeATimeArrangeTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1766,6 +1788,7 @@
 				9653B7102567C1EA0088B16E /* MJRefreshGifHeader.m in Sources */,
 				9633BC3D2574884F008666A1 /* ZSKJHomeExaminationModel.m in Sources */,
 				9653B50A2567717E0088B16E /* ViewController.m in Sources */,
+				96C8080C257B24FA00DDDB1E /* ZSKJHomeReportModel.m in Sources */,
 				96A0C8A6256BBACF00DA0AA5 /* ZSKJScheduleOptionControl.m in Sources */,
 				9653B6E32567C1EA0088B16E /* MASViewConstraint.m in Sources */,
 				96BF5685257610D400B50BAC /* ZSKJCommentViewController.m in Sources */,
@@ -1783,6 +1806,7 @@
 				9653B6EC2567C1EA0088B16E /* AFAutoPurgingImageCache.m in Sources */,
 				96A0C85E256B396500DA0AA5 /* UIImage+Extension.m in Sources */,
 				96A1A867256DF52900876755 /* SSKJ_TableView.m in Sources */,
+				96C80808257B24D500DDDB1E /* ZSKJHomeATimeArrangeModel.m in Sources */,
 				9653B6B52567C1EA0088B16E /* SDWebImageFrame.m in Sources */,
 				9653B57C2567B43E0088B16E /* ZSKJCourseViewController.m in Sources */,
 				9653B6C82567C1EA0088B16E /* SDImageCacheConfig.m in Sources */,
@@ -1964,8 +1988,10 @@
 				96A0C875256B4EFE00DA0AA5 /* ZSKJMineNoticeControl.m in Sources */,
 				966FB1AA2570BE1400DDFFF9 /* ZSKJHomeReportTableViewCell.m in Sources */,
 				966FB18C25708BA900DDFFF9 /* ZSKJHomeHeaderSoonView.m in Sources */,
+				96C80804257B226600DDDB1E /* ZSKJHomeATimeArrangeTableViewCell.m in Sources */,
 				9653B6B92567C1EA0088B16E /* UIImage+GIF.m in Sources */,
 				9633BC662574EB8A008666A1 /* ZSKJNoticeDetailsViewController.m in Sources */,
+				96C80800257B225C00DDDB1E /* ZSKJHomeATimeArrangeTableView.m in Sources */,
 				9665B29225789055003EF07C /* MBProgressHUD+FR.m in Sources */,
 				9653B6FD2567C1EA0088B16E /* YYSpriteSheetImage.m in Sources */,
 				96A0C85D256B396500DA0AA5 /* UIView+Layout.m in Sources */,

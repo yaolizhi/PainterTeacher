@@ -20,6 +20,8 @@
 #import "ZSKJTemporaryViewController.h"  //!<临时课堂
 #import "ZSKJMineResumeViewController.h" //!< 我的简历
 #import "ZSKJNoticeViewController.h" //!< 我的消息
+#import "ZSKJHomeATimeArrangeViewController.h" //!< 课时明细
+
 
 
 
@@ -224,7 +226,7 @@
 #pragma mark case 3 课时明细
         case 3:
         {
-            
+            [self pushViewController:[[ZSKJHomeATimeArrangeViewController alloc]init] animated:YES];
         }
             break;
 #pragma mark case 4 个人信息

@@ -6,10 +6,14 @@
 //
 
 #import "SSKJ_TableViewCell.h"
+#import "ZSKJHomeReportModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZSKJHomeReportTableViewCell : SSKJ_TableViewCell
+
+@property (nonatomic, strong) ZSKJHomeReportModel *model;
+
 
 @end
 

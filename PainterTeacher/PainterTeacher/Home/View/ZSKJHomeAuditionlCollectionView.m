@@ -92,6 +92,7 @@
             if ([array count]>=10)
             {
                 [self setPage:(self.page+1)];
+                
             }
             else
             {
@@ -102,14 +103,11 @@
         {
             [weakSelf endNoMoreData];
         }
-        
         [weakSelf endRefresh];
-        
-    
             
     } failure:^(NSError * _Nonnull error) {
         
-        [weakSelf endRefresh];
+        [weakSelf endNoMoreData];
         
     }];
     

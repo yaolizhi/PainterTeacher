@@ -9,11 +9,7 @@
 
 
 
-typedef NS_ENUM(NSInteger,InitType)
-{
-    AuditionlType = 1, //!< 试听课程
-    FormalType = 2,    //!< 正式课
-};
+
 
 
 

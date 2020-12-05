@@ -19,6 +19,31 @@
 @implementation SSKJ_TableView
 
 
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self)
+    {
+        [self setBackgroundColor:KLineColor];
+        [self setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+        
+        [self setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+        [self setEstimatedRowHeight:0];
+        [self setEstimatedSectionHeaderHeight:0];
+        [self setEstimatedSectionFooterHeight:0];
+        
+        [self addSubview:self.iconView];
+        [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
+           
+            make.centerX.equalTo(self.mas_centerX);
+            make.centerY.equalTo(self.mas_centerY).offset(-60);
+                    
+            
+        }];
+    }
+    return self;
+}
+
 
 - (instancetype)init
 {
@@ -63,10 +88,11 @@
         
         [self addSubview:self.iconView];
         [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
-           
+            
             make.centerX.equalTo(self.mas_centerX);
             make.centerY.equalTo(self.mas_centerY).offset(-60);
                     
+            
         }];
     }
     return self;
@@ -117,6 +143,11 @@
     self.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:target refreshingAction:action];
 }
 
+-(void)headerRefresh
+{
+    
+}
+
 /// 添加脚部刷新
 /// -(void)footerRefresh
 /// @param target 代理对象
@@ -125,6 +156,11 @@
 {
     self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:target refreshingAction:action];
     [self.mj_footer setAutomaticallyHidden:YES];
+}
+
+-(void)footerRefresh
+{
+    
 }
 
 
